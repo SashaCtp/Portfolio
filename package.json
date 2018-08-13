@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Ceci est mon portfolio afin de proposer mes services et montrer mes différents projets.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/MegaSash/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/MegaSash/Portfolio/issues"
+  },
+  "homepage": "https://gitlab.com/MegaSash/Portfolio#README",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

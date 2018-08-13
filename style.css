@@ -1,0 +1,8 @@
+/*
+    Loading fonts
+*/
+
+@font-face {
+    font-family: "OratorStd";
+    src: url(http://localhost/fonts/OratorStd.ttf) format("truetype");
+}
