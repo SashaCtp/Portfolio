@@ -4,11 +4,187 @@
 
 @font-face {
     font-family: "OratorStd";
-    src: url(http://localhost/fonts/OratorStd.ttf) format("truetype");
+    src: url(http://localhost:8080/fonts/OratorStd.ttf) format("truetype");
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: inherit;
+    font-style: inherit;
+    color: inherit;
+}
+
+.title{text-align: center;}
+
+.title .icon{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0 0 20px 20px;
+}
+
+.title h1{
+    font-size: 50px;
+    font-family: "OratorStd", sans-serif;
+    font-weight: 300;
+    margin: 30px 0 15px 0;
+}
+.darkTitle h1{color: #4D5762;}
+
+.title .spacer{
+    width: 20%;
+    height: 2px;
+    display: block;
+    margin: 0 auto 30px auto;
+    background: black;
+}
+
+.darkTitle .spacer{
+    background: linear-gradient(to left, #485563, #29323C);
+}
+
+/* Dark Fade Background */
+.dark{
+    background: linear-gradient(to bottom right, #485563, #29323C);
+    z-index: 1;
+}
+
+.bright{
+    background: #fff;
+    z-index: 2;
+
+    -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+}
+
+/*
+    Header
+*/
+
+header{
+    height: 90px;
+    width: 100%;
+    z-index: 2;
+
+    -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+
+    display: block;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100vw;
+    height: 90px;
+    padding: 0 60px;
+}
+
+nav .item{
+    line-height: 90px;
+    font-family: 'OratorStd', sans-serif;
+    color: #535C65;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+header .headerLogo{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    bottom: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #485563, #29323C);
+}
+
+/*
+    Accueil
+*/
+#accueil{
+    width: 100%;
+    height: calc(100vh - 90px);
+    padding: calc((100vh - 90px - 362px) / 2) 0;
+}
+
+#accueil .container{
+    height: 362px;
+}
+
+#accueil .imgContainer{
+    margin: 0 auto;
+
+    height: 240px;
+    width: 240px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+#accueil .accueilImg{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#accueil h1{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 65px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#accueil h2{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*
+    Présentation
+*/
+#presentation{
+    padding: 60px 0;
+    width: 100%;
+}
+
+#presentation .container{
+    padding: 30px 100px;
+}
+
+#presentation p{
+    color: #4D5762;
+
+    letter-spacing: 1.5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    text-align: center;
 }
