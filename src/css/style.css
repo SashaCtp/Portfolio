@@ -40,7 +40,8 @@ a{
     font-weight: 300;
     margin: 30px 0 15px 0;
 }
-.darkTitle h1{color: #4D5762;}
+.bright .title h1{color: #4D5762;}
+.dark .title h1{color: #fff;}
 
 .title .spacer{
     width: 20%;
@@ -50,9 +51,18 @@ a{
     background: black;
 }
 
-.darkTitle .spacer{
-    background: linear-gradient(to left, #485563, #29323C);
+.bright .title .spacer{background: #485563}
+.dark .title .spacer{background: #fff; opacity: 0.9;}
+
+.title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
 }
+
+.brigth .title h2{color:#4D5762;}
+.dark .title h2{color: #fff}
 
 /* Dark Fade Background */
 .dark{
@@ -67,6 +77,10 @@ a{
     -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
     -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
     box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+}
+
+.padded{
+    padding: 100px;
 }
 
 /*
@@ -172,12 +186,7 @@ header .headerLogo{
     Présentation
 */
 #presentation{
-    padding: 60px 0;
     width: 100%;
-}
-
-#presentation .container{
-    padding: 30px 100px;
 }
 
 #presentation p{
@@ -187,4 +196,24 @@ header .headerLogo{
     font-family: 'Raleway', sans-serif;
     font-size: 23px;
     text-align: center;
+}
+
+/*
+    Compétences
+*/
+#competences .skills{
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+#competences .skills .item{
+    background: #fff;
+    min-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'OratorStd', sans-serif;
+    color: #505B67;
+    font-weight: 600;
+    font-size: 18px;
 }

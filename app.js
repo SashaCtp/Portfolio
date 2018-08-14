@@ -7,9 +7,8 @@ app.use('/fonts', express.static(__dirname + '/src/fonts'))
 //Static img
 app.use('/img', express.static(__dirname + '/src/img'))
 
-app.use('/style.css', (req, res) => {
-    res.sendFile(__dirname + '/style.css')
-})
+//Static css
+app.use('/css', express.static(__dirname + '/src/css'))
 
 app.get('/', (req, res) => {
 
