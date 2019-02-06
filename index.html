@@ -2,21 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <title>Sasha Contrepois | Portfolio</title>
+
+        <!-- Responsive -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSS & Fonts-->
-        <link rel="stylesheet" href="/css/style.css" type="text/css" />
-        <link rel="stylesheet" href="/css/ui-grid.min.css" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700" rel="stylesheet">
-
-        <title>Sasha Contrepois | Portfolio</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/ui-grid.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700">
+        <link rel="stylesheet" href="css/hamburgers.min.css" />
     </head>
     <body>
 
-        <header>
+        <header class="">
 
-            <div class='headerLogo'>SC</div>
-
-            <nav>
+            <nav class="">
                 <div class="item">
                     <a href="#">QUI SUIS-JE ?</a>
                 </div>
@@ -38,12 +39,18 @@
                 </div>
             </nav>
 
+            <button class="hamburger hamburger--collapse" id="navButton" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
         </header>
 
         <section class="dark" id="accueil">
             <div class="container">
                 <div class="imgContainer">
-                    <img class="accueilImg" src="/img/moi.png" />
+                    <img class="accueilImg" src="img/sasha.jpg" />
                 </div>
                 <h1>Sasha Contrepois</h1>
                 <h2>Etudiant & Développeur Web Fullstack</h2>
@@ -54,17 +61,19 @@
             <div class="container">
 
                 <div class="title darkTitle">
-                    <img class="icon" src="/img/boy_gray.png" />
+                    <img class="icon" src="img/boy_gray.png" />
                     <h1>QUI SUIS-JE ?</h1>
                     <div class="spacer"></div>
                 </div>
 
                 <p>
-                    Bonjour, je suis Sasha Contrepois, j'ai 16 ans et je suis avant tout un passioné de technologie, d'informatique, d'espace et d'ingéniérie.
-                    <br />
-                    Je suis actuellement en terminale Scientifique ddans la région de Toulon et me dirige vers des études dans l'aérospatial.
-                    <br />
-                    A l'âge de 14 ans, je me suis intéréssé au développement web et je suis maintenant capable de développer une application web complète.
+                    Bonjour, je suis Sasha Contrepois, j'ai 17 ans et je suis avant tout un passioné de technologies, d'informatique, d'espace et d'ingéniérie.
+                </p>
+                <p>
+                    Je suis actuellement en terminale S Sciences de l'Ingénieur spé. Physique dans la région de Toulon et me dirige vers des études dans l'aéronautique et le spatial.
+                </p>
+                <p>
+                    A l'âge de 13 ans, je me suis intéréssé au développement web et je suis maintenant capable de développer une application web complète.
                 </p>
             </div>
         </section>
@@ -73,10 +82,10 @@
             <div class="container">
 
                 <div class="title">
-                    <img class="icon" src="/img/cogwheel.png" />
+                    <img class="icon" src="img/cogwheel.png" />
                     <h1>MES COMPETENCES</h1>
                     <div class="spacer"></div>
-                    <h2>Je possède de multiples compétences,<br />il y a bien quelque chose pour lequel je peux vous aider !</h2>
+                    <h2>Je possède de multiples compétences,<br />il y a bien une chose pour laquelle je peux vous aider !</h2>
                 </div>
 
                 <div class="skills ui four column stackable grid">
@@ -93,19 +102,276 @@
                         <div class="column"><div class="item">Docker</div></div>
                     </div>
                     <div class="row">
-                        <div class="column"><div class="item">Semantic-UI</div></div>
+                        <div class="column"><div class="item">Bootstrap</div></div>
                         <div class="column"><div class="item">SolidWorks</div></div>
                         <div class="column"><div class="item">Suite Adobe</div></div>
-                        <div class="column"><div class="item">Trello</div></div>
+                        <div class="column"><div class="item">Slack/Trello/GitLab</div></div>
                     </div>
                     <div class="row">
-                        <div class="column"><div class="item">Cambridge<br />Certificate</div></div>
+                        <div class="column"><div class="item">Anglais <br />(Cambridge Certificate)</div></div>
                         <div class="column"><div class="item">Italien</div></div>
                         <div class="column"><div class="item">Russe</div></div>
+                        <div class="column"><div class="item">Arduino</div></div>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <section class="bright padded" id="projects">
+            <div class="title">
+                <img class="icon" src="img/rocket.png" />
+                <h1>MES PROJETS</h1>
+                <div class="spacer"></div>
+                <h2>Voici différents projets sur lesquels j'ai pu travailler ces dernières années. <br />(Ils ne sont pas tous listés)</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeSpacer">2018</div>
+
+                <!-- RelaxBot -->
+                <div class="project">
+
+                    <div class="title">RelaxBot</div>
+                    <div class="subtitle">
+                        Un bot Discord permettant de jouer tout en se relaxant.
+                    </div>
+
+                    <div class="card">
+
+                        <div class="column logo">
+                            <img src="img/logo_relaxbot.png" />
+                        </div>
+
+                        <div class="column buttons">
+
+                            <div class="btn outline">
+                                <a href="#">Cahier des charges</a>
+                            </div>
+
+                            <div class="btn">
+                                <a href="#">En savoir plus</a>
+                            </div>
+
+                        </div>
+
+                        <ul class="column technos">
+                            <li class="main">
+                                Développé avec:
+                            </li>
+                            <li>NodeJS</li>
+                            <li>Javascript</li>
+                            <li>Discord.js</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeSpacer">2017</div>
+
+                <!-- Monopo.li -->
+                <div class="project">
+
+                    <div class="title">Monopo.li</div>
+                    <div class="subtitle">
+                        Un vrai jeu Monopoly sur un navigateur internet !
+                    </div>
+
+                    <div class="card">
+
+                        <div class="column logo">
+                            <img src="img/logo_monopoli.png" />
+                        </div>
+
+                        <div class="column buttons">
+
+                            <div class="btn outline">
+                                <a href="#">Cahier des charges</a>
+                            </div>
+
+                            <div class="btn">
+                                <a href="#">En savoir plus</a>
+                            </div>
+
+                            <div class="info">
+                                Projet en développement
+                            </div>
+
+                        </div>
+
+                        <ul class="column technos">
+                            <li class="main">
+                                Développé avec:
+                            </li>
+                            <li>HTML & CSS</li>
+                            <li>NodeJS</li>
+                            <li>Javascript</li>
+                            <li>Vue.js</li>
+                            <li>Socket.io</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeSpacer">2016</div>
+
+                <!-- Monopo.li -->
+                <div class="project">
+
+                    <div class="title">RubyzGames</div>
+                    <div class="subtitle">
+                        Un serveur de jeu ammusant et original.
+                    </div>
+
+                    <div class="card">
+
+                        <div class="column logo">
+                            <img src="img/logo_rubyzgames.png" />
+                        </div>
+
+                        <div class="column buttons">
+
+                            <div class="btn outline">
+                                <a href="#">Cahier des charges</a>
+                            </div>
+
+                            <div class="btn">
+                                <a href="#">En savoir plus</a>
+                            </div>
+
+                        </div>
+
+                        <ul class="column technos">
+                            <li class="main">
+                                Développé avec:
+                            </li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>HTML & CSS</li>
+                            <li>Javascript</li>
+                            <li>Bash</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="dark padded" id="cv">
+            <div class="container">
+
+                <div class="title">
+                    <img class="icon" src="img/resume.png" />
+                    <h1>MON CV</h1>
+                    <div class="spacer"></div>
+                    <h2>Je résume tout en une page !</h2>
+                </div>
+
+                <div class="choice">
+
+                    <div class="column">
+                        <img class="logo" src="img/pdf.png" />
+
+                        <div class="btn">
+                            <a href="pdf/Sasha Contrepois.pdf" download>Télécharger le CV</a>
+                        </div>
+                    </div>
+
+                    <div class="orSpacer">Ou</div>
+
+                    <div class="column">
+                        <img class="logo" src="img/cloud.png" />
+
+                        <div class="btn">
+                            <a href="pdf/Sasha Contrepois.pdf" target="_blank">Consulter en ligne</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bright padded" id="contact">
+            <div class="container">
+
+                <div class="title">
+                    <img class="icon" src="img/paperplane.png" />
+                    <h1>ME CONTACTER</h1>
+                    <div class="spacer"></div>
+                    <h2>Contactez-moi pour un devis, un projet quelconque, me dire bonjour ou avoir quelques informations supplémentaires !</h2>
+                    <br />
+                    <h2>Vous pouvez aussi me contacter directement par email :
+                        <br />
+                        <span>sasha.contrepois@hotmail.fr</span>
+                    </h2>
+                </div>
+
+
+                <form>
+
+                    <div class="line">
+                        <div class="block" id="name">
+                            <label>Nom & Prénom (et/ou société)</label>
+                            <input type="text" placeholder="Ex: Contrepois Sasha - Freelance" />
+                        </div>
+
+                        <div class="block" id="email">
+                            <label>Adresse e-mail</label>
+                            <input type="email" placeholder="Ex: sasha.contrepois@hotmail.fr" />
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <label>Ecrivez ici votre message</label>
+                        <textarea placeholder="Bonjour,"></textarea>
+                    </div>
+
+                    <input type="submit" value="Envoyer" />
+
+                    <p>Je m'engage à vous répondre sous 2 jours ouvrables.</p>
+
+                </form>
+
+                <div class="socials">
+
+                    <div class="btn">
+                        <a href="https://twitter.com/MegaSash" target="_blank">
+                            <img src="img/twitter.png"/>
+                        </a>
+                    </div>
+
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/sasha-contrepois/" target="_blank">
+                            <img src="img/linkedin.png"/>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="text">Made with <img src="img/heart.png" /> by Sasha</div>
+
+        </footer>
+
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

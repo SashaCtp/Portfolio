@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "OratorStd";
-    src: url(http://localhost:8080/fonts/OratorStd.ttf) format("truetype");
+    src: url(../fonts/OratorStd.ttf) format("truetype");
 }
 
 *{
@@ -61,7 +61,7 @@ a{
     font-style: italic;
 }
 
-.brigth .title h2{color:#4D5762;}
+.bright .title h2{color:#4D5762;}
 .dark .title h2{color: #fff}
 
 /* Dark Fade Background */
@@ -83,21 +83,37 @@ a{
     padding: 100px;
 }
 
+@media screen and (max-width: 1400px) {
+
+    .padded{
+        padding: 30px;
+    }
+
+}
+
 /*
     Header
 */
 
 header{
-    height: 90px;
+    height: 70px;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
+
+    display: block;
+    position: fixed;
+
+    transition: all 0.3s;
+}
+
+header.scrolled{
+    background: rgba(255,255,255,0.8);
+
+    transition: all 0.3s;
 
     -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
     -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
     box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-
-    display: block;
-    position: relative;
 }
 
 nav{
@@ -105,34 +121,78 @@ nav{
     justify-content: space-around;
 
     width: 100vw;
-    height: 90px;
+    height: 70px;
     padding: 0 60px;
 }
 
 nav .item{
-    line-height: 90px;
+    line-height: 70px;
     font-family: 'OratorStd', sans-serif;
-    color: #535C65;
-    font-size: 24px;
+    color: #fff;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
-header .headerLogo{
-    position: absolute;
-    left: 20px;
-    top: 15px;
-    bottom: 0;
+header.scrolled nav .item{
+    color: #535C65;
+}
 
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 25px;
-    text-align: center;
-    line-height: 60px;
+header button{
+    display: none !important;
+    color: blue !important;
+}
 
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom right, #485563, #29323C);
+@media screen and (max-width: 1400px) {
+
+    header{
+        background: rgba(255,255,255,0.8);
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        width: 100vw;
+        height:auto;
+        padding: 0;
+
+        z-index: 4;
+        overflow: hidden;
+
+        opacity: 0;
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav.display{
+        opacity: 1;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav .item{
+        display: block;
+        line-height: 30px;
+        padding: 5px 0 5px 45px;
+        text-align: left;
+        width: 100%;
+        color: #535C65;
+        background: rgba(255,255,255,0.8);
+    }
+
+    header button{
+        display: block !important;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+    }
+
 }
 
 /*
@@ -140,8 +200,8 @@ header .headerLogo{
 */
 #accueil{
     width: 100%;
-    height: calc(100vh - 90px);
-    padding: calc((100vh - 90px - 362px) / 2) 0;
+    height: 100vh;
+    padding: calc((100vh - 90px - 362px) / 2 + 45px) 0 calc((100vh - 90px - 362px) / 2) 0;
 }
 
 #accueil .container{
@@ -196,14 +256,22 @@ header .headerLogo{
     font-family: 'Raleway', sans-serif;
     font-size: 23px;
     text-align: center;
+
+    padding: 10px 0;
 }
 
 /*
     Compétences
 */
+#competences{
+    height: 950px;
+}
+
 #competences .skills{
-    width: 80%;
     margin: 50px auto 0 auto;
+    height:420px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #competences .skills .item{
@@ -216,4 +284,470 @@ header .headerLogo{
     color: #505B67;
     font-weight: 600;
     font-size: 18px;
+}
+
+/*
+    Projects
+*/
+#projects.padded{
+    padding: 100px 0;
+}
+
+#projects .timeline{
+    text-align: center;
+}
+
+#projects .timeline .timeSpacer{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #505B67;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+#projects .timeline .timeSpacer:before, #projects .timeline .timeSpacer:after{
+    height: 1px;
+    width: 78px;
+    display: block;
+    background: #505B67;
+    content: '';
+    position: relative;
+
+    margin: 14px 0;
+}
+
+#projects .timeline .timeSpacer:before{
+    right: 8px;
+    top: 30px;
+}
+
+#projects .timeline .timeSpacer:after{
+    left: 130px;
+    bottom: 27px;
+}
+
+#projects .timeline .project{
+    margin: 0 auto;
+}
+
+#projects .timeline .project .title{
+    font-size: 45px;
+    font-family: 'OratorStd', sans-serif;
+    color: #4D5762;
+
+    text-align: center;
+}
+
+#projects .timeline .project .subtitle{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: #4D5762;
+
+    text-align: center;
+}
+
+#projects .timeline .project .card{
+    min-height: 200px;
+    width: 830px;
+
+    margin: 40px auto;
+
+    background: linear-gradient(to bottom right, #485563, #29323C);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1385px) {
+
+    #projects .timeline .project .card{
+
+        width: 100%;
+        border-radius: 0px;
+
+    }
+
+}
+
+#projects .timeline .project .card .column{
+    width: 33%;
+
+    display: block;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+}
+
+#projects .timeline .project .card .logo img{
+    width: 150px;
+    height: 150px;
+
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    padding: 0;
+}
+
+#projects .timeline .project .card .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 110px;
+    margin: auto;
+}
+
+#projects .timeline .project .card .buttons .btn{
+
+    height: 40px;
+    width: 230px;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #4D5762;
+    line-height: 40px;
+
+    background: #fff;
+}
+
+#projects .timeline .project .card .buttons .btn.outline{
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+
+    background: none;
+    border: 2px solid #fff;
+}
+
+#projects .timeline .project .card .buttons .btn a{
+    display: block;
+    border-radius: 20px;
+}
+
+#projects .timeline .project .card .buttons .info{
+    color: #fff;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+
+    bottom: -45px;
+    left: 0;
+    right: 0;
+}
+
+#projects .timeline .project .card .technos{
+    list-style: none;
+    font-family: 'OratorStd', sans-serif;
+    color: #eee;
+    font-size: 22px;
+
+    padding: 40px 0;
+    margin: auto;
+}
+
+#projects .timeline .project .card .technos .main{
+    color: #fff;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/*
+    CV
+*/
+#cv .choice{
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 690px;
+
+    display: flex;
+}
+
+#cv .choice .column .btn{
+    background: #fff;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    color: #4D5762;
+
+    width: 300px;
+    height:60px;
+
+    line-height: 60px;
+
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#cv .choice .column .btn a{
+    display: block;
+}
+
+#cv .choice .column .logo{
+    height: auto;
+    width: 120px;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+#cv .choice .orSpacer{
+    font-family: 'OratorStd', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    height: 300px;
+    margin: 20px 0;
+    padding: 0 30px;
+}
+
+#cv .choice .orSpacer:before, #cv .choice .orSpacer:after{
+    width: 1px;
+    height: 90px;
+    display: block;
+    background: #fff;
+    content: '';
+    position: relative;
+
+    margin: 14px 0;
+}
+
+#cv .choice .orSpacer:before{
+    right: -14px;
+    top: 0px;
+}
+
+#cv .choice .orSpacer:after{
+    left: 14px;
+    bottom: 0;
+}
+
+/*
+    Contact
+*/
+#contact h2 span{
+    font-weight: bold;
+}
+
+#contact form{
+    width: 70%;
+
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#contact form .line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact form .block{
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+#contact form .line{
+    padding: 0 0 40px 0;
+    transition: 0.3s all;
+}
+
+#contact form .line .block{
+    width: 500px;
+}
+
+#contact form .block label{
+    height: 60px;
+    display: block;
+    line-height: 60px;
+
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+
+    background: linear-gradient(to bottom right, #485563, #29323C);
+}
+
+#contact form .line .block input[type=text], #contact form .line .block input[type=email]{
+    border: none;
+    display: block;
+    height: 60px;
+    width: 100%;
+
+    padding: 0 15px;
+
+    background: #ECECEC;
+    font-family: 'Raleway', sans-serif;
+    color: #4D5762;
+    font-size: 18px;
+}
+
+#contact form .line #name{margin: 0 10px 0 0;}
+#contact form .line #email{margin: 0 0 0 10px;}
+
+#contact form .block textarea{
+    border: none;
+
+    resize: none;
+    display: block;
+
+    padding: 20px;
+
+    width: 100%;
+    min-height: 500px;
+
+    background: #ECECEC;
+    font-family: 'Raleway', sans-serif;
+    color: #4D5762;
+    font-size: 18px;
+
+}
+
+#contact form input[type=submit]{
+    height: 70px;
+    width: 230px;
+    line-height: 70px;
+
+    border-radius: 22px;
+    border: none;
+
+    margin: 40px auto;
+
+    display: block;
+
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+
+    background: linear-gradient(to bottom right, #485563, #29323C);
+}
+
+#contact form input[type=submit]:hover{
+    cursor: pointer;
+}
+
+#contact p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
+    color:#4D5762;
+}
+
+#contact .socials{
+    width: 210px;
+    height: 80px;
+
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .socials .btn{
+    height: 70px;
+    width: 70px;
+
+    position: relative;
+
+    border-radius: 40px;
+    overflow: hidden;
+
+    background: linear-gradient(to bottom right, #485563, #29323C);
+}
+
+#contact .socials .btn img{
+    height: 40px;
+    width: 40px;
+
+    display: block;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+
+    margin: auto;
+}
+
+#contact .socials .btn a{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+
+    #contact form .line{
+        display: block;
+        height: 250px;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    #contact form .line .block{
+        width: 100%;
+    }
+
+    #contact form .line #name{margin: 0 0 20px 0;}
+    #contact form .line #email{margin: 0;}
+
+}
+
+@media screen and (max-width: 740px){
+
+    #contact form{
+        width: 100vw;
+        margin: 0 0 0 -30px;
+    }
+
+    #contact form .block{
+        border-radius: 0;
+    }
+
+}
+
+/*
+    Footer
+*/
+footer{
+    background: linear-gradient(to bottom right, #485563, #29323C);
+
+    width: 100%;
+    height: 120px;
+}
+
+footer .text{
+    font-family: 'OratorStd', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    line-height: 120px;
+    text-align: center;
+}
+
+footer .text img{
+    height: 23px;
 }
