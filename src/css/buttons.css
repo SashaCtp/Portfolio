@@ -18,10 +18,23 @@
     font-weight: bold;
     color: #4D5762;
     line-height: 40px;
+    border: none;
 
     background: #fff;
 
+    font-size: 15px;
+
     transition: all 0.2s;
+}
+
+.btn.btn-light{
+    color: #4D5762;
+    background: #eee;
+}
+
+.btn.btn-dark{
+    background: #4D5762;
+    color: #fff;
 }
 
 .btn.btn-large{
@@ -33,7 +46,7 @@
     font-weight: normal;
 }
 
-.btn.btn-outline{
+.btn.btn-border{
     font-weight: bold;
     color: #fff;
     line-height: 40px;
@@ -48,6 +61,7 @@
 }
 
 .btn:hover{
+    cursor: pointer;
     transform: scale(1.01);
     transition: all 0.2s;
 }
@@ -78,4 +92,17 @@
     position: absolute;
 
     margin: auto;
+}
+
+.btn.btn-success-anim{
+    position: relative;
+}
+
+.btn.btn-success-anim:after{
+
+    content: '';
+    display: block;
+    position: absolute;
+
+
 }

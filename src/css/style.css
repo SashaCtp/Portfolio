@@ -24,6 +24,44 @@ a{
     color: inherit;
 }
 
+/* Paragraphs */
+p{
+    color: #4D5762;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    text-align: justify;
+
+    padding: 10px 0;
+}
+
+p .tab{
+    margin-left: 2.3em;
+}
+
+.text-small{
+    font-size: 0.9em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-exp{
+    font-size: 10px;
+    position: relative;
+    bottom: 8px;
+}
+
+
 .title{text-align: center;}
 
 .title .icon{
@@ -68,6 +106,9 @@ a{
 .colored{
     background: linear-gradient(to bottom right, #005C97, #3d72b4);
     background: linear-gradient(to bottom right, #363795, #005C97);
+    
+    /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
+    
     z-index: 1;
 }
 
@@ -126,7 +167,7 @@ nav{
     padding: 0 60px;
 }
 
-nav .item{
+nav .menuElement{
     line-height: 70px;
     font-family: 'OratorStd', sans-serif;
     color: #fff;
@@ -134,7 +175,7 @@ nav .item{
     letter-spacing: 1px;
 }
 
-header.scrolled nav .item{
+header.scrolled nav .menuElement{
     color: #005C97;
 }
 
@@ -176,7 +217,7 @@ header button{
         transition: all 0.3s ease-in-out;
     }
 
-    nav .item{
+    nav .menuElement{
         display: block;
         line-height: 30px;
         padding: 5px 0 5px 45px;
@@ -244,41 +285,18 @@ header button{
 }
 
 /*
-    Présentation
+    ITEMS
 */
-#presentation{
-    width: 100%;
-}
 
-#presentation p{
-    color: #4D5762;
+.item{
 
-    letter-spacing: 1.5px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 23px;
-    text-align: center;
-
-    padding: 10px 0;
-}
-
-/*
-    Compétences
-*/
-#competences{
-    min-height: 950px;
-}
-
-#competences .skills{
-    margin: 50px auto 0 auto;
-    min-height: 420px;
-}
-
-#competences .skills .item{
     background: #fff;
+
+    padding: 6px 4px;
+
     min-height: 40px;
     border-radius: 20px;
     text-align: center;
-    line-height: 40px;
     font-family: 'OratorStd', sans-serif;
     color: #505B67;
     font-weight: 600;
@@ -287,17 +305,45 @@ header button{
     position: relative;
 
     transform: scale(1);
-    transition: transform 0.2s;    
+    transition: transform 0.2s; 
+    
+    width: 100%;
 }
 
-#competences .skills .item:hover{
+.item:hover{
     cursor: default;
     transform: scale(1.05);
 
     transition: transform 0.2s;
 }
 
-#competences .skills .item .info{
+.item.item-dark{
+    color: #fff;
+    background: #505B67;
+}
+
+.item.item-red{
+    color: #fff;
+    background: #8a1538;
+}
+
+.item-border{
+    color: #fff;
+    background: #505B67;
+}
+
+.item-border.item-dark{
+    color: #505B67;
+    background: none;
+    border: 2px solid #505B67;
+}
+
+.item.item-medium{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.item .info{
 
     position: absolute;
     bottom: 50px;
@@ -322,18 +368,14 @@ header button{
 
     z-index: -1;
 
-    opacity : 0;
-    transition: all 0.1s;
+    display: none;
 }
 
-#competences .skills .item:hover .info{
-    opacity: 1;
-    z-index: 1;
+.item:hover .info{
     display: block;
-    transition: all 0.2s;
 }
 
-#competences .skills .item .info:before{
+.item .info:before{
 
     position: absolute;
     bottom: -5px;
@@ -355,28 +397,20 @@ header button{
 
 }
 
-/*
-    Projects
-*/
-#projects.padded{
-    padding: 100px 0;
-}
+/* Spacer */
 
-#projects .timeline{
-    text-align: center;
-}
-
-#projects .timeline .timeSpacer{
+.timeSpacer{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #505B67;
     display: block;
+    
     width: 200px;
-    margin: 20px auto;
+    margin: 5px auto;
 }
 
-#projects .timeline .timeSpacer:before, #projects .timeline .timeSpacer:after{
+.timeSpacer:before, .timeSpacer:after{
     height: 1px;
     width: 78px;
     display: block;
@@ -387,21 +421,52 @@ header button{
     margin: 14px 0;
 }
 
-#projects .timeline .timeSpacer:before{
+.timeSpacer:before{
     right: 8px;
     top: 30px;
 }
 
-#projects .timeline .timeSpacer:after{
+.timeSpacer:after{
     left: 130px;
     bottom: 27px;
 }
 
-#projects .timeline .project{
+
+/* Compétences */
+
+#competences{
+    min-height: 950px;
+}
+
+#competences .skills{
+    margin: 50px auto 0 auto;
+    min-height: 420px;
+}
+
+.skills .item{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+/*
+    Projects
+*/
+#projects.padded{
+    padding: 100px 0;
+}
+
+.timeline{
+    margin: 40px 0 10px 0;
+}
+
+.timeline .project{
     margin: 0 auto;
 }
 
-#projects .timeline .project .title{
+#projects .timeline .project .name{
     font-size: 45px;
     font-family: 'OratorStd', sans-serif;
     color: #4D5762;
@@ -409,7 +474,7 @@ header button{
     text-align: center;
 }
 
-#projects .timeline .project .subtitle{
+#projects .timeline .project .description{
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     color: #4D5762;
@@ -419,7 +484,7 @@ header button{
 
 #projects .timeline .project .card{
     min-height: 200px;
-    width: 830px;
+    width: 800px;
 
     margin: 40px auto;
 
@@ -451,16 +516,18 @@ header button{
     padding: 0;
 }
 
+#projects .timeline .project .card .logo{
+
+    display: flex;
+    justify-content: center;
+
+}
+
 #projects .timeline .project .card .logo img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 
     display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
     margin: auto;
     padding: 0;
@@ -469,7 +536,7 @@ header button{
 #projects .timeline .project .card .buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
     height: 110px;
     margin: auto;
@@ -487,20 +554,21 @@ header button{
     right: 0;
 }
 
+#projects .timeline .project .card .technos .title{
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+}
+
 #projects .timeline .project .card .technos{
     list-style: none;
     font-family: 'OratorStd', sans-serif;
     color: #eee;
-    font-size: 22px;
-
-    padding: 40px 0;
-    margin: auto;
-}
-
-#projects .timeline .project .card .technos .main{
-    color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
+
+    padding: 25px 0;
+    margin: auto;
 }
 
 /*
@@ -508,210 +576,198 @@ header button{
 */
 #cv .choice{
     padding: 40px 0;
-    margin: 0 auto;
-    width: 690px;
+}
+
+#cv .illustration{
+    height: auto;
+    width: 100px;
+
+    display: block;
+
+    margin: 25px auto;
+}
+
+/*
+    DIVIDER
+*/
+
+.divider{
+    color: #fff;
+
+    margin: 20px;
 
     display: flex;
 }
 
-#cv .choice .column .logo{
-    height: auto;
-    width: 120px;
+.divider.row{flex-direction: row;}
+.divider.column{flex-direction: column;}
 
-    display: block;
-
-    margin: 20px auto;
-}
-
-#cv .choice .orSpacer{
+.divider .text{
     font-family: 'OratorStd', sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    height: 300px;
-    margin: 20px 0;
-    padding: 0 30px;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 15px;
 }
 
-#cv .choice .orSpacer:before, #cv .choice .orSpacer:after{
+.divider .bar{
+    background: #fff;
+    margin: auto;
+}
+
+.divider.row .bar{
+    width: 90px;
+    height: 1px;
+}
+
+.divider.column .bar{
     width: 1px;
     height: 90px;
-    display: block;
-    background: #fff;
-    content: '';
-    position: relative;
-
-    margin: 14px 0;
-}
-
-#cv .choice .orSpacer:before{
-    right: -14px;
-    top: 0px;
-}
-
-#cv .choice .orSpacer:after{
-    left: 14px;
-    bottom: 0;
 }
 
 /*
     Contact
 */
-#contact h2 span{
-    font-weight: bold;
-}
 
-#contact form{
-    width: 70%;
+.contactWindow{
 
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-#contact form .line{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+    max-width: 460px;
 
-#contact form .block{
-    position: relative;
-    border-radius: 22px;
+    margin: 25px auto!important;
+
     overflow: hidden;
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+
 }
 
-#contact form .line{
-    padding: 0 0 40px 0;
-    transition: 0.3s all;
-}
-
-#contact form .line .block{
-    width: 500px;
-}
-
-#contact form .block label{
-    height: 60px;
-    display: block;
-    line-height: 60px;
-
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-
-    background: linear-gradient(to bottom right, #485563, #29323C);
-}
-
-#contact form .line .block input[type=text], #contact form .line .block input[type=email]{
-    border: none;
-    display: block;
-    height: 60px;
+.contactWindow.open{
     width: 100%;
+    max-width: 1200px;
+
+    transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+
+    #contact .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+.contactWindow .aside{
+    padding: 55px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(to bottom right, #363795, #005C97);
+
+}
+
+.contactWindow .aside p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contactWindow .aside .title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.contactWindow form{
+    padding: 40px 6%;
+
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #fff;
+}
+
+.contactWindow.open form{
+    display: flex;
+
+    transition: all 0.3s;
+}
+
+.contactWindow form label{
+    display: block;
+    width: 100%;
+
+    margin: 20px 0;
+
+    font-family: 'Roboto', sans-serif;
+
+    position: relative;
+}
+
+.contactWindow form .labelText{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+
+    line-height: 45px;
+    transition: all 0.3s;
+
+    font-size: 16px;
+
+    color: #555555;
+
+}
+
+.contactWindow form input,
+.contactWindow form textarea{
+    width: 100%;
+
+    background-color: #eee;
+    border-radius: 5px;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
 
     padding: 0 15px;
-
-    background: #ECECEC;
-    font-family: 'Raleway', sans-serif;
-    color: #4D5762;
-    font-size: 18px;
 }
 
-#contact form .line #name{margin: 0 10px 0 0;}
-#contact form .line #email{margin: 0 0 0 10px;}
+.contactWindow form input{
+    height: 45px;
+    line-height: 45px;
+}
 
-#contact form .block textarea{
-    border: none;
-
+.contactWindow form textarea{
+    height: 200px;
+    padding: 17px 15px;
     resize: none;
-    display: block;
-
-    padding: 20px;
-
-    width: 100%;
-    min-height: 500px;
-
-    background: #ECECEC;
-    font-family: 'Raleway', sans-serif;
-    color: #4D5762;
-    font-size: 18px;
-
 }
 
-#contact form input[type=submit]{
-    height: 70px;
-    width: 230px;
-    line-height: 70px;
-
-    border-radius: 22px;
-    border: none;
-
-    margin: 40px auto;
-
-    display: block;
-
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    text-align: center;
-
-    background: linear-gradient(to bottom right, #485563, #29323C);
+.contactWindow form input:focus + .labelText,
+.contactWindow form input:valid + .labelText,
+.contactWindow form textarea:focus + .labelText,
+.contactWindow form textarea:valid + .labelText{
+    top: -40px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s;
 }
 
-#contact form input[type=submit]:hover{
-    cursor: pointer;
-}
-
-#contact p{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    font-style: italic;
-    color:#4D5762;
-}
-
-#contact .socials{
-    width: 210px;
-    height: 80px;
-
-    margin: 30px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-@media screen and (max-width: 1400px) {
-
-    #contact form .line{
-        display: block;
-        height: 250px;
-        width: 100%;
-        margin: 0 0 30px 0;
-    }
-
-    #contact form .line .block{
-        width: 100%;
-    }
-
-    #contact form .line #name{margin: 0 0 20px 0;}
-    #contact form .line #email{margin: 0;}
-
-}
-
-@media screen and (max-width: 740px){
-
-    #contact form{
-        width: 100vw;
-        margin: 0 0 0 -30px;
-    }
-
-    #contact form .block{
-        border-radius: 0;
-    }
-
+.contactWindow form input:focus,
+.contactWindow form textarea:focus{
+    outline: none;
 }
 
 /*
