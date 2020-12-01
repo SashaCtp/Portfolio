@@ -61,7 +61,7 @@
         <section class="colored" id="accueil">
             <div class="container">
                 <div class="imgContainer">
-                    <img class="accueilImg" src="img/sasha.jpg" />
+                    <img class="accueilImg" src="img/sasha.jpg" alt="Photo de Sasha Contrepois" />
                 </div>
                 <h1>Sasha Contrepois</h1>
                 <h2>Etudiant & Développeur Web</h2>
@@ -71,8 +71,7 @@
         <section class="bright padded" id="presentation">
             <div class="container-fluid">
 
-                <div class="title darkTitle">
-                    <img class="icon" src="img/boy_gray.png" />
+                    <img class="icon" src="img/boy_gray.png" alt="Icone représentant un homme" />
                     <h1>QUI SUIS-JE ?</h1>
                     <div class="spacer"></div>
                 </div>
@@ -136,8 +135,7 @@
 
             <div class="container-fluid">
 
-                <div class="title">
-                    <img class="icon" src="img/cogwheel.png" />
+                    <img class="icon" src="img/cogwheel.png" alt="Icone représentant un engrenage" />
                     <h1>MES COMPETENCES</h1>
                     <div class="spacer"></div>
                     <h2>J'ai appris de nombreuses choses, en voici une liste non exhaustive.</h2>
@@ -162,9 +160,7 @@
 
         </section>
 
-        <section class="bright padded" id="projects">
-            <div class="title">
-                <img class="icon" src="img/rocket.png" />
+                <img class="icon" src="img/rocket.png" alt="Icone représentant une fusée" />
                 <h1>MES PROJETS</h1>
                 <div class="spacer"></div>
                 <h2>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h2>
@@ -178,6 +174,7 @@
 
                     <div v-for="project in projectYear.projects" class="project">
 
+                                    <img v-bind:src="project.imageUrl" alt="Logo du projet" />
                         <div class="name">{{ project.name }}</div>
                         <div class="description">{{ project.description }}</div>
 
@@ -221,8 +218,7 @@
 
         <section class="colored padded" id="cv">
 
-            <div class="title">
-            <img class="icon" src="img/resume.png" />
+                <img class="icon" src="img/resume.png" alt="Icone représentant un CV" />
                 <h1>MON CV</h1>
                 <div class="spacer"></div>
                 <h2>Je résume tout en une page !</h2>
@@ -233,7 +229,7 @@
                 <div class="row choice">
 
                     <div class="col-md-5 col-12 cvSection">
-                        <img class="illustration" src="img/pdf.png" />
+                        <img class="illustration" src="img/pdf.png" alt="Icone représentant un fichier PDF" />
 
                         <a class="btn btn-large" href="pdf/Sasha_Contrepois.pdf" download>Télécharger le CV</a>
                     </div>
@@ -259,7 +255,7 @@
                     </div>
                     
                     <div class="col-md-5 col-12 cvSection">
-                        <img class="illustration" src="img/cloud.png" />
+                        <img class="illustration" src="img/cloud.png" alt="Icone représentant un nuage" />
 
                         <a class="btn btn-large" href="pdf/Sasha_Contrepois.pdf" target="_blank">Consulter en ligne</a>
                     </div>
@@ -272,10 +268,7 @@
 
         <section class="bright padded" id="contact">
 
-            <div class="container-fluid">
-
-                <div class="title">
-                    <img class="icon" src="img/paperplane.png" />
+                    <img class="icon" src="img/paperplane.png" alt="Icone représentant un avion en papier" />
                     <h1>ME CONTACTER</h1>
                     <div class="spacer"></div>
                 </div>
