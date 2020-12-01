@@ -72,9 +72,9 @@
             </div>
         </section>
 
-        <section class="bright padded" id="presentation">
-            <div class="container-fluid">
+        <section class="bright" id="presentation">
 
+                <div class="sectionHeader">
                     <img class="icon" src="img/boy_gray.png" alt="Icone représentant un homme" />
                     <h1>QUI SUIS-JE ?</h1>
                     <div class="spacer"></div>
@@ -84,7 +84,7 @@
 
                     <div class="row">
 
-                        <div class="col-lg-6 col-12">
+                        <article class="col-lg-6 col-12">
 
                             <p>
                                 <span class="tab">Bonjour</span>, je suis Sasha Contrepois, j'ai 19 ans et je suis avant tout un passioné de technologies,
@@ -95,23 +95,28 @@
                                 solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur.
                             </p>
                             <p>
-                                <span class="tab">A</span> l'âge de 13 ans, je me suis intéréssé au développement web et je suis maintenant capable de développer
-                                une application web complète.
+                                <span class="tab">A</span> la sortie de cette école d'ingénieur, je vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués. Vous trouverez ici <a href="https://www.linkedin.com/in/sasha-contrepois/" target="_blank">mon profil LinkedIn</a>.
+                            </p> 
+                            <p>
+                                <span class="tab">Je</span> suis quelqu'un de dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page <a href="https://github.com/SashaCtp" target="_blank">GitHub</a>.
                             </p>
 
-                        </div>
+                        </article>
 
-                        <div class="col-lg-6 col-12 diplomas text-center">
-
+                        <div class="col-lg-6 col-12 timeline">
 
                             <div class="item item-medium item-red item-border">
                                 <div class="info">
                                     Depuis Octobre 2020
                                 </div>
-                                Etudiant 1<span class="text-exp">ère</span> l'IUT Informatique à l'Université de Paris
+                                Etudiant en 1<span class="text-exp">ère</span> année d'informatique à l'IUT de l'Université de Paris
                             </div>
 
-                            <div class="timeSpacer" >2020</div>
+                            <div class="divider row">
+                                <div class="bar"></div>
+                                <div class="text">2020</div>
+                                <div class="bar"></div>
+                            </div>
 
                             <div class="item item-medium item-dark item-border">
                                 <div class="info">
@@ -120,10 +125,28 @@
                                 Etudiant en CPGE au Lycée Chaptal
                             </div>
 
-                            <div class="timeSpacer" >2019</div>
+                            <div class="item item-medium item-blue item-icon">
+                                <i class="fas fa-graduation-cap"></i>
 
-                            <div class="item item-medium item-dark">
                                 Baccalauréat S - Sciences de l'Ingénieur, Mention TB & Anglais Européen
+                            </div>
+
+                            <div class="divider row">
+                                <div class="bar"></div>
+                                <div class="text">2019</div>
+                                <div class="bar"></div>
+                            </div>
+
+                            <div class="item item-medium item-blue item-icon">
+                                <i class="fas fa-graduation-cap"></i>
+
+                                Brevet d'Initiation à l'Aéronautique <br> - Félicitations du Jury
+                            </div>
+
+                            <div class="divider row">
+                                <div class="bar"></div>
+                                <div class="text">2018</div>
+                                <div class="bar"></div>
                             </div>
 
                         </div>
@@ -132,13 +155,11 @@
 
                 </div>
 
-            </div>
         </section>
 
-        <section class="colored padded" id="competences">
+        <section class="colored" id="skills">
 
-            <div class="container-fluid">
-
+                <div class="sectionHeader">
                     <img class="icon" src="img/cogwheel.png" alt="Icone représentant un engrenage" />
                     <h1>MES COMPETENCES</h1>
                     <div class="spacer"></div>
@@ -159,34 +180,42 @@
                         </div>
 
                     </div>
-
-            </div>
+                
+                </div>
 
         </section>
 
+        <section class="bright" id="projects">
+
+            <div class="sectionHeader">
                 <img class="icon" src="img/rocket.png" alt="Icone représentant une fusée" />
                 <h1>MES PROJETS</h1>
                 <div class="spacer"></div>
                 <h2>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h2>
             </div>
 
-            <div class="timeline text-center">
-
-                <div class="spacer"></div>
+            <div class="timeline">
 
                 <template v-for="projectYear in projectTimeline">
 
                     <div v-for="project in projectYear.projects" class="project">
 
+                        <div class="row">
+                            <div class="col-md-3 col-12">
+                                <div class="logo">
                                     <img v-bind:src="project.imageUrl" alt="Logo du projet" />
-                        <div class="name">{{ project.name }}</div>
-                        <div class="description">{{ project.description }}</div>
+                                </div>
+                            </div>
 
+                            <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
+                                <div class="name">{{ project.name }}</div>
+                                <p>{{ project.description }}</p>
+                            </div>
+                        </div>
+                        
                         <div class="card">
 
-                            <div class="column logo">
-                                <img v-bind:src="project.imageUrl" />
-                            </div>
+                            
     
                             <div class="column buttons">
     
@@ -211,17 +240,21 @@
 
                     </div>
 
-                    <div class="timeSpacer" >{{ projectYear.year }}</div>
+                    <div class="divider row">
+                        <div class="bar"></div>
+                        <div class="text">{{ projectYear.year }}</div>
+                        <div class="bar"></div>
+                    </div>
 
                 </template>
 
             </div>
 
-
         </section>
 
-        <section class="colored padded" id="cv">
+        <section class="colored" id="cv">
 
+            <div class="sectionHeader">
                 <img class="icon" src="img/resume.png" alt="Icone représentant un CV" />
                 <h1>MON CV</h1>
                 <div class="spacer"></div>
@@ -240,7 +273,7 @@
 
                     <div class="col-2 d-md-flex d-none justify-content-center">
 
-                        <div class="divider column">
+                        <div class="divider white column">
                             <div class="bar"></div>
                             <div class="text">Ou</div>
                             <div class="bar"></div>
@@ -250,7 +283,7 @@
 
                     <div class="col-12 d-md-none d-flex justify-content-center">
 
-                        <div class="divider row">
+                        <div class="divider white row">
                             <div class="bar"></div>
                             <div class="text">Ou</div>
                             <div class="bar"></div>
@@ -268,10 +301,36 @@
 
             </div>
 
+            <div class="container">
+
+                <table>
+                    <tr>
+                        <td colspan="2">Développé avec</td>
+                    </tr>
+    
+                    <tr>
+    
+                        <td>HTML5</td>
+                        <td>CSS3</td>
+    
+                    </tr>
+
+                    <tr>
+    
+                        <td>HTML5</td>
+                        <td>CSS3</td>
+    
+                    </tr>
+    
+                </table>
+
+            </div>
+
         </section>
 
         <section class="bright padded" id="contact">
 
+                <div class="sectionHeader">
                     <img class="icon" src="img/paperplane.png" alt="Icone représentant un avion en papier" />
                     <h1>ME CONTACTER</h1>
                     <div class="spacer"></div>
@@ -297,19 +356,19 @@
 
                         <label>
                             <input type="text" name="name" id="name" required>
-                            <div class="labelText">Nom, prénom ou société</div>
+                            <span class="labelText">Nom, prénom ou société</span>
 
                         </label>
 
                         <label>
                             <input type="text" name="email" id="email" required>
-                            <div class="labelText">Adresse email</div>
+                            <span class="labelText">Adresse email</span>
 
                         </label>
 
                         <label>
                             <textarea name="message" id="message" required></textarea>
-                            <div class="labelText">Votre message</div>
+                            <span class="labelText">Votre message</span>
                         </label>
 
                         <div class="row">
@@ -327,13 +386,13 @@
 
                 </div>
 
-            </div>
-
         </section>
 
         <footer>
 
-            <div class="text">Made with <img src="img/heart.png" /> by Sasha</div>
+            <p>Développé avec les framework Bootstrap et VueJS</p>
+
+            
 
         </footer>
 

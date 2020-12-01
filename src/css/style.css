@@ -24,36 +24,33 @@ a{
     color: inherit;
 }
 
-/* Paragraphs */
+/* 
+======== Text ======================================================
+*/
 p{
     color: #4D5762;
 
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.25em;
+    font-family: 'Tw Cen MT', sans-serif;
+    font-size: 1.4em;
     text-align: justify;
 
     padding: 10px 0;
 }
 
-p .tab{
-    margin-left: 2.3em;
-}
+p .tab{margin-left: 2.3em;}
 
-.text-small{
-    font-size: 0.9em;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.text-italic{
-    font-style: italic;
-}
-
-.text-underline{
+p a{
     text-decoration: underline;
+    color: #546de5;
 }
+
+.text-small{font-size: 0.9em;}
+
+.text-center{text-align: center;}
+
+.text-italic{font-style: italic;}
+
+.text-underline{text-decoration: underline;}
 
 .text-exp{
     font-size: 10px;
@@ -61,81 +58,74 @@ p .tab{
     bottom: 8px;
 }
 
-
-.title{text-align: center;}
-
-.title .icon{
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 0 0 20px 20px;
-}
-
-.title h1{
-    font-size: 50px;
-    font-family: "OratorStd", sans-serif;
-    font-weight: 300;
-    margin: 30px 0 15px 0;
-}
-.bright .title h1{color: #4D5762;}
-.colored .title h1{color: #fff;}
-
-.title .spacer{
-    width: 20%;
-    height: 2px;
-    display: block;
-    margin: 0 auto 30px auto;
-    background: black;
-}
-
-.bright .title .spacer{background: #485563}
-.colored .title .spacer{background: #fff; opacity: 0.9;}
-
-.title h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.bright .title h2{color:#4D5762;}
-.colored .title h2{color: #fff}
-
-/* colored Fade Background */
-.colored{
-    background: linear-gradient(to bottom right, #005C97, #3d72b4);
-    background: linear-gradient(to bottom right, #363795, #005C97);
-    
-    /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
-    
-    z-index: 1;
-}
-
-.bright{
-    background: #fff;
-    z-index: 2;
-
-    -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-    -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-}
-
-.padded{
-    padding: 100px;
-}
-
-@media screen and (max-width: 1400px) {
-
-    .padded{
-        padding: 30px;
-    }
-
-}
-
 /*
-    Header
+======== Timeline & Divider ======================================================
 */
+
+.timeline .divider:last-child{
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+.divider{
+    
+    width: 80%;
+    margin: 10px auto!important;
+
+    color: #4D5762;
+
+    display: flex;
+    justify-content: center;
+
+    max-width: 320px;
+}
+
+.divider.large{
+    width: 100%;
+    margin: 20px auto;
+}
+
+.divider.white{
+    color: #fff;
+}
+
+.divider.row{flex-direction: row;}
+.divider.column{flex-direction: column;}
+
+.divider .text{
+    font-family: 'OratorStd', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+}
+
+.divider.large .text{
+    font-size: 1.8em;
+}
+
+.divider .bar{
+    background: #4D5762;
+    margin: auto;
+}
+
+.divider.white .bar{
+    background: #fff;
+}
+
+.divider.row .bar{
+    width: 90px;
+    height: 1px;
+}
+
+.divider.column .bar{
+    width: 1px;
+    height: 90px;
+}
+
+/* 
+======== Header ======================================================
+*/
+
 
 header{
     height: 70px;
@@ -240,12 +230,102 @@ header button{
 }
 
 /*
-    Accueil
+======== Sections ======================================================
+*/
+
+section{
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    section{
+        padding: 30px;
+    }
+
+}
+
+.sectionHeader{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.sectionHeader .icon{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.sectionHeader h1{
+    font-size: 50px;
+    font-family: "OratorStd", sans-serif;
+    font-weight: 300;
+    margin: 30px 0 15px 0;
+    text-align: center;
+}
+
+.sectionHeader h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.sectionHeader .spacer{
+    width: 20%;
+    height: 2px;
+    display: block;
+    margin: 0 auto 30px auto;
+    background: black;
+}
+
+.bright h1{color: #4D5762;}
+.colored h1{color: #fff;}
+
+.bright h2{color:#4D5762;}
+.colored h2{color: #fff}
+
+.bright .sectionHeader .spacer{background: #485563}
+.colored .sectionHeader .spacer{background: #fff; opacity: 0.9;}
+
+/* colored Fade Background */
+.colored{
+    background-image: linear-gradient(to bottom right, #363795, #005C97);
+    
+    /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
+    
+    z-index: 1;
+}
+
+.bright{
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+}
+
+/* 
+======== Accueil ======================================================
 */
 #accueil{
-    width: 100%;
-    height: 100vh;
-    padding: calc((100vh - 90px - 362px) / 2 + 45px) 0 calc((100vh - 90px - 362px) / 2) 0;
+    padding-top : calc((100vh - 90px - 362px) / 2 + 45px);
+    padding-right: 0;
+    padding-bottom: calc((100vh - 90px - 362px) / 2);
+    padding-left: 0;
 
     display: flex;
     flex-direction: column;
@@ -286,211 +366,44 @@ header button{
     margin: 10px 0;
 }
 
-/*
-    ITEMS
+/* 
+======== Presentations ======================================================
 */
 
-.item{
 
-    background: #fff;
 
-    padding: 6px 4px;
 
-    min-height: 40px;
-    border-radius: 20px;
-    text-align: center;
-    font-family: 'OratorStd', sans-serif;
-    color: #505B67;
-    font-weight: 600;
-    font-size: 18px;
+/* 
+======== Projects ======================================================
+*/
 
-    position: relative;
+#projects .sectionHeader{
+    margin-bottom: 40px;
+}
 
-    transform: scale(1);
-    transition: transform 0.2s; 
+#projects .project{
+    
+    min-height: 200px;
     
     width: 100%;
-}
-
-.item:hover{
-    cursor: default;
-    transform: scale(1.05);
-
-    transition: transform 0.2s;
-}
-
-.item.item-dark{
-    color: #fff;
-    background: #505B67;
-}
-
-.item.item-red{
-    color: #fff;
-    background: #8a1538;
-}
-
-.item-border{
-    color: #fff;
-    background: #505B67;
-}
-
-.item-border.item-dark{
-    color: #505B67;
-    background: none;
-    border: 2px solid #505B67;
-}
-
-.item.item-medium{
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.item .info{
-
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    left: 0;
-
-    padding: 8px 10px;
-    margin: 0 auto;
-
-    max-width: 430px;
-
-    border-radius: 5px;
-
-    line-height: normal;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-
-    background: #353b48;
-    
-    color: #fff;
-    font-size: 14px;
-
-    z-index: -1;
-
-    display: none;
-}
-
-.item:hover .info{
-    display: block;
-}
-
-.item .info:before{
-
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-
-    display: block;
-
-    content: '';
-    background: #353b48;
-    height: 12px;
-    width: 12px;
+    max-width: 800px;
 
     margin: 0 auto;
-
-    transform: rotate(45deg);
-
-    z-index: -1;
-
 }
 
-/* Spacer */
-
-.timeSpacer{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #505B67;
-    display: block;
-    
-    width: 200px;
-    margin: 5px auto;
-}
-
-.timeSpacer:before, .timeSpacer:after{
-    height: 1px;
-    width: 78px;
-    display: block;
-    background: #505B67;
-    content: '';
-    position: relative;
-
-    margin: 14px 0;
-}
-
-.timeSpacer:before{
-    right: 8px;
-    top: 30px;
-}
-
-.timeSpacer:after{
-    left: 130px;
-    bottom: 27px;
-}
-
-
-/* Compétences */
-
-#competences{
-    min-height: 950px;
-}
-
-#competences .skills{
-    margin: 50px auto 0 auto;
-    min-height: 420px;
-}
-
-.skills .item{
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
-
-/*
-    Projects
-*/
-#projects.padded{
-    padding: 100px 0;
-}
-
-.timeline{
-    margin: 40px 0 10px 0;
-}
-
-.timeline .project{
-    margin: 0 auto;
-}
-
-#projects .timeline .project .name{
-    font-size: 45px;
+#projects .project .name{
+    font-size: 2.6em;
     font-family: 'OratorStd', sans-serif;
     color: #4D5762;
-
-    text-align: center;
 }
 
-#projects .timeline .project .description{
-    font-size: 25px;
-    font-family: 'Raleway', sans-serif;
-    color: #4D5762;
-
-    text-align: center;
-}
-
-#projects .timeline .project .card{
+#projects .project .card{
     min-height: 200px;
     width: 800px;
 
     margin: 40px auto;
 
-    background: linear-gradient(to bottom right, #363795, #005C97);
+    background-image: linear-gradient(to bottom right, #363795, #005C97);
     border-radius: 30px;
 
     display: flex;
@@ -499,7 +412,7 @@ header button{
 
 @media screen and (max-width: 1385px) {
 
-    #projects .timeline .project .card{
+    #projects .project .card{
 
         width: 100%;
         border-radius: 0px;
@@ -518,14 +431,14 @@ header button{
     padding: 0;
 }
 
-#projects .timeline .project .card .logo{
+#projects .timeline .project .logo{
 
     display: flex;
     justify-content: center;
 
 }
 
-#projects .timeline .project .card .logo img{
+#projects .timeline .project .logo img{
     width: 120px;
     height: 120px;
 
@@ -568,14 +481,16 @@ header button{
     color: #eee;
     font-size: 20px;
     font-style: italic;
+    text-align: center;
 
     padding: 25px 0;
     margin: auto;
 }
 
 /*
-    CV
+======== CV ======================================================
 */
+
 #cv .choice{
     padding: 40px 0;
 }
@@ -590,44 +505,9 @@ header button{
 }
 
 /*
-    DIVIDER
-*/
 
-.divider{
-    color: #fff;
+======== Contact ======================================================
 
-    margin: 20px;
-
-    display: flex;
-}
-
-.divider.row{flex-direction: row;}
-.divider.column{flex-direction: column;}
-
-.divider .text{
-    font-family: 'OratorStd', sans-serif;
-    font-size: 1.8em;
-    text-align: center;
-    padding: 15px;
-}
-
-.divider .bar{
-    background: #fff;
-    margin: auto;
-}
-
-.divider.row .bar{
-    width: 90px;
-    height: 1px;
-}
-
-.divider.column .bar{
-    width: 1px;
-    height: 90px;
-}
-
-/*
-    Contact
 */
 
 .contactWindow{
@@ -669,7 +549,7 @@ header button{
     flex-direction: column;
     justify-content: center;
 
-    background: linear-gradient(to bottom right, #363795, #005C97);
+    background-image: linear-gradient(to bottom right, #363795, #005C97);
 
 }
 
@@ -716,6 +596,9 @@ header button{
 }
 
 .contactWindow form .labelText{
+
+    display: block;
+
     position: absolute;
     top: 0;
     left: 15px;
@@ -772,26 +655,36 @@ header button{
     outline: none;
 }
 
-/*
-    Footer
+/* 
+======== Table ======================================================
 */
+
+table{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+table td{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+
+    text-align: center;
+}
+
+
+/* 
+======== Footer ======================================================
+*/
+
 footer{
-    background: linear-gradient(to bottom right, #363795, #005C97);
+    background: #eee;
 
     width: 100%;
     height: 80px;
 
-    display: flex;
-    flex-direction: column;
-
-}
-
-footer .text{
-    font-family: 'OratorStd', sans-serif;
-    font-size: 30px;
-    color: #fff;
-}
-
-footer .text img{
-    height: 23px;
+    font-weight: 500!important;
+    font-size: 0.9em!important;
 }
