@@ -159,29 +159,34 @@ header.scrolled{
 }
 
 nav{
-    display: flex;
-    justify-content: space-around;
-
     width: 100vw;
     height: 70px;
     padding: 0 60px;
 }
 
-nav .menuElement{
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+
     line-height: 70px;
     font-family: 'OratorStd', sans-serif;
     color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
+
+    margin: 0 50px;
 }
 
-header.scrolled nav .menuElement{
+header.scrolled nav ul li{
     color: #005C97;
 }
 
 header button{
     display: none !important;
-    color: blue !important;
 }
 
 @media screen and (max-width: 1400px) {
@@ -191,9 +196,6 @@ header button{
     }
 
     nav{
-        display: flex;
-        flex-direction: column;
-
         position: relative;
         top: 70px;
         left: 0;
@@ -217,7 +219,7 @@ header button{
         transition: all 0.3s ease-in-out;
     }
 
-    nav .menuElement{
+    nav ul li{
         display: block;
         line-height: 30px;
         padding: 5px 0 5px 45px;
