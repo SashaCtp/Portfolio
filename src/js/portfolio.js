@@ -40,7 +40,7 @@ var app = new Vue({
                     {
                         name: "CoinCoin du FPV",
                         description: "Un site d'achat et de revente de pièces dédiées au FPV.",
-                        imageUrl: "/img/projects/coincoinfpv.png",
+                        imageUrl: "/public/img/projects/coincoinfpv.png",
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
                         technos : [
@@ -60,7 +60,7 @@ var app = new Vue({
                     {
                         name: "AeroSaver",
                         description: "Projet de fin d'année pour porter secours aux victimes de noyades.",
-                        imageUrl: "/img/projects/aerosaver.png",
+                        imageUrl: "/public/img/projects/aerosaver.png",
                         specificationsUrl: null,
                         learnMoreUrl: null,
                         technos: [
@@ -70,7 +70,7 @@ var app = new Vue({
                     {
                         name: "Relax Bot",
                         description: "Un projet pour prendre en main la librairie Discord.JS.",
-                        imageUrl: "/img/projects/relaxbot.png",
+                        imageUrl: "/public/img/projects/relaxbot.png",
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
                         technos : [
@@ -87,7 +87,7 @@ var app = new Vue({
                     {
                         name: "Monopo.li",
                         description: "Un vrai jeu Monopoly sur un navigateur internet !",
-                        imageUrl : "/img/projects/monopoli.png",
+                        imageUrl : "/public/img/projects/monopoli.png",
                         specitifactionsUrl: null,
                         learnMoreUrl: null,
                         technos: [
@@ -107,7 +107,7 @@ var app = new Vue({
                     {
                         name: "RubyzGames",
                         description: "Un serveur de jeu amusant et innovant.",
-                        imageUrl: "/img/projects/rubyzgames.png",
+                        imageUrl: "/public/img/projects/rubyzgames.png",
                         specitifactionsUrl: null,
                         learnMoreUrl: null,
                         technos: [

@@ -8,20 +8,8 @@ const app = express()
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-//Static fonts
-app.use('/fonts', express.static(__dirname + '/src/fonts'))
-
-//Static img
-app.use('/img', express.static(__dirname + '/src/img'))
-
-//Static css
-app.use('/css', express.static(__dirname + '/src/css'))
-
-//Static pdf files
-app.use('/pdf', express.static(__dirname + '/src/pdf'))
-
-//Static javascript
-app.use('/js', express.static(__dirname + '/src/js'))
+//Static files
+app.use('/public', express.static(__dirname + '/src'))
 
 //Messages
 app.post('/message', (req, res) => {
