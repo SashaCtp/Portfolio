@@ -76,7 +76,7 @@
 
                 <div class="sectionHeader">
                     <img class="icon" src="img/boy_gray.png" alt="Icone représentant un homme" />
-                    <h1>QUI SUIS-JE ?</h1>
+                    <h3>QUI SUIS-JE ?</h3>
                     <div class="spacer"></div>
                 </div>
 
@@ -112,7 +112,7 @@
                                 Etudiant en 1<span class="text-exp">ère</span> année d'informatique à l'IUT de l'Université de Paris
                             </div>
 
-                            <div class="divider row">
+                            <div class="divider divider-row">
                                 <div class="bar"></div>
                                 <div class="text">2020</div>
                                 <div class="bar"></div>
@@ -131,7 +131,7 @@
                                 Baccalauréat S - Sciences de l'Ingénieur, Mention TB & Anglais Européen
                             </div>
 
-                            <div class="divider row">
+                            <div class="divider divider-row">
                                 <div class="bar"></div>
                                 <div class="text">2019</div>
                                 <div class="bar"></div>
@@ -143,7 +143,7 @@
                                 Brevet d'Initiation à l'Aéronautique <br> - Félicitations du Jury
                             </div>
 
-                            <div class="divider row">
+                            <div class="divider divider-row">
                                 <div class="bar"></div>
                                 <div class="text">2018</div>
                                 <div class="bar"></div>
@@ -161,9 +161,9 @@
 
                 <div class="sectionHeader">
                     <img class="icon" src="img/cogwheel.png" alt="Icone représentant un engrenage" />
-                    <h1>MES COMPETENCES</h1>
+                    <h3>MES COMPETENCES</h3>
                     <div class="spacer"></div>
-                    <h2>J'ai appris de nombreuses choses, en voici une liste non exhaustive.</h2>
+                    <h4>J'ai appris de nombreuses choses, en voici une liste non exhaustive.</h4>
                 </div>
 
                 <div class="skills">
@@ -189,9 +189,9 @@
 
             <div class="sectionHeader">
                 <img class="icon" src="img/rocket.png" alt="Icone représentant une fusée" />
-                <h1>MES PROJETS</h1>
+                <h3>MES PROJETS</h3>
                 <div class="spacer"></div>
-                <h2>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h2>
+                <h4>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h4>
             </div>
 
             <div class="timeline">
@@ -240,7 +240,7 @@
 
                     </div>
 
-                    <div class="divider row">
+                    <div class="divider divider-row">
                         <div class="bar"></div>
                         <div class="text">{{ projectYear.year }}</div>
                         <div class="bar"></div>
@@ -256,9 +256,9 @@
 
             <div class="sectionHeader">
                 <img class="icon" src="img/resume.png" alt="Icone représentant un CV" />
-                <h1>MON CV</h1>
+                <h3>MON CV</h3>
                 <div class="spacer"></div>
-                <h2>Je résume tout en une page !</h2>
+                <h4>Je résume tout en une page !</h4>
             </div>
 
             <div class="container">
@@ -273,7 +273,7 @@
 
                     <div class="col-2 d-md-flex d-none justify-content-center">
 
-                        <div class="divider white column">
+                        <div class="divider white divider-column">
                             <div class="bar"></div>
                             <div class="text">Ou</div>
                             <div class="bar"></div>
@@ -283,7 +283,7 @@
 
                     <div class="col-12 d-md-none d-flex justify-content-center">
 
-                        <div class="divider white row">
+                        <div class="divider white divider-row">
                             <div class="bar"></div>
                             <div class="text">Ou</div>
                             <div class="bar"></div>
@@ -332,57 +332,61 @@
 
                 <div class="sectionHeader">
                     <img class="icon" src="img/paperplane.png" alt="Icone représentant un avion en papier" />
-                    <h1>ME CONTACTER</h1>
+                    <h3>ME CONTACTER</h3>
                     <div class="spacer"></div>
                 </div>
 
-                <div class="contactWindow row" v-bind:class="{ open : msgWindowOpen }">
+                <div class="contactWindow" v-bind:class="{ open : msgWindowOpen }">
 
-                    <div class="aside colored" v-bind:class="{ 'col-lg-4 col-12' : msgWindowOpen, 'col-12' : !msgWindowOpen }">
+                    <div class="row">
 
-                        <p class="title">Vous souhaitez me contacter ?</p>
+                        <div class="aside colored" v-bind:class="{ 'col-lg-4 col-12' : msgWindowOpen, 'col-12' : !msgWindowOpen }">
 
-                        <p>Vous pouvez vous adresser directement par mail à <br> <a href="mailto:sasha.contrepois@protonmail.com" class="text-underline">sasha.contrepois@protonmail.com</a></p>
+                            <p class="title">Vous souhaitez me contacter ?</p>
 
-                        <p>Ou alors envoyez-moi un message depuis ce formulaire !</p>
+                            <p>Vous pouvez vous adresser directement par mail à <br> <a href="mailto:sasha.contrepois@protonmail.com" class="text-underline">sasha.contrepois@protonmail.com</a></p>
 
-                        <div class="btn btn-border" v-on:click="openMsgWindow">
-                            Envoyer un message
+                            <p>Ou alors envoyez-moi un message depuis ce formulaire !</p>
+
+                            <div class="btn btn-border" v-on:click="openMsgWindow">
+                                Envoyer un message
+                            </div>
+
                         </div>
+
+                        <form class="col-lg-8 col-12" method="POST" action="/message">
+
+                            <label>
+                                <input type="text" name="name" id="name" required>
+                                <span class="labelText">Nom, prénom ou société</span>
+
+                            </label>
+
+                            <label>
+                                <input type="text" name="email" id="email" required>
+                                <span class="labelText">Adresse email</span>
+
+                            </label>
+
+                            <label>
+                                <textarea name="message" id="message" required></textarea>
+                                <span class="labelText">Votre message</span>
+                            </label>
+
+                            <div class="row">
+                                <p class="col-lg-6 col-12 text-center text-italic text-small">
+                                    Aucune donnée n'est utilisée à des fins commerciales.
+                                </p>
+                                <div class="col-lg-6 col-12">
+
+                                    <button class="btn btn-light">Envoyer</button>
+
+                                </div>
+                            </div>
+
+                        </form>
 
                     </div>
-
-                    <form class="col-lg-8 col-12" method="POST" action="/message">
-
-                        <label>
-                            <input type="text" name="name" id="name" required>
-                            <span class="labelText">Nom, prénom ou société</span>
-
-                        </label>
-
-                        <label>
-                            <input type="text" name="email" id="email" required>
-                            <span class="labelText">Adresse email</span>
-
-                        </label>
-
-                        <label>
-                            <textarea name="message" id="message" required></textarea>
-                            <span class="labelText">Votre message</span>
-                        </label>
-
-                        <div class="row">
-                            <p class="col-lg-6 col-12 text-center text-italic text-small">
-                                Aucune donnée n'est utilisée à des fins commerciales.
-                            </p>
-                            <div class="col-lg-6 col-12">
-
-                                <button class="btn btn-light">Envoyer</button>
-
-                            </div>
-                        </div>
-
-                    </form>
 
                 </div>
 

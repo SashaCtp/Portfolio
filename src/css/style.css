@@ -24,6 +24,45 @@ a{
     color: inherit;
 }
 
+
+/*
+======== Titles ======================================================
+*/
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 65px;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 3.5em;
+    font-family: "OratorStd", sans-serif;
+    font-weight: 300;
+    margin: 30px 0 15px 0;
+    text-align: center;
+    color: #4D5762;
+}
+
+h4{
+    font-size: 1.8em;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
 /* 
 ======== Text ======================================================
 */
@@ -70,7 +109,7 @@ p a{
 .divider{
     
     width: 80%;
-    margin: 10px auto!important;
+    margin: 10px auto;
 
     color: #4D5762;
 
@@ -80,17 +119,15 @@ p a{
     max-width: 320px;
 }
 
+.divider-row{flex-direction: row;}
+.divider-column{flex-direction: column;}
+
 .divider.large{
     width: 100%;
     margin: 20px auto;
 }
 
-.divider.white{
-    color: #fff;
-}
-
-.divider.row{flex-direction: row;}
-.divider.column{flex-direction: column;}
+.divider.white{color: #fff;}
 
 .divider .text{
     font-family: 'OratorStd', sans-serif;
@@ -112,12 +149,12 @@ p a{
     background: #fff;
 }
 
-.divider.row .bar{
+.divider.divider-row .bar{
     width: 90px;
     height: 1px;
 }
 
-.divider.column .bar{
+.divider.divider-column .bar{
     width: 1px;
     height: 90px;
 }
@@ -139,13 +176,14 @@ header{
 }
 
 header.scrolled{
-    background: rgba(255,255,255,0.8);
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
 
     transition: all 0.3s;
 
-    -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-    -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    -webkit-box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
+    -moz-box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
+    box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
 }
 
 nav{
@@ -176,13 +214,14 @@ header.scrolled nav ul li{
 }
 
 header button{
-    display: none !important;
+    display: none;
 }
 
 @media screen and (max-width: 1400px) {
 
     header{
-        background: rgba(255,255,255,0.8);
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.8);
     }
 
     nav{
@@ -203,7 +242,7 @@ header button{
         transition: all 0.3s ease-in-out;
     }
 
-    nav.display{
+    .display{
         opacity: 1;
         display: block;
         transition: all 0.3s ease-in-out;
@@ -216,11 +255,13 @@ header button{
         text-align: left;
         width: 100%;
         color: #535C65;
-        background: rgba(255,255,255,0.8);
+
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.8);
     }
 
     header button{
-        display: block !important;
+        display: block;
         position: absolute;
         right: 20px;
         top: 0;
@@ -254,6 +295,9 @@ section{
 
 }
 
+.bright .sectionHeader{color: #4D5762;}
+.colored .sectionHeader{color: #fff;}
+
 .sectionHeader{
 
     display: flex;
@@ -267,23 +311,7 @@ section{
     height: 120px;
     margin: 0 auto;
     display: block;
-    border-radius: 0px 0px 20px 20px;
-}
-
-.sectionHeader h1{
-    font-size: 50px;
-    font-family: "OratorStd", sans-serif;
-    font-weight: 300;
-    margin: 30px 0 15px 0;
-    text-align: center;
-}
-
-.sectionHeader h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
+    border-radius: 0 0 20px 20px;
 }
 
 .sectionHeader .spacer{
@@ -294,11 +322,8 @@ section{
     background: black;
 }
 
-.bright h1{color: #4D5762;}
-.colored h1{color: #fff;}
-
-.bright h2{color:#4D5762;}
-.colored h2{color: #fff}
+.bright h3{color: #4D5762;}
+.colored h3{color: #fff;}
 
 .bright .sectionHeader .spacer{background: #485563}
 .colored .sectionHeader .spacer{background: #fff; opacity: 0.9;}
@@ -315,7 +340,8 @@ section{
 .bright{
     background: #fff;
     z-index: 2;
-    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    
+    box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
 }
 
 /* 
@@ -347,31 +373,6 @@ section{
     border-radius: 50%;
     margin: 5px;
 }
-
-#accueil h1{
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-    font-weight: 400;
-    font-size: 65px;
-    text-align: center;
-    margin: 10px 0;
-}
-
-#accueil h2{
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-    font-weight: 300;
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* 
-======== Presentations ======================================================
-*/
-
-
-
 
 /* 
 ======== Projects ======================================================
@@ -408,6 +409,9 @@ section{
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+
 }
 
 @media screen and (max-width: 1385px) {
@@ -415,7 +419,7 @@ section{
     #projects .project .card{
 
         width: 100%;
-        border-radius: 0px;
+        border-radius: 0;
 
     }
 
@@ -429,13 +433,6 @@ section{
 
     margin: 0;
     padding: 0;
-}
-
-#projects .timeline .project .logo{
-
-    display: flex;
-    justify-content: center;
-
 }
 
 #projects .timeline .project .logo img{
@@ -515,14 +512,14 @@ section{
     width: 100%;
     max-width: 460px;
 
-    margin: 25px auto!important;
+    margin: 25px auto;
 
     overflow: hidden;
     border-radius: 15px;
 
-    -webkit-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-    -moz-box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
-    box-shadow: 0px 8px 10px 0px rgba(90,86,86,0.16);
+    -webkit-box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
+    -moz-box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
+    box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
 
 }
 
@@ -685,6 +682,6 @@ footer{
     width: 100%;
     height: 80px;
 
-    font-weight: 500!important;
-    font-size: 0.9em!important;
+    font-weight: 500;
+    font-size: 0.9em;
 }
