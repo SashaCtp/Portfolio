@@ -214,7 +214,7 @@ header.scrolled nav ul li{
 }
 
 header button{
-    display: none;
+    display: none!important;
 }
 
 @media screen and (max-width: 1400px) {
