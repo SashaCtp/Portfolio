@@ -1,6 +1,7 @@
-/*
-    CLIENT
-*/
+/**
+ * @file portfolio.js
+ * @author Sasha Contrepois
+ */
 
 var app = new Vue({
     el: '#app',
