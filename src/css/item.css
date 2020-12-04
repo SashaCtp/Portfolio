@@ -1,5 +1,9 @@
 
 /*
+    Validé CSS3 + SVG
+*/
+
+/*
     ITEMS
 */
 
@@ -8,7 +12,7 @@
     background: #fff;
 
     padding: 6px 4px;
-    margin: 30px auto!important;
+    margin: 30px auto;
 
     min-height: 40px;
     border-radius: 20px;
@@ -27,11 +31,9 @@
     width: 100%;
 }
 
-.item.item-icon{
-    padding-left: 40px;
-}
+.item-icon{padding-left: 40px;}
 
-.item.item-icon i{
+.item-icon i{
     position: absolute;
     top: 0;
     left: 5px;
@@ -53,17 +55,17 @@
     transition: transform 0.2s;
 }
 
-.item.item-dark{
+.item-dark{
     color: #fff;
     background: #505B67;
 }
 
-.item.item-red{
+.item-red{
     color: #fff;
     background: #8a1538;
 }
 
-.item.item-blue{
+.item-blue{
     color: #fff;
     background: #546de5;
 }
@@ -73,15 +75,16 @@
     background: #505B67;
 }
 
-.item-border.item-dark{
+.item-dark{
     color: #505B67;
     background: none;
     border: 2px solid #505B67;
 }
 
-.item.item-medium{
-    max-width: 500px;
-    margin: 0 auto;
+.item-medium{
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item .info{
