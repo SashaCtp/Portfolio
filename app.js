@@ -1,11 +1,13 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const helmet = require('helmet');
+const app = express();
 const PORT = 80;
 
 
 /*
     INIT Middleware
 */
+app.use(helmet());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
