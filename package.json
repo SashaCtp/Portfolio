@@ -4,6 +4,7 @@
   "description": "Ceci est mon portfolio afin de proposer mes services et montrer mes différents projets.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
