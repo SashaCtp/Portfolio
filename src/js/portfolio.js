@@ -38,6 +38,20 @@ var app = new Vue({
                 year: 2020,
                 projects: [
                     {
+                        name: "Portfolio",
+                        description: "Un site pour présenter mes compétences, mes projets et ma personnalitée",
+                        imageUrl: "/public/img/projects/portfolio.jpg",
+                        githubUrl: "https://github.com/SashaCtp/Portfolio",
+                        specitifactionsUrl : null,
+                        learnMoreUrl: null,
+                        technos : [
+                            "HTML & CSS (Boostrap)",
+                            "Javascript (VueJS)",
+                            "NodeJS & Express",
+                            "Docker"
+                        ]
+                    },
+                    {
                         name: "CoinCoin du FPV",
                         description: "Un site d'achat et de revente de pièces dédiées au FPV",
                         imageUrl: "/public/img/projects/coincoinfpv.png",
