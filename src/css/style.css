@@ -38,12 +38,12 @@ h1, h2{
 
 h1{
     font-weight: 400;
-    font-size: 65px;
+    font-size: 4em;
 }
 
 h2{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.7em;
 }
 
 h3{
@@ -57,10 +57,34 @@ h3{
 
 h4{
     font-size: 1.5em;
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-weight: 300;
     margin: 0 0 15px 0;
     text-align: center;
+}
+
+h5{
+    font-size: 2.5em;
+    font-family: "OratorStd", sans-serif;
+    font-weight: 300;
+    margin: 30px 0 15px 0;
+    text-align: center;
+    color: #4D5762;
+}
+
+/* Medium breakpoint Bootstrap */
+@media screen and (max-width: 768px){
+
+    h1{font-size: 3em;}
+
+    h2{font-size: 1.4em;}
+
+    h3{font-size: 2.5em;}
+
+    h4{font-size: 1.4em;}
+
+    h5{font-size: 2em;}
+
 }
 
 /* 
@@ -88,6 +112,8 @@ p a{
 .text-center{text-align: center;}
 
 .text-italic{font-style: italic;}
+
+.text-bold{font-weight: bold;}
 
 .text-underline{text-decoration: underline;}
 
@@ -177,7 +203,7 @@ header{
 
 header.scrolled{
     background-color: #fff;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
 
     transition: all 0.3s;
 
@@ -207,10 +233,39 @@ nav ul li{
     letter-spacing: 1px;
 
     margin: 0 50px;
+
+    position: relative;
 }
 
-header.scrolled nav ul li{
-    color: #005C97;
+.scrolled nav ul li{color: #535C65;}
+
+nav ul li a{
+    padding: 10px 0;
+}
+
+nav ul li a::after{
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    right: 0;
+
+    display: block;
+    content: '';
+
+    width: 0;
+    height: 1px;
+
+    background: #fff;
+
+    transition: width .2s;
+}
+
+.scrolled nav ul li a::after{background: #535C65;}
+
+nav ul li a:hover::after,
+nav .active a::after{
+    width: 100%;
+    transition: width .2s;
 }
 
 header button{
@@ -220,22 +275,30 @@ header button{
 @media screen and (max-width: 1400px) {
 
     header{
+        height: 60px;
         background-color: #fff;
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255,255,255,0.9);
     }
 
     nav{
         position: relative;
-        top: 70px;
+        top: 60px;
         left: 0;
         right: 0;
 
         width: 100vw;
         height:auto;
-        padding: 0;
+        padding: 15px 0;
 
         z-index: 4;
         overflow: hidden;
+
+        background-color: #fff;
+        background-color: rgba(255,255,255,0.9);
+
+        -webkit-box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
+        -moz-box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
+        box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
 
         opacity: 0;
         display: none;
@@ -251,13 +314,21 @@ header button{
     nav ul li{
         display: block;
         line-height: 30px;
-        padding: 5px 0 5px 45px;
+        margin: 0;
+        padding: 10px 0 10px 10px;
         text-align: left;
         width: 100%;
-        color: #535C65;
 
-        background-color: #fff;
-        background-color: rgba(255,255,255,0.8);
+        color: #535C65;
+    }
+
+    nav ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav ul li a::after{
+        display: none;
     }
 
     header button{
@@ -290,7 +361,7 @@ section{
 @media screen and (max-width: 1400px) {
 
     section{
-        padding: 30px;
+        padding: 70px 30px;
     }
 
 }
@@ -382,7 +453,7 @@ section{
     margin-bottom: 40px;
 }
 
-#projects .project{
+.project{
     
     width: 100%;
     max-width: 800px;
@@ -391,7 +462,7 @@ section{
 
 }
 
-#projects .project .logo{
+.project .logo{
     width: 120px;
     height: 120px;
 
@@ -402,26 +473,48 @@ section{
 }
 
 
-#projects .project .name{
+.project .name{
     font-size: 2.6em;
     font-family: 'OratorStd', sans-serif;
     color: #4D5762;
+    position: relative;
 }
 
-#projects .project .card{
+/* Medium Breakpoint */
+@media screen and (max-width: 768px){
+
+    .project .name{
+
+        text-align: center;
+        font-size: 2.3em;
+
+    }
+
+    .project .name .prefix{
+        display: none;
+    }
+
+    .project p{
+        text-align: center;
+    }
+
+}
+
+.project .card{
     min-height: 100px;
     width: 800px;
 
     margin: 30px auto;
-    padding: 20px 0;
+    padding: 10px 0;
 
     background-image: linear-gradient(to bottom right, #363795, #005C97);
     border-radius: 30px;
 }
 
-@media screen and (max-width: 1385px) {
+/* Large breakpoint */
+@media screen and (max-width: 992px) {
 
-    #projects .project .card{
+    .project .card{
 
         width: 100%;
 
@@ -429,7 +522,11 @@ section{
 
 }
 
-#projects .buttons, #projects .technos{
+.project .buttons, .project .technos{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -630,18 +727,38 @@ section{
 */
 
 table{
-    border: 1px solid #fff;
+
+    margin: 15px auto;
+
     border-collapse: collapse;
     
+    color: #444444;
+    font-family: 'Tw Cen MT', sans-serif;
+}
+
+table thead{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.table-blue thead{
+    background: #546de5;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+}
+
+table tbody{
+    font-size: 1.1em;
 }
 
 table td{
-    border: 1px solid #fff;
+    border: 1px solid #444;
     padding: 10px 20px;
 
     text-align: center;
+}
+
+.table-blue td{
+    border-color: #546de5;
 }
 
 

@@ -21,16 +21,16 @@ var app = new Vue({
                 { name:"Git", informations : "Gitlab, GitHub, AzureDevops"}
             ],
             [
+                { name: "Unix", informations: "Administration système"},
+                { name: "Docker", informations: ""},
                 { name: "Bureautique", informations : "Word, Excel, Powerpoint"},
-                { name: "SolidWorks", informations: ""},
-                { name: "SuiteAdobe", informations : "Photoshop, AdobeXD, After Effects"},
                 { name: "Gestion de projet", informations: "Trello, AzureDevops"}
             ],
             [
+                { name: "SuiteAdobe", informations : "Photoshop, Adobe XD, After Effects"},
                 { name : "Français", informations: ""},
                 { name: "Anglais", informations: "Cambdrige Certificate"},
                 { name: "Italien", informations: ""},
-                { name: "Russe", informations: "Niveau débutant"}
             ]
         ],
         projectTimeline : [
