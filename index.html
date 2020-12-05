@@ -202,39 +202,42 @@
 
                         <div class="row">
                             <div class="col-md-3 col-12">
-                                <div class="logo">
-                                    <img v-bind:src="project.imageUrl" alt="Logo du projet" />
-                                </div>
+                                <img class="logo" v-bind:src="project.imageUrl" alt="Logo du projet" />
                             </div>
 
                             <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-                                <div class="name">{{ project.name }}</div>
+                                <div class="name">- {{ project.name }}</div>
                                 <p>{{ project.description }}</p>
                             </div>
                         </div>
                         
-                        <div class="card">
+                        <div class="card row">
 
-                            
-    
-                            <div class="column buttons">
-    
-                                <a class="btn btn-border" v-bind:href="project.specitifactionsUrl" v-if="project.specitifactionsUrl != null">
-                                    Cahier des charges
-                                </a>
-    
-                                <a class="btn" href="#">
-                                    En savoir plus
-                                </a>
-    
+
+                            <div class="col-6 buttons">
+
+                                <a class="btn btn-border" v-bind:href="project.githubUrl" v-if="project.githubUrl != null">
+                                        <i class="fab fa-github"></i> Voir sur GitHub
+                                    </a>
+        
+                                    <a class="btn btn-border" v-bind:href="project.specitifactionsUrl" v-if="project.specitifactionsUrl != null">
+                                        Cahier des charges
+                                    </a>
+        
+                                    <a class="btn" href="#">
+                                        En savoir plus
+                                    </a>
+        
+                                </div>
+        
+                                <ul class="col-6 technos">
+                                    <li class="title">
+                                        Développé avec
+                                    </li>
+                                    <li v-for="techno in project.technos">{{ techno }}</li>
+                                </ul>
+
                             </div>
-    
-                            <ul class="column technos">
-                                <li class="title">
-                                    Développé avec:
-                                </li>
-                                <li v-for="techno in project.technos">{{ techno }}</li>
-                            </ul>
 
                         </div>
 
@@ -298,31 +301,6 @@
                     </div>
 
                 </div>
-
-            </div>
-
-            <div class="container">
-
-                <table>
-                    <tr>
-                        <td colspan="2">Développé avec</td>
-                    </tr>
-    
-                    <tr>
-    
-                        <td>HTML5</td>
-                        <td>CSS3</td>
-    
-                    </tr>
-
-                    <tr>
-    
-                        <td>HTML5</td>
-                        <td>CSS3</td>
-    
-                    </tr>
-    
-                </table>
 
             </div>
 

@@ -9,16 +9,16 @@ var app = new Vue({
         msgWindowOpen : false,
         skillLists : [
             [
-                { name :"Javascript",informations: "jQuery, VueJS",},
-                { name: "HTML & CSS", informations: ""},
-                { name: "Java", informations: ""},
-                { name: "Git", informations: "Gitlab, GitHub, AzureDevops"} 
+                { name :"HTML & CSS",informations: "",},
+                { name: "Javascript", informations: "jQuery, VueJS"},
+                { name: "PHP", informations: "WordPress"},
+                { name: "SQL", informations: ""} 
             ],
             [
-                { name:"PHP", informations : "Wordpress"},
-                { name:"NodeJS", informations: "" },
-                { name:"SQL", informations : ""},
-                { name:"C/C++", informations : ""}
+                { name:"NodeJS", informations : "Wordpress"},
+                { name:"C/C++", informations: "" },
+                { name:"JAVA", informations : ""},
+                { name:"Git", informations : "Gitlab, GitHub, AzureDevops"}
             ],
             [
                 { name: "Bureautique", informations : "Word, Excel, Powerpoint"},
@@ -39,17 +39,15 @@ var app = new Vue({
                 projects: [
                     {
                         name: "CoinCoin du FPV",
-                        description: "Un site d'achat et de revente de pièces dédiées au FPV.",
+                        description: "Un site d'achat et de revente de pièces dédiées au FPV",
                         imageUrl: "/public/img/projects/coincoinfpv.png",
+                        githubUrl: null,
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
                         technos : [
-                            "HTML & CSS",
-                            "PHP (WordPress)",
-                            "SQL",
-                            "Javascript",
-                            "Bootstrap"
-                            
+                            "HTML & CSS (Boostrap)",
+                            "PHP (WordPress) & SQL",
+                            "Javascript"
                         ]
                     },
                 ],
@@ -59,8 +57,9 @@ var app = new Vue({
                 projects: [
                     {
                         name: "AeroSaver",
-                        description: "Projet de fin d'année pour porter secours aux victimes de noyades.",
+                        description: "Projet de fin d'année pour porter secours aux victimes de noyades",
                         imageUrl: "/public/img/projects/aerosaver.png",
+                        githubUrl: null,
                         specificationsUrl: null,
                         learnMoreUrl: null,
                         technos: [
@@ -69,8 +68,9 @@ var app = new Vue({
                     },
                     {
                         name: "Relax Bot",
-                        description: "Un projet pour prendre en main la librairie Discord.JS.",
+                        description: "Un projet pour prendre en main la librairie Discord.JS",
                         imageUrl: "/public/img/projects/relaxbot.png",
+                        githubUrl: null,
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
                         technos : [
@@ -88,6 +88,7 @@ var app = new Vue({
                         name: "Monopo.li",
                         description: "Un vrai jeu Monopoly sur un navigateur internet !",
                         imageUrl : "/public/img/projects/monopoli.png",
+                        githubUrl: null,
                         specitifactionsUrl: null,
                         learnMoreUrl: null,
                         technos: [
@@ -106,15 +107,15 @@ var app = new Vue({
                 projects: [
                     {
                         name: "RubyzGames",
-                        description: "Un serveur de jeu amusant et innovant.",
+                        description: "Un serveur de jeu amusant et innovant",
                         imageUrl: "/public/img/projects/rubyzgames.png",
+                        githubUrl: null,
                         specitifactionsUrl: null,
                         learnMoreUrl: null,
                         technos: [
                             "Java",
-                            "SQL",
-                            "Bash",
                             "HTML & CSS",
+                            "PHP & SQL",
                             "Javascript"
                         ]
                     }
