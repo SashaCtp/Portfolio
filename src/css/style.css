@@ -384,13 +384,23 @@ section{
 
 #projects .project{
     
-    min-height: 200px;
-    
     width: 100%;
     max-width: 800px;
 
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
+
 }
+
+#projects .project .logo{
+    width: 120px;
+    height: 120px;
+
+    display: block;
+
+    margin: auto;
+    padding: 0;
+}
+
 
 #projects .project .name{
     font-size: 2.6em;
@@ -399,19 +409,14 @@ section{
 }
 
 #projects .project .card{
-    min-height: 200px;
+    min-height: 100px;
     width: 800px;
 
-    margin: 40px auto;
+    margin: 30px auto;
+    padding: 20px 0;
 
     background-image: linear-gradient(to bottom right, #363795, #005C97);
     border-radius: 30px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
 }
 
 @media screen and (max-width: 1385px) {
@@ -425,50 +430,15 @@ section{
 
 }
 
-#projects .timeline .project .card .column{
-    width: 33%;
-
-    display: block;
-    position: relative;
-
-    margin: 0;
-    padding: 0;
-}
-
-#projects .timeline .project .logo img{
-    width: 120px;
-    height: 120px;
-
-    display: block;
-
-    margin: auto;
-    padding: 0;
-}
-
-#projects .timeline .project .card .buttons{
+#projects .buttons, #projects .technos{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
-    height: 110px;
-    margin: auto;
-}
-
-#projects .timeline .project .card .buttons .info{
-    color: #fff;
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-
-    bottom: -45px;
-    left: 0;
-    right: 0;
+    justify-content: center;
 }
 
 #projects .timeline .project .card .technos .title{
     color: #fff;
-    font-size: 22px;
+    font-size: 1.1em;
     font-style: normal;
 }
 
@@ -479,9 +449,6 @@ section{
     font-size: 20px;
     font-style: italic;
     text-align: center;
-
-    padding: 25px 0;
-    margin: auto;
 }
 
 /*
