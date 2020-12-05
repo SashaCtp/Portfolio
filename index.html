@@ -140,7 +140,7 @@
                             <div class="item item-medium item-blue item-icon">
                                 <i class="fas fa-graduation-cap"></i>
 
-                                Brevet d'Initiation à l'Aéronautique <br> - Félicitations du Jury
+                                Brevet d'Initiation à l'Aéronautique - Félicitations du Jury
                             </div>
 
                             <div class="divider divider-row">
@@ -213,31 +213,28 @@
                         
                         <div class="card row">
 
+                            <div class="col-md-6 col-12 buttons">
 
-                            <div class="col-6 buttons">
-
-                                <a class="btn btn-border" v-bind:href="project.githubUrl" v-if="project.githubUrl != null">
-                                        <i class="fab fa-github"></i> Voir sur GitHub
-                                    </a>
+                                <a class="btn btn-border" v-bind:href="project.githubUrl" v-if="project.githubUrl != null" target="_blank">
+                                    <i class="fab fa-github"></i> Voir sur GitHub
+                                </a>
         
-                                    <a class="btn btn-border" v-bind:href="project.specitifactionsUrl" v-if="project.specitifactionsUrl != null">
-                                        Cahier des charges
-                                    </a>
+                                <a class="btn btn-border" v-bind:href="project.specitifactionsUrl" v-if="project.specitifactionsUrl != null" target="_blank">
+                                    Cahier des charges
+                                </a>
         
-                                    <a class="btn" href="#">
-                                        En savoir plus
-                                    </a>
+                                <a class="btn" href="#" target="_blank">
+                                    En savoir plus
+                                </a>
         
-                                </div>
-        
-                                <ul class="col-6 technos">
-                                    <li class="title">
-                                        Développé avec
-                                    </li>
-                                    <li v-for="techno in project.technos">{{ techno }}</li>
-                                </ul>
-
                             </div>
+        
+                            <ul class="col-md-6 col-12 technos">
+                                <li class="title">
+                                    Développé avec
+                                </li>
+                                <li v-for="techno in project.technos">{{ techno }}</li>
+                            </ul>
 
                         </div>
 
@@ -327,7 +324,7 @@
                             <p>Ou alors envoyez-moi un message depuis ce formulaire !</p>
 
                             <div class="btn btn-border" v-on:click="openMsgWindow">
-                                Envoyer un message
+                                <i class="fas fa-paper-plane"></i> Envoyer un message
                             </div>
 
                         </div>

@@ -11,8 +11,8 @@
 
     background: #fff;
 
-    padding: 6px 4px;
-    margin: 30px auto;
+    padding: 8px 6px;
+    margin: 25px auto;
 
     min-height: 40px;
     border-radius: 20px;
@@ -21,7 +21,7 @@
     font-family: 'OratorStd', sans-serif;
     color: #505B67;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1em;
 
     position: relative;
 
@@ -90,7 +90,7 @@
 .item .info{
 
     position: absolute;
-    bottom: 50px;
+    bottom: calc(100% + 8px);
     right: 0;
     left: 0;
 
@@ -110,7 +110,7 @@
     color: #fff;
     font-size: 14px;
 
-    z-index: -1;
+    z-index: 2;
 
     display: none;
 }
