@@ -7,7 +7,12 @@ const PORT = 80;
 /*
     INIT Middleware
 */
-app.use(helmet());
+
+var helmetConfig = {
+    contentSecurityPolicy: false
+};
+
+app.use(helmet(helmetConfig));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
