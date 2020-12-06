@@ -281,6 +281,8 @@ nav ul li a::after{
 
     background: #fff;
 
+    opacity: 0.5;
+
     transition: width .2s;
 }
 
@@ -290,6 +292,10 @@ nav ul li a:hover::after,
 nav .active a::after{
     width: 100%;
     transition: width .2s;
+}
+
+nav .active a::after{
+    opacity: 0.9;
 }
 
 header button{
