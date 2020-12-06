@@ -190,8 +190,6 @@ function changeActiveSection(){
 
             });
 
-            console.log("Active : " + id);
-
             $("#link_" + id).addClass("active");
 
         }
