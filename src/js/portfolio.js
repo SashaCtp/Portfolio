@@ -153,6 +153,9 @@ $('#navButton').click(function(){
     $('nav').toggleClass('display');
 });
 
+/**
+ * @brief Change the header status if the user scroll down under 50px
+ */
 function checkHeader(){
     var fromTop = $(window).scrollTop();
 
@@ -162,14 +165,57 @@ function checkHeader(){
         $('header').removeClass('scrolled');
 };
 
-$(document).ready(function(){checkHeader();})
+/**
+ * @brief Change the active element in header according to the position of the window
+ */
+function changeActiveSection(){
+
+    var cursor = $(window).scrollTop() + $(window).height() / 2;
+
+    $.each($("section"), function (index, el) {
+
+        var offset = $(this).offset();
+
+        let start = Math.floor(offset.top);
+        let end = start + $(this).height();
+
+        var id = el.id;
+        
+        if(cursor >= start && cursor <= end){
+
+            //Clear all from class active
+            $("nav li").each(function(index){
+
+                $(this).removeClass("active");
+
+            });
+
+            console.log("Active : " + id);
+
+            $("#link_" + id).addClass("active");
+
+        }
+
+    });
+
+}
+
+$(document).ready(function(){
+    checkHeader();
+
+    changeActiveSection();
+});
 
 //Scroll
-$(window).scroll(function(){checkHeader();});
+$(window).scroll(function(e){
+    checkHeader();
+
+    changeActiveSection();
+});
 
 
 
-    /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
+/* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
 var darkBlue = [54, 55, 149];
 var lightBlue = [0, 92, 151];
 
