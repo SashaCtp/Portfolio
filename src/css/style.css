@@ -26,6 +26,21 @@ a{
 
 
 /*
+======== Bootstrap ======================================================
+*/
+
+/* Small breakpoint */
+@media screen and (max-width: 576px) {
+
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+
+/*
 ======== Titles ======================================================
 */
 
@@ -98,6 +113,15 @@ p{
     text-align: justify;
 
     padding: 10px 0;
+}
+
+/* Small breakpoint */
+@media screen and (max-width: 576px) {
+
+    p{
+        font-size: 1em;
+    }
+
 }
 
 p .tab{margin-left: 2.3em;}
@@ -362,6 +386,15 @@ section{
 
     section{
         padding: 70px 30px;
+    }
+
+}
+
+/* Small breakpoint */
+@media screen and (max-width: 576px) {
+
+    section{
+        padding: 70px 3%;
     }
 
 }
