@@ -3,165 +3,6 @@
  * @author Sasha Contrepois
  */
 
-var app = new Vue({
-    el: '#app',
-    data : {
-        contactFormUrl: "/message",
-        msgWindowOpen : false,
-        contactMessage: {
-            name: "",
-            email: "",
-            message: ""
-        },
-        contactErrors : { // Name, Email, Message
-            name: false,
-            email: false,
-            message : false
-        },
-        contactErrorMessages : [],
-        skillLists : [
-            [
-                { name :"HTML & CSS",informations: "",},
-                { name: "Javascript", informations: "jQuery, VueJS"},
-                { name: "PHP", informations: "WordPress"},
-                { name: "SQL", informations: ""} 
-            ],
-            [
-                { name:"NodeJS", informations : "Wordpress"},
-                { name:"C/C++", informations: "" },
-                { name:"JAVA", informations : ""},
-                { name:"Git", informations : "Gitlab, GitHub, AzureDevops"}
-            ],
-            [
-                { name: "Unix", informations: "Administration système"},
-                { name: "Docker", informations: ""},
-                { name: "Bureautique", informations : "Word, Excel, Powerpoint"},
-                { name: "Gestion de projet", informations: "Trello, AzureDevops"}
-            ],
-            [
-                { name: "SuiteAdobe", informations : "Photoshop, Adobe XD, After Effects"},
-                { name : "Français", informations: ""},
-                { name: "Anglais", informations: "Cambdrige Certificate"},
-                { name: "Italien", informations: ""},
-            ]
-        ],
-        projectTimeline : [
-            {   
-                year: 2020,
-                projects: [
-                    {
-                        name: "Portfolio",
-                        description: "Un site pour présenter mes compétences, mes projets et ma personnalitée",
-                        imageUrl: "src/img/projects/portfolio.jpg",
-                        githubUrl: "https://github.com/SashaCtp/Portfolio",
-                        specitifactionsUrl : null,
-                        learnMoreUrl: null,
-                        technos : [
-                            "HTML & CSS (Boostrap)",
-                            "Javascript (VueJS)",
-                            "NodeJS & Express",
-                            "Docker"
-                        ]
-                    },
-                    {
-                        name: "CoinCoin du FPV",
-                        description: "Un site d'achat et de revente de pièces dédiées au FPV",
-                        imageUrl: "src/img/projects/coincoinfpv.png",
-                        githubUrl: null,
-                        specitifactionsUrl : null,
-                        learnMoreUrl: null,
-                        technos : [
-                            "HTML & CSS (Boostrap)",
-                            "PHP (WordPress) & SQL",
-                            "Javascript"
-                        ]
-                    },
-                ],
-            },
-            {
-                year: 2019,
-                projects: [
-                    {
-                        name: "AeroSaver",
-                        description: "Projet de fin d'année pour porter secours aux victimes de noyades",
-                        imageUrl: "src/img/projects/aerosaver.png",
-                        githubUrl: null,
-                        specificationsUrl: null,
-                        learnMoreUrl: null,
-                        technos: [
-                            "C++"
-                        ]
-                    },
-                    {
-                        name: "Relax Bot",
-                        description: "Un projet pour prendre en main la librairie Discord.JS",
-                        imageUrl: "src/img/projects/relaxbot.png",
-                        githubUrl: null,
-                        specitifactionsUrl : null,
-                        learnMoreUrl: null,
-                        technos : [
-                            "NodeJS",
-                            "Javascript",
-                            "Discord.JS"
-                        ]
-                    }
-                ]
-
-            },{
-                year : 2017,
-                projects : [
-                    {
-                        name: "Monopo.li",
-                        description: "Un vrai jeu Monopoly sur un navigateur internet !",
-                        imageUrl : "src/img/projects/monopoli.png",
-                        githubUrl: null,
-                        specitifactionsUrl: null,
-                        learnMoreUrl: null,
-                        technos: [
-                            "HTML & CSS",
-                            "Javascript",
-                            "VueJS",
-                            "SocketIO",
-                            "NodeJS"
-                        ]
-                    }
-                ]
-
-            },
-            {
-                year: 2016,
-                projects: [
-                    {
-                        name: "RubyzGames",
-                        description: "Un serveur de jeu amusant et innovant",
-                        imageUrl: "src/img/projects/rubyzgames.png",
-                        githubUrl: null,
-                        specitifactionsUrl: null,
-                        learnMoreUrl: null,
-                        technos: [
-                            "Java",
-                            "HTML & CSS",
-                            "PHP & SQL",
-                            "Javascript"
-                        ]
-                    }
-
-                ]
-            }
-        ]
-    },
-    methods : {
-
-        submitContactForm: function(e){
-
-            alert("Message envoyé !");
-
-            e.preventDefault();
-
-        }
-    }
-});
-
 //Toggle responsive nav
 $('#navButton').click(function(){
     $(this).toggleClass('is-active');
@@ -227,6 +68,54 @@ $(window).scroll(function(e){
 });
 
 
+/**
+ *  @brief Toggle the contact form display
+ */
+
+function toggleContactForm(e){
+
+    /*
+        When contact form is displayed :
+        - contactWindow : 'open'
+        - Aside : 'col-12 col-lg-4'
+
+        When contact form is closed :
+        - contactWindow : x
+        - Aside : 'col-12'
+    */
+    if($('#contactWindow').hasClass('open')){
+
+        //Close the contact form
+        $('#contactWindow').removeClass('open');
+        $('#contactWindow .aside').removeClass('col-lg-4');
+
+    }else{
+
+        //Open the contact form
+        $('#contactWindow').addClass('open');
+        $('#contactWindow .aside').addClass('col-lg-4');
+
+    }
+
+    e.preventDefault();
+
+}
+
+/**
+ * @brief Handle the form submit
+ */
+
+function submitContactForm(e){
+
+    alert("Message envoyé !");
+
+    e.preventDefault();
+
+}
+
+/*
+    Dynamic Backgrounds
+*/
 
 /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
 var darkBlue = [54, 55, 149];

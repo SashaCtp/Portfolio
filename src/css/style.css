@@ -616,7 +616,7 @@ section{
 
 */
 
-.contactWindow{
+#contactWindow{
 
     width: 100%;
     max-width: 460px;
@@ -632,7 +632,7 @@ section{
 
 }
 
-.contactWindow.open{
+#contactWindow.open{
     width: 100%;
     max-width: 1200px;
 
@@ -648,7 +648,7 @@ section{
 
 }
 
-.contactWindow .aside{
+#contactWindow .aside{
     padding: 55px 25px;
 
     display: flex;
@@ -659,7 +659,7 @@ section{
 
 }
 
-.contactWindow .aside p{
+#contactWindow .aside p{
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -668,12 +668,12 @@ section{
     margin-bottom: 15px;
 }
 
-.contactWindow .aside .title{
+#contactWindow .aside .title{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
 
-.contactWindow form{
+#contactWindow form{
     padding: 40px 6%;
 
 
@@ -684,13 +684,13 @@ section{
     background-color: #fff;
 }
 
-.contactWindow.open form{
+#contactWindow.open form{
     display: flex;
 
     transition: all 0.3s;
 }
 
-.contactWindow form label{
+#contactWindow form label{
     display: block;
     width: 100%;
 
@@ -701,7 +701,7 @@ section{
     position: relative;
 }
 
-.contactWindow form .labelText{
+#contactWindow form .labelText{
 
     display: block;
 
@@ -719,8 +719,8 @@ section{
 
 }
 
-.contactWindow form input,
-.contactWindow form textarea{
+#contactWindow form input,
+#contactWindow form textarea{
     width: 100%;
 
     background-color: #eee;
@@ -735,29 +735,29 @@ section{
     padding: 0 15px;
 }
 
-.contactWindow form input{
+#contactWindow form input{
     height: 45px;
     line-height: 45px;
 }
 
-.contactWindow form textarea{
+#contactWindow form textarea{
     height: 200px;
     padding: 17px 15px;
     resize: none;
 }
 
-.contactWindow form input:focus + .labelText,
-.contactWindow form input:valid + .labelText,
-.contactWindow form textarea:focus + .labelText,
-.contactWindow form textarea:valid + .labelText{
+#contactWindow form input:focus + .labelText,
+#contactWindow form input:valid + .labelText,
+#contactWindow form textarea:focus + .labelText,
+#contactWindow form textarea:valid + .labelText{
     top: -40px;
     font-weight: bold;
     font-size: 17px;
     transition: all 0.3s;
 }
 
-.contactWindow form input:focus,
-.contactWindow form textarea:focus{
+#contactWindow form input:focus,
+#contactWindow form textarea:focus{
     outline: none;
 }
 
