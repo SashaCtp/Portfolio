@@ -27,7 +27,7 @@ var app = new Vue({
                 { name: "SQL", informations: ""} 
             ],
             [
-                { name:"NodeJS", informations : "Wordpress"},
+                { name:"NodeJS", informations : ""},
                 { name:"C/C++", informations: "" },
                 { name:"JAVA", informations : ""},
                 { name:"Git", informations : "Gitlab, GitHub, AzureDevops"}
@@ -57,10 +57,8 @@ var app = new Vue({
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
                         technos : [
-                            "HTML & CSS (Boostrap)",
-                            "Javascript (VueJS)",
-                            "NodeJS & Express",
-                            "Docker"
+                            "HTML & CSS (Bootstrap)",
+                            "Javascript (VueJS)"
                         ]
                     },
                     {
@@ -71,7 +69,7 @@ var app = new Vue({
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
                         technos : [
-                            "HTML & CSS (Boostrap)",
+                            "HTML & CSS (Bootstrap)",
                             "PHP (WordPress) & SQL",
                             "Javascript"
                         ]
@@ -227,6 +225,9 @@ $(window).scroll(function(e){
 });
 
 
+/*
+    Dynamic Backgrounds
+*/
 
 /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
 var darkBlue = [54, 55, 149];
