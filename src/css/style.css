@@ -806,11 +806,17 @@ table td{
 */
 
 footer{
-    background: #eee;
+    background: #EEE;
 
     width: 100%;
     height: 80px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p{
     font-weight: 500;
-    font-size: 0.9em;
+    color: #333;
 }
