@@ -52,7 +52,7 @@ var app = new Vue({
                     {
                         name: "Portfolio",
                         description: "Un site pour présenter mes compétences, mes projets et ma personnalitée",
-                        imageUrl: "/src/img/projects/portfolio.jpg",
+                        imageUrl: "src/img/projects/portfolio.jpg",
                         githubUrl: "https://github.com/SashaCtp/Portfolio",
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
@@ -66,7 +66,7 @@ var app = new Vue({
                     {
                         name: "CoinCoin du FPV",
                         description: "Un site d'achat et de revente de pièces dédiées au FPV",
-                        imageUrl: "/src/img/projects/coincoinfpv.png",
+                        imageUrl: "src/img/projects/coincoinfpv.png",
                         githubUrl: null,
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
@@ -84,7 +84,7 @@ var app = new Vue({
                     {
                         name: "AeroSaver",
                         description: "Projet de fin d'année pour porter secours aux victimes de noyades",
-                        imageUrl: "/src/img/projects/aerosaver.png",
+                        imageUrl: "src/img/projects/aerosaver.png",
                         githubUrl: null,
                         specificationsUrl: null,
                         learnMoreUrl: null,
@@ -95,7 +95,7 @@ var app = new Vue({
                     {
                         name: "Relax Bot",
                         description: "Un projet pour prendre en main la librairie Discord.JS",
-                        imageUrl: "/src/img/projects/relaxbot.png",
+                        imageUrl: "src/img/projects/relaxbot.png",
                         githubUrl: null,
                         specitifactionsUrl : null,
                         learnMoreUrl: null,
@@ -113,7 +113,7 @@ var app = new Vue({
                     {
                         name: "Monopo.li",
                         description: "Un vrai jeu Monopoly sur un navigateur internet !",
-                        imageUrl : "/src/img/projects/monopoli.png",
+                        imageUrl : "src/img/projects/monopoli.png",
                         githubUrl: null,
                         specitifactionsUrl: null,
                         learnMoreUrl: null,
@@ -134,7 +134,7 @@ var app = new Vue({
                     {
                         name: "RubyzGames",
                         description: "Un serveur de jeu amusant et innovant",
-                        imageUrl: "/src/img/projects/rubyzgames.png",
+                        imageUrl: "src/img/projects/rubyzgames.png",
                         githubUrl: null,
                         specitifactionsUrl: null,
                         learnMoreUrl: null,
