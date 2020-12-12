@@ -7,4 +7,4 @@ Technologies utilisées:
 - HTML & CSS | *Bootstrap Grid Component*
 - Javascript | *VueJS & jQuery*
 
-Déployé dans un conteneur NodeJS grâce à Docker 🐳
+Publié grâce à Github Pages
