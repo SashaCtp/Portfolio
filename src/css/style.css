@@ -253,7 +253,7 @@ nav ul li{
     line-height: 70px;
     font-family: 'OratorStd', sans-serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.2em;
     letter-spacing: 1px;
 
     margin: 0 50px;
@@ -262,6 +262,41 @@ nav ul li{
 }
 
 .scrolled nav ul li{color: #535C65;}
+
+/*
+    Dropdown
+*/
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+nav ul li .dropdown{
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    width: 110%;
+
+    display: none;
+
+    line-height: normal;
+}
+
+nav ul li .dropdown li{
+    line-height: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    
+    transition: all 0.3s;
+}
+
+.scrolled .dropdown{
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+
+    transition: all 0.3s;
+}
 
 nav ul li a{
     padding: 10px 0;
@@ -352,6 +387,16 @@ header button{
         color: #535C65;
     }
 
+    nav ul li .dropdown{
+        position: relative;
+        right: 0;
+        left: 0;
+
+        display: block;
+
+        padding: 0 0 0 25px;
+    }
+
     nav ul li a{
         padding-left: 10px;
         padding-right: 10px;
@@ -403,6 +448,10 @@ section{
         padding: 70px 3%;
     }
 
+}
+
+.smallSection{
+    min-height: 40vh;
 }
 
 .bright .sectionHeader{color: #4D5762;}

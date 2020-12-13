@@ -44,6 +44,13 @@
     color: #fff;
 }
 
+.btn.btn-blue{
+    border: none;
+    background: #546de5;
+    border-color: #546de5;
+    color: #fff;
+}
+
 .btn.btn-large{
     max-width: 300px;
     width: 100%;
