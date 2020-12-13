@@ -49,16 +49,22 @@ h1, h2{
     color: #fff;
     text-align: center;
     margin: 10px 0;
+
+    transition: font-size .2s;
 }
 
 h1{
     font-weight: 400;
     font-size: 4em;
+
+    transition: font-size .2s;
 }
 
 h2{
     font-weight: 300;
     font-size: 1.7em;
+
+    transition: font-size .2s;
 }
 
 h3{
@@ -68,6 +74,8 @@ h3{
     margin: 30px 0 15px 0;
     text-align: center;
     color: #4D5762;
+
+    transition: font-size .2s;
 }
 
 h4{
@@ -76,6 +84,8 @@ h4{
     font-weight: 300;
     margin: 0 0 15px 0;
     text-align: center;
+
+    transition: font-size .2s;
 }
 
 h5{
@@ -85,20 +95,22 @@ h5{
     margin: 30px 0 15px 0;
     text-align: center;
     color: #4D5762;
+
+    transition: font-size .2s;
 }
 
 /* Medium breakpoint Bootstrap */
 @media screen and (max-width: 768px){
 
-    h1{font-size: 3em;}
+    h1{font-size: 3em; transition: all .2s;}
 
-    h2{font-size: 1.4em;}
+    h2{font-size: 1.4em; transition: all .2s;}
 
-    h3{font-size: 2.5em;}
+    h3{font-size: 2.5em; transition: all .2s;}
 
-    h4{font-size: 1.4em;}
+    h4{font-size: 1.4em; transition: all .2s;}
 
-    h5{font-size: 2em;}
+    h5{font-size: 2em; transition: all .2s;}
 
 }
 
@@ -272,9 +284,8 @@ nav ul li:hover .dropdown{
 
 nav ul li .dropdown{
     position: absolute;
-    left: -10px;
-    right: -10px;
-    width: 110%;
+    left: 0;
+    right: 0;
 
     display: none;
 
@@ -284,8 +295,10 @@ nav ul li .dropdown{
 nav ul li .dropdown li{
     line-height: 40px;
     height: 40px;
+
     margin: 0;
     padding: 0;
+    
     font-size: 1em;
     
     transition: all 0.3s;
@@ -299,7 +312,7 @@ nav ul li .dropdown li{
 }
 
 nav ul li a{
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 nav ul li a::after{
@@ -394,6 +407,8 @@ header button{
 
         display: block;
 
+        background-color: none;
+
         padding: 0 0 0 25px;
     }
 
@@ -433,10 +448,20 @@ section{
 
 }
 
+.titleSection{
+    min-height: 40vh;
+    padding: 40px;
+}
+
+
 @media screen and (max-width: 1400px) {
 
     section{
         padding: 70px 30px;
+    }
+
+    .titleSection{
+        padding: 100px 30px 30px 30px;
     }
 
 }
@@ -448,10 +473,6 @@ section{
         padding: 70px 3%;
     }
 
-}
-
-.smallSection{
-    min-height: 40vh;
 }
 
 .bright .sectionHeader{color: #4D5762;}
