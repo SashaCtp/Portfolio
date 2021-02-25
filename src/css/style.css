@@ -24,6 +24,10 @@ a{
     color: inherit;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 
 /*
 ======== Bootstrap ======================================================
@@ -49,16 +53,22 @@ h1, h2{
     color: #fff;
     text-align: center;
     margin: 10px 0;
+
+    transition: font-size .2s;
 }
 
 h1{
     font-weight: 400;
     font-size: 4em;
+
+    transition: font-size .2s;
 }
 
 h2{
     font-weight: 300;
     font-size: 1.7em;
+
+    transition: font-size .2s;
 }
 
 h3{
@@ -68,6 +78,8 @@ h3{
     margin: 30px 0 15px 0;
     text-align: center;
     color: #4D5762;
+
+    transition: font-size .2s;
 }
 
 h4{
@@ -76,6 +88,8 @@ h4{
     font-weight: 300;
     margin: 0 0 15px 0;
     text-align: center;
+
+    transition: font-size .2s;
 }
 
 h5{
@@ -85,20 +99,22 @@ h5{
     margin: 30px 0 15px 0;
     text-align: center;
     color: #4D5762;
+
+    transition: font-size .2s;
 }
 
 /* Medium breakpoint Bootstrap */
 @media screen and (max-width: 768px){
 
-    h1{font-size: 3em;}
+    h1{font-size: 3em; transition: all .2s;}
 
-    h2{font-size: 1.4em;}
+    h2{font-size: 1.4em; transition: all .2s;}
 
-    h3{font-size: 2.5em;}
+    h3{font-size: 2.5em; transition: all .2s;}
 
-    h4{font-size: 1.4em;}
+    h4{font-size: 1.4em; transition: all .2s;}
 
-    h5{font-size: 2em;}
+    h5{font-size: 2em; transition: all .2s;}
 
 }
 
@@ -253,18 +269,57 @@ nav ul li{
     line-height: 70px;
     font-family: 'OratorStd', sans-serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.2em;
     letter-spacing: 1px;
 
-    margin: 0 50px;
+    margin: 0 40px;
 
     position: relative;
 }
 
 .scrolled nav ul li{color: #535C65;}
 
+/*
+    Dropdown
+*/
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+nav ul li .dropdown{
+    position: absolute;
+    left: -10%;
+    right: -10%;
+
+    width: 120%;
+    height: 120%;
+
+    display: none;
+
+    line-height: normal;
+}
+
+nav ul li .dropdown li{
+    line-height: 40px;
+    height: 40px;
+
+    margin: 0;
+    padding: 0;
+    
+    font-size: 1em;
+    
+    transition: all 0.3s;
+}
+
+.scrolled .dropdown{
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+
+    transition: all 0.3s;
+}
+
 nav ul li a{
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 nav ul li a::after{
@@ -352,6 +407,18 @@ header button{
         color: #535C65;
     }
 
+    nav ul li .dropdown{
+        position: relative;
+        right: 0;
+        left: 0;
+
+        display: block;
+
+        background: none!important;
+
+        padding: 0 0 0 25px;
+    }
+
     nav ul li a{
         padding-left: 10px;
         padding-right: 10px;
@@ -388,10 +455,20 @@ section{
 
 }
 
+.titleSection{
+    min-height: 40vh;
+    padding: 40px;
+}
+
+
 @media screen and (max-width: 1400px) {
 
     section{
         padding: 70px 30px;
+    }
+
+    .titleSection{
+        padding: 100px 30px 30px 30px;
     }
 
 }
@@ -429,7 +506,7 @@ section{
     height: 2px;
     display: block;
     margin: 0 auto 30px auto;
-    background: black;
+    background: #4D5762;;
 }
 
 .bright h3{color: #4D5762;}
@@ -440,10 +517,8 @@ section{
 
 /* colored Fade Background */
 .colored{
-    background-image: linear-gradient(to bottom right, #363795, #005C97);
     
     /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
-    
     z-index: 1;
 }
 
@@ -616,7 +691,7 @@ section{
 
 */
 
-.contactWindow{
+#contactWindow{
 
     width: 100%;
     max-width: 460px;
@@ -632,7 +707,7 @@ section{
 
 }
 
-.contactWindow.open{
+#contactWindow.open{
     width: 100%;
     max-width: 1200px;
 
@@ -648,7 +723,7 @@ section{
 
 }
 
-.contactWindow .aside{
+#contactWindow .aside{
     padding: 55px 25px;
 
     display: flex;
@@ -659,7 +734,7 @@ section{
 
 }
 
-.contactWindow .aside p{
+#contactWindow .aside p{
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -668,12 +743,12 @@ section{
     margin-bottom: 15px;
 }
 
-.contactWindow .aside .title{
+#contactWindow .aside .title{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
 
-.contactWindow form{
+#contactWindow form{
     padding: 40px 6%;
 
 
@@ -684,13 +759,13 @@ section{
     background-color: #fff;
 }
 
-.contactWindow.open form{
+#contactWindow.open form{
     display: flex;
 
     transition: all 0.3s;
 }
 
-.contactWindow form label{
+#contactWindow form label{
     display: block;
     width: 100%;
 
@@ -701,7 +776,7 @@ section{
     position: relative;
 }
 
-.contactWindow form .labelText{
+#contactWindow form .labelText{
 
     display: block;
 
@@ -719,8 +794,8 @@ section{
 
 }
 
-.contactWindow form input,
-.contactWindow form textarea{
+#contactWindow form input,
+#contactWindow form textarea{
     width: 100%;
 
     background-color: #eee;
@@ -735,29 +810,29 @@ section{
     padding: 0 15px;
 }
 
-.contactWindow form input{
+#contactWindow form input{
     height: 45px;
     line-height: 45px;
 }
 
-.contactWindow form textarea{
+#contactWindow form textarea{
     height: 200px;
     padding: 17px 15px;
     resize: none;
 }
 
-.contactWindow form input:focus + .labelText,
-.contactWindow form input:valid + .labelText,
-.contactWindow form textarea:focus + .labelText,
-.contactWindow form textarea:valid + .labelText{
+#contactWindow form input:focus + .labelText,
+#contactWindow form input:valid + .labelText,
+#contactWindow form textarea:focus + .labelText,
+#contactWindow form textarea:valid + .labelText{
     top: -40px;
     font-weight: bold;
     font-size: 17px;
     transition: all 0.3s;
 }
 
-.contactWindow form input:focus,
-.contactWindow form textarea:focus{
+#contactWindow form input:focus,
+#contactWindow form textarea:focus{
     outline: none;
 }
 

@@ -15,9 +15,6 @@
         <!-- Responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- VueJS -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-
         <!-- Frameworks-->
         <link rel="stylesheet" href="src/css/bootstrap-grid.min.css" type="text/css" />
 
@@ -25,18 +22,18 @@
         <link rel="stylesheet" href="src/css/buttons.css" type="text/css" />
         <link rel="stylesheet" href="src/css/hamburgers.min.css" />
         <link rel="stylesheet" href="src/css/item.css" type="text/css" />
+        <link rel="stylesheet" href="src/css/hamburgers.min.css" />
         <link rel="stylesheet" href="src/css/style.css" type="text/css" />
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Raleway:300,300i,400,400i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i">
 
         <!-- Font Awesome-->
         <script src="https://kit.fontawesome.com/795db5ddf9.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-
-        <div id ="app">
 
         <header class="">
 
@@ -45,6 +42,13 @@
                 <ul>
                     <li id="link_presentation">
                         <a href="#presentation">QUI SUIS-JE ?</a>
+
+                        <ul id="link_loisirs" class="dropdown">
+                            <li>
+                                <a href="parcours.html">Mon parcours</a>
+                            </li>
+                        </ul>
+                        
                     </li>
                     <li id="link_skills">
                         <a href="#skills">MES COMPETENCES</a>
@@ -75,7 +79,7 @@
                     <img class="accueilImg" src="src/img/sasha.jpg" alt="Photo de Sasha Contrepois" />
                 </div>
                 <h1>Sasha Contrepois</h1>
-                <h2>Etudiant & Développeur Web</h2>
+                <h2>Etudiant & Développeur</h2>
             </div>
         </section>
 
@@ -109,6 +113,14 @@
                             <p>
                                 <span class="tab">Je</span> suis quelqu'un de dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page <a href="https://github.com/SashaCtp" target="_blank">GitHub</a>.
                             </p>
+
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-6">
+                                    <a href="parcours.html" class="btn btn-blue">Mon parcours</a>
+                                </div>
+                            </div>
+                            
+
 
                             <table class="table-blue">
 
@@ -207,14 +219,137 @@
 
                 <div class="skills">
 
-                    <div class="row" v-for="list in skillLists">
+                    <div class="row">
 
-                        <div class="col-12 col-sm-6 col-lg-3" v-for="skill in list">
+                        <div class="col-12 col-sm-6 col-lg-3">
                             <div class="item">
-                                <div class="info" v-if="skill.informations.length > 0">
-                                    {{ skill.informations }}
+                                HTML & CSS
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    jQuery, VueJS
                                 </div>
-                                {{ skill.name }}
+                                Javascript
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    Wordpress
+                                </div>
+                                PHP
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                SQL
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                NodeJS
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                C/C++
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                Java
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    GitLab, GitHub, AzureDevops
+                                </div>
+                                Git
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    Administration système
+                                </div>
+                                Unix
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                Docker
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    Word, Excel, Powerpoint
+                                </div>
+                                Bureautique
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    Trello, AzureDevops, Monday.com
+                                </div>
+                                Gestion de projet
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    Photoshop, AdobeXD, After Effects
+                                </div>
+                                SuiteAdobe
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                Français
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                <div class="info">
+                                    Cambdrige Certificate
+                                </div>
+                                Anglais
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="item">
+                                Italien
                             </div>
                         </div>
 
@@ -235,57 +370,170 @@
 
             <div class="timeline">
 
-                <template v-for="projectYear in projectTimeline">
+                <div class="project">
 
-                    <div v-for="project in projectYear.projects" class="project">
-
-                        <div class="row">
-                            <div class="col-md-3 col-12">
-                                <img class="logo" v-bind:src="project.imageUrl" alt="Logo du projet" />
-                            </div>
-
-                            <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-                                <div class="name"><span class="prefix">- </span>{{ project.name }}</div>
-                                <p>{{ project.description }}</p>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img class="logo" src="src/img/projects/portfolio.jpg" alt="Logo du projet" />
                         </div>
+
+                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
+                            <div class="name"><span class="prefix">- </span>Portfolio</div>
+                            <p>Un site pour présenter mes compétences, mes projets et ma personnalité</p>
+                        </div>
+                    </div>
                         
-                        <div class="card row">
+                    <div class="card row">
 
-                            <div class="col-md-6 col-12 buttons">
+                        <div class="col-md-6 col-12 buttons">
 
-                                <a class="btn btn-border" v-bind:href="project.githubUrl" v-if="project.githubUrl != null" target="_blank">
-                                    <i class="fab fa-github"></i> Voir sur GitHub
-                                </a>
+                            <a class="btn btn-border" href="https://github.com/SashaCtp/Portfolio" target="_blank">
+                                <i class="fab fa-github"></i> Voir sur GitHub
+                            </a>
         
-                                <a class="btn btn-border" v-bind:href="project.specitifactionsUrl" v-if="project.specitifactionsUrl != null" target="_blank">
-                                    Cahier des charges
-                                </a>
+                            <a class="btn" href="#" target="_blank">
+                                En savoir plus
+                            </a>
         
-                                <a class="btn" href="#" target="_blank">
-                                    En savoir plus
-                                </a>
+                        </div>
         
-                            </div>
-        
-                            <ul class="col-md-6 col-12 technos">
-                                <li class="title">
-                                    Développé avec
-                                </li>
-                                <li v-for="techno in project.technos">{{ techno }}</li>
-                            </ul>
+                        <ul class="col-md-6 col-12 technos">
+                            <li class="title">
+                                Développé avec
+                            </li>
+                            <li>HTML & CSS (Bootstrap)</li>
+                            <li>Javascript</li>
+                        </ul>
 
+                    </div>
+
+                </div>
+
+                <div class="project">
+
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img class="logo" src="src/img/projects/coincoinfpv.png" alt="Logo du projet" />
                         </div>
 
+                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
+                            <div class="name"><span class="prefix">- </span>CoinCoin du FPV</div>
+                            <p>Un site d'achat et de revente de pièces dédiées au FPV</p>
+                        </div>
+                    </div>
+                        
+                    <div class="card row">
+
+                        <div class="col-md-6 col-12 buttons">
+        
+                            <a class="btn" href="#" target="_blank">
+                                En savoir plus
+                            </a>
+        
+                        </div>
+        
+                        <ul class="col-md-6 col-12 technos">
+                            <li class="title">
+                                Développé avec
+                            </li>
+                            <li>HTML & CSS (Bootstrap)</li>
+                            <li>PHP (WordPress) & SQL</li>
+                            <li>Javascript</li>
+                        </ul>
+
                     </div>
 
-                    <div class="divider divider-row">
-                        <div class="bar"></div>
-                        <div class="text">{{ projectYear.year }}</div>
-                        <div class="bar"></div>
+                </div>
+
+                <div class="divider divider-row">
+                    <div class="bar"></div>
+                    <div class="text">2019</div>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="project">
+
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img class="logo" src="src/img/projects/aerosaver.png" alt="Logo du projet" />
+                        </div>
+
+                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
+                            <div class="name"><span class="prefix">- </span>AeroSaver</div>
+                            <p>Projet de fin d'année pour porter secours aux victimes de noyades</p>
+                        </div>
+                    </div>
+                        
+                    <div class="card row">
+
+                        <div class="col-md-6 col-12 buttons">
+        
+                            <a class="btn" href="#" target="_blank">
+                                En savoir plus
+                            </a>
+        
+                        </div>
+        
+                        <ul class="col-md-6 col-12 technos">
+                            <li class="title">
+                                Développé avec
+                            </li>
+                            <li>C++</li>
+                        </ul>
+
                     </div>
 
-                </template>
+                </div>
+
+                <div class="divider divider-row">
+                    <div class="bar"></div>
+                    <div class="text">2017</div>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="project">
+
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img class="logo" src="src/img/projects/monopoli.png" alt="Logo du projet" />
+                        </div>
+
+                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
+                            <div class="name"><span class="prefix">- </span>Monopo.li</div>
+                            <p>Un vrai jeu Monopoly sur un navigateur internet !</p>
+                        </div>
+                    </div>
+                        
+                    <div class="card row">
+
+                        <div class="col-md-6 col-12 buttons">
+        
+                            <a class="btn" href="#" target="_blank">
+                                En savoir plus
+                            </a>
+        
+                        </div>
+        
+                        <ul class="col-md-6 col-12 technos">
+                            <li class="title">
+                                Développé avec
+                            </li>
+                            <li>HTML & CSS</li>
+                            <li>Javascript</li>
+                            <li>VueJS</li>
+                            <li>SocketIO</li>
+                            <li>NodeJS</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="divider divider-row">
+                    <div class="bar"></div>
+                    <div class="text">2016</div>
+                    <div class="bar"></div>
+                </div>
 
             </div>
 
@@ -350,25 +598,35 @@
                     <div class="spacer"></div>
                 </div>
 
-                <div class="contactWindow" v-bind:class="{ open : msgWindowOpen }">
+                <div id="contactWindow">
 
                     <div class="row">
 
-                        <div class="aside colored" v-bind:class="{ 'col-lg-4 col-12' : msgWindowOpen, 'col-12' : !msgWindowOpen }">
+                        <div class="aside colored col-12 ">
 
                             <p class="title">Vous souhaitez me contacter ?</p>
 
-                            <p>Vous pouvez vous adresser directement par mail à <br> <a href="mailto:sasha.contrepois@protonmail.com" class="text-underline">sasha.contrepois@protonmail.com</a></p>
+                            <p>
+                                Vous pouvez vous adresser directement par mail à l'adresse suivante
+                                
+                            </p>
+                            <p>
+                                
+                                <a href="mailto:sasha.contrepois@protonmail.com" style="color:#fff">sasha.contrepois@protonmail.com</a>
 
-                            <p>Ou alors envoyez-moi un message depuis ce formulaire !</p>
+                            </p>
+                            
+                            <p>
+                                Ou alors envoyez-moi un message depuis ce formulaire !
+                            </p>
 
-                            <div class="btn btn-border" v-on:click="msgWindowOpen = !msgWindowOpen">
+                            <div class="btn btn-border" onclick="toggleContactForm(event)">
                                 <i class="fas fa-paper-plane"></i> Envoyer un message
                             </div>
 
                         </div>
 
-                        <form class="col-lg-8 col-12" method="POST" @submit.prevent="submitContactForm">
+                        <form class="col-lg-8 col-12" method="POST">
 
                             <label>
                                 <input type="text" name="name" id="name" required>
@@ -393,7 +651,7 @@
                                 </p>
                                 <div class="col-lg-6 col-12">
 
-                                    <button type="submit" class="btn btn-light" >Envoyer</button>
+                                    <button type="submit" class="btn btn-light" onclick="submitContactForm(event)" >Envoyer</button>
 
                                 </div>
                             </div>
@@ -409,11 +667,9 @@
         <footer>
 
 
-            <p class="text-center">Développé avec les framework <a href="https://getbootstrap.com/">Bootstrap</a> et <a href="https://vuejs.org/">VueJS</a></p>
+            <p class="text-center">Développé avec le framework <a href="https://getbootstrap.com/">Bootstrap</a></p>
 
         </footer>
-
-        </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

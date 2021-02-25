@@ -51,7 +51,7 @@
 }
 
 .item:hover{
-    cursor: default;
+    cursor: inherit;
     transform: scale(1.05);
 
     transition: transform 0.2s;
@@ -74,7 +74,8 @@
 
 .item-border{
     color: #fff;
-    background: #505B67;
+    background: none;
+    border: 2px solid #fff;
 }
 
 .item-dark{
