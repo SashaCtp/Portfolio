@@ -6,4 +6,4 @@ Technologies utilisées:
 - HTML & CSS | *Bootstrap Grid Component*
 - Javascript | *jQuery*
 
-Publié grâce à Github Pages
+Publié grâce à Github Pages.
