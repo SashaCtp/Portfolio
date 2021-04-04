@@ -1,85 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
+<template>
 
-    <head>
-        <meta charset="utf-8">
-
-        <title>Sasha Contrepois | Portfolio</title>
-        <meta name="description" content="Sasha Contrepois - Etudiant en Informatique à l'IUT de l'Université de Paris - Développement Web et C++">
-
-        <!-- Référencement -->
-        <meta name="robot" content="index, follow">
-        <meta name="googlebot" content="index, follow">
-        <meta name="keywords" content="Sasha Contrepois, Sasha Ctp, sashactp.fr, Développement, Web, C++, NodeJS, VueJS, Programmation, IUT Paris, sasha.contrepois">
-
-        <!-- Responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Frameworks-->
-        <link rel="stylesheet" href="src/css/bootstrap-grid.min.css" type="text/css" />
-
-        <!-- CSS (positionné après pour conserver l'ordre d'importance) -->
-        <link rel="stylesheet" href="src/css/buttons.css" type="text/css" />
-        <link rel="stylesheet" href="src/css/item.css" type="text/css" />
-        <link rel="stylesheet" href="src/css/hamburgers.min.css" />
-        <link rel="stylesheet" href="src/css/style.css" type="text/css" />
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i">
-
-        <!-- Font Awesome-->
-        <script src="https://kit.fontawesome.com/795db5ddf9.js" crossorigin="anonymous"></script>
-    </head>
-
-    <body>
-
-        <header class="">
-
-            <nav class="">
-
-                <ul>
-                    <li id="link_presentation">
-                        <a href="index.html#presentation">QUI SUIS-JE ?</a>
-
-                        <ul id="link_loisirs" class="dropdown">
-                            <li>
-                                <a href="parcours.html">Mon parcours</a>
-                            </li>
-
-                            <li>
-                                <a href="loisirs.html">Mes loisirs</a>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li id="link_skills">
-                        <a href="index.html#skills">MES COMPETENCES</a>
-                    </li>
-                    <li id="link_projects">
-                        <a href="index.html#projects">MES PROJETS</a>
-                    </li>
-                    <li id="link_cv">
-                        <a href="index.html#cv">MON CV</a>
-                    </li>
-                    <li id="link_contact">
-                        <a href="index.html#contact">ME CONTACTER</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <button class="hamburger hamburger--collapse" id="navButton" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-
-        </header>
+    <div>
 
         <section class="colored titleSection">
-            
+            <router-link class="btn btn-secondary btn-outline" to="/">Home</router-link>
             <h1>Mon parcours</h1>
-
         </section>
 
         <section id="parcours">
@@ -178,19 +103,12 @@
 
         </section>
 
+    </div>
 
-        <!-- CONTENU -->
+</template>
 
-        <footer>
-
-            <p class="text-center">Développé avec le framework <a href="https://getbootstrap.com/">Bootstrap</a></p>
-
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="src/js/portfolio.js"></script>
-        
-    </body>
-
-</html>
+<script>
+export default {
+    
+}
+</script>

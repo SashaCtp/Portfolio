@@ -2,9 +2,12 @@
     Loading fonts
 */
 
+@import './buttons.css', './item.css';
+
 @font-face {
-    font-family: "OratorStd";
-    src: url(../fonts/OratorStd.ttf) format("truetype");
+    font-family: 'OratorStd';
+    /* webpackIgnore: true */
+    src: url('../public/fonts/OratorStd.ttf') format('truetype');
 }
 
 *{
@@ -15,6 +18,7 @@
 
 body{
     width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -22,12 +26,9 @@ a{
     text-decoration: inherit;
     font-style: inherit;
     color: inherit;
-}
 
-a:hover{
-    cursor: pointer;
+    :hover{cursor: pointer;}
 }
-
 
 /*
 ======== Bootstrap ======================================================
@@ -42,7 +43,6 @@ a:hover{
     }
 
 }
-
 
 /*
 ======== Titles ======================================================
@@ -457,7 +457,7 @@ section{
 
 .titleSection{
     min-height: 40vh;
-    padding: 40px;
+    padding: 80px;
 }
 
 
@@ -518,7 +518,7 @@ section{
 /* colored Fade Background */
 .colored{
     
-    /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
+    background: linear-gradient(to bottom right, rgb(54, 55, 149), rgb(0, 92, 151));
     z-index: 1;
 }
 

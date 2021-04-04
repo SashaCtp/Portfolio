@@ -51,10 +51,18 @@
 }
 
 .item:hover{
-    cursor: inherit;
+    cursor: pointer;
     transform: scale(1.05);
 
     transition: transform 0.2s;
+}
+
+.item::selection{
+    background: transparent;
+}
+
+.item .text-exp::selection{
+    background: transparent;
 }
 
 .item-dark{

@@ -1,0 +1,66 @@
+[
+    {
+        "name": "HTML & CSS",
+        "infos": "Framework Boostrap, SASS",
+        "favorite": true
+    },
+    {
+        "name": "Javascript",
+        "infos": "jQuery, VueJS, Webpack"
+    },
+    {
+        "name": "PHP",
+        "infos": "WordPress"
+    },
+    {
+        "name": "SQL",
+        "infos": "SGBD Oracle & MySQL"
+    },
+    {
+        "name": "NodeJS",
+        "infos": ""
+    },
+    {
+        "name": "C & C++",
+        "infos": ""
+    },
+    {
+        "name": "Java",
+        "infos": "jUnit",
+        "favorite": true
+    },
+    {
+        "name": "GIT",
+        "infos": "GitHub, GitLab & Azure Devops"
+    },
+    {
+        "name": "Unix",
+        "infos": "Administration système Linux"
+    },
+    {
+        "name": "Docker",
+        "infos": "Connaissances basiques"
+    },
+    {
+        "name": "Bureautique",
+        "infos": "Word, Excel, Powerpoint"
+    },
+    {
+        "name": "Gestion de projet",
+        "infos": "Trello, AzureDevops, Monday.com"
+    },
+    {
+        "name": "Suite Adobe",
+        "infos": "Photoshop, After Effects, Adobe XD"
+    },
+    {
+        "name": "Français"
+    },
+    {
+        "name": "Anglais",
+        "infos": "Cambridge Certificate"
+    },
+    {
+        "name": "Italien"
+    }
+]
