@@ -624,20 +624,33 @@ section {
   flex-direction: column;
   justify-content: space-around; }
 
-.titleSection {
-  min-height: 40vh;
-  padding: 80px; }
+.dividedSection {
+  display: block;
+  min-height: calc(100vh - 70px);
+  padding: 0 !important; }
+
+.dividedSection .header {
+  height: 40% !important;
+  padding: 100px; }
+
+.dividedSection .body {
+  height: 60% !important;
+  padding: 70px; }
 
 @media screen and (max-width: 1400px) {
   section {
-    padding: 70px 30px; }
-  .titleSection {
-    padding: 100px 30px 30px 30px; } }
+    padding: 70px 30px; } }
 
 /* Small breakpoint */
 @media screen and (max-width: 576px) {
   section {
-    padding: 70px 3%; } }
+    padding: 70px 3%; }
+  .dividedSection {
+    padding: 0; }
+  .dividedSection .header {
+    padding: 70px 3%; }
+  .dividedSection .body {
+    padding: 50px 3%; } }
 
 .bright .sectionHeader {
   color: #4D5762; }
@@ -933,7 +946,7 @@ table td {
 footer {
   background: #EEE;
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center; }

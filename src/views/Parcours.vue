@@ -1,13 +1,12 @@
 <template>
 
-    <div>
+    <section class="dividedSection">
 
-        <section class="colored titleSection">
-            <router-link class="btn btn-secondary btn-outline" to="/">Home</router-link>
+        <div class="colored header">
             <h1>Mon parcours</h1>
-        </section>
+        </div>
 
-        <section id="parcours">
+        <div class="body">
 
             <div class="sectionHeader">
                 
@@ -101,9 +100,9 @@
 
             </div>
 
-        </section>
+        </div>
 
-    </div>
+    </section>
 
 </template>
 
