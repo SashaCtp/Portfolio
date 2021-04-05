@@ -20,7 +20,7 @@
                 <div class="row">
                 
                     <div class="col-12 col-lg-6">
-                        <p><span class="tab">J'ai</span> suivis 3 années dans le Lycée Paul Langevin à la Seyne-Sur-Mer. Sur 3 ans je me suis spécialisé dans les matières scientifiques, en 1<span class="text-exp">ère</span> Scientifique, Sciences de l'Ingénieur, T<span class="text-exp">ale</span> Scientifique, Sciences de l'Ingénieur, Spécialité Physique-Chimie, Option Anglais Européen.</p>
+                        <p><span class="tab">J'ai</span> suivi 3 années dans le Lycée Paul Langevin à la Seyne-Sur-Mer. Sur 3 ans je me suis spécialisé dans les matières scientifiques. En classe de 1<span class="text-exp">ère</span> Scientifique, Sciences de l'Ingénieur, puis en T<span class="text-exp">ale</span> Scientifique, Sciences de l'Ingénieur, Spécialité Physique-Chimie, Option Anglais Européen.</p>
 
                         <p><span class="tab">Durant</span> ces trois annnées, j'ai appris, en plus des connaissances purement scolaires, différents soft skills comme apprendre à expliquer synthétiquement afin d'aider mes camarades en difficulté dans différentes matières, ou la gestion de projets et d'équipe au travers de différents projets.</p>
                     
