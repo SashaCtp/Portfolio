@@ -913,6 +913,14 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+footer:hover{
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 footer p{
