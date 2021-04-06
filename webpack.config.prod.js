@@ -14,6 +14,7 @@ module.exports = {
 		filename: 'bundle.js',
 		path: path.join(process.cwd(), 'app', 'dist')
 	},
+	devtool: false,
 	module: {
 		rules: [
 			{
