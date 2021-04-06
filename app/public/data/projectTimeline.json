@@ -1,0 +1,94 @@
+[
+    {
+        "year": 2021,
+        "projects" : [
+            {
+                "name": "Portfolio",
+                "description": "Un site pour présenter mes compétences et mes projets",
+                "technos" : [
+                    "HTML & CSS",
+                    "VueJS",
+                    "NodeJS",
+                    "Webpack",
+                    "Docker"
+                ],
+                "repository": "//github.com/SashaCtp/Portfolio",
+                "logo": "portfolio.jpg"
+            },{
+                "name": "Balls Of Steel",
+                "description": "Un plugin Java pour jouer entre amis !",
+                "technos": [
+                    "Java",
+                    "API Spigot"
+                ],
+                "repository": "//github.com/SashaCtp/BallsOfSteel",
+                "logo": "rubyzgames.png"
+            }
+        ]
+        
+    },{
+        "year": 2020,
+        "projects": [
+            {
+                "name": "CoinCoin du FPV",
+                "description": "Un site d'achat et de revente de pièces dédiées au FPV",
+                "technos": [
+                    "HTML & CSS",
+                    "PHP & SQL",
+                    "Javascript"
+                ],
+                "repository": null,
+                "logo": "coincoinfpv.png"
+            }
+        ]
+    },{
+
+        "year": 2019,
+        "projects": [
+            {
+                "name": "AeroSaver",
+                "description": "Projet de fin d'année pour porter secours aux victimes de noyades",
+                "technos" : [
+                    "C",
+                    "Arduino"
+                ],
+                "repository": null,
+                "logo": "aerosaver.png"
+            }
+        ]
+
+    },{
+        "year": 2017,
+        "projects": [
+            {
+                "name": "Monopo.li",
+                "description": "Un vrai jeu Monopoly sur un navigateur internet !",
+                "technos": [
+                    "HTML & CSS",
+                    "Javascript",
+                    "VueJS",
+                    "SocketIO",
+                    "NodeJS"
+                ],
+                "repository": null,
+                "logo": "monopoli.png"
+            }
+        ]
+    },{
+        "year": 2016,
+        "projects": [
+            {
+                "name": "RubyzGames",
+                "description": "Un serveur de jeu innovant et amusant !",
+                "technos": [
+                    "Java",
+                    "API Spigot",
+                    "HTML & CSS",
+                    "PHP & SQL"
+                ],
+                "repository": null,
+                "logo": "rubyzgames.png"
+            }
+        ]
+    }
+]

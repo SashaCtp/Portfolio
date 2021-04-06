@@ -1,10 +1,17 @@
 /*
+    Variables
+ */
+
+/*
     Loading fonts
 */
 
+@import './buttons.css', './item.css';
+
 @font-face {
-    font-family: "OratorStd";
-    src: url(../fonts/OratorStd.ttf) format("truetype");
+    font-family: 'OratorStd';
+    /* webpackIgnore: true */
+    src: url('../public/fonts/OratorStd.ttf') format('truetype');
 }
 
 *{
@@ -15,6 +22,7 @@
 
 body{
     width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -22,12 +30,9 @@ a{
     text-decoration: inherit;
     font-style: inherit;
     color: inherit;
-}
 
-a:hover{
-    cursor: pointer;
+    :hover{cursor: pointer;}
 }
-
 
 /*
 ======== Bootstrap ======================================================
@@ -42,7 +47,6 @@ a:hover{
     }
 
 }
-
 
 /*
 ======== Titles ======================================================
@@ -125,7 +129,7 @@ p{
     color: #4D5762;
 
     font-family: 'Tw Cen MT', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: justify;
 
     padding: 10px 0;
@@ -252,6 +256,14 @@ header.scrolled{
     box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
 }
 
+header button{
+    display: none!important;
+}
+
+/* 
+======== Nav ======================================================
+*/
+
 nav{
     width: 100vw;
     height: 70px;
@@ -279,45 +291,6 @@ nav ul li{
 
 .scrolled nav ul li{color: #535C65;}
 
-/*
-    Dropdown
-*/
-nav ul li:hover .dropdown{
-    display: block;
-}
-
-nav ul li .dropdown{
-    position: absolute;
-    left: -10%;
-    right: -10%;
-
-    width: 120%;
-    height: 120%;
-
-    display: none;
-
-    line-height: normal;
-}
-
-nav ul li .dropdown li{
-    line-height: 40px;
-    height: 40px;
-
-    margin: 0;
-    padding: 0;
-    
-    font-size: 1em;
-    
-    transition: all 0.3s;
-}
-
-.scrolled .dropdown{
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.9);
-
-    transition: all 0.3s;
-}
-
 nav ul li a{
     padding: 10px 10px;
 }
@@ -344,17 +317,50 @@ nav ul li a::after{
 .scrolled nav ul li a::after{background: #535C65;}
 
 nav ul li a:hover::after,
-nav .active a::after{
+nav ul li.active a::after{
     width: 100%;
     transition: width .2s;
 }
 
-nav .active a::after{
+nav ul li.active a::after{
     opacity: 0.9;
 }
 
-header button{
-    display: none!important;
+/*
+    Dropdown
+*/
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+nav ul li .dropdown{
+    position: absolute;
+    left: -10%;
+    right: -10%;
+
+    display: none;
+    padding: 0 10px 15px 10px;
+
+    line-height: normal;
+}
+
+nav ul li .dropdown li{
+    line-height: 40px;
+    height: 40px;
+
+    margin: 0;
+    padding: 0;
+    
+    font-size: 1em;
+    
+    transition: all 0.3s;
+}
+
+.scrolled .dropdown{
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+
+    transition: all 0.3s;
 }
 
 @media screen and (max-width: 1400px) {
@@ -455,20 +461,28 @@ section{
 
 }
 
-.titleSection{
-    min-height: 40vh;
-    padding: 40px;
+.dividedSection{
+    display: block;
+    min-height: calc(100vh - 70px);
+    padding: 0!important;
 }
 
+
+.dividedSection .header{
+    height: 40%!important;
+    padding: 100px;
+}
+
+.dividedSection .body{
+    height: 60%!important;
+    
+    padding: 70px;
+}
 
 @media screen and (max-width: 1400px) {
 
     section{
         padding: 70px 30px;
-    }
-
-    .titleSection{
-        padding: 100px 30px 30px 30px;
     }
 
 }
@@ -478,6 +492,18 @@ section{
 
     section{
         padding: 70px 3%;
+    }
+
+    .dividedSection{
+        padding: 0;
+    }
+
+    .dividedSection .header{
+        padding: 70px 3%;
+    }
+
+    .dividedSection .body{
+        padding: 50px 3%;
     }
 
 }
@@ -518,7 +544,7 @@ section{
 /* colored Fade Background */
 .colored{
     
-    /* Dark color : rgb(54, 55, 149)   , Light color : rgb(0, 92, 151) */
+    background: linear-gradient(to bottom right, rgb(54, 55, 149), rgb(0, 92, 151));
     z-index: 1;
 }
 
@@ -884,11 +910,19 @@ footer{
     background: #EEE;
 
     width: 100%;
-    height: 80px;
+    height: 70px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+footer:hover{
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 footer p{
