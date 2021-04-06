@@ -79,7 +79,7 @@
         "projects": [
             {
                 "name": "RubyzGames",
-                "description": "Un serveur de jeu innovant et ammusant !",
+                "description": "Un serveur de jeu innovant et amusant !",
                 "technos": [
                     "Java",
                     "API Spigot",
