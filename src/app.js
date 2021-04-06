@@ -6,7 +6,7 @@ import './css/style.scss'
 
 import Home from './views/Home.vue'
 import Parcours from './views/Parcours.vue'
-import ProjectDescription from './views/ProjectDescription.vue'
+import Project from './views/Project.vue'
 import NotFound from './views/NotFound.vue'
 
 Vue.use(VueRouter)

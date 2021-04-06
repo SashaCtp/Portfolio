@@ -256,6 +256,14 @@ header.scrolled{
     box-shadow: 0 8px 10px 0 rgba(90,86,86,0.16);
 }
 
+header button{
+    display: none!important;
+}
+
+/* 
+======== Nav ======================================================
+*/
+
 nav{
     width: 100vw;
     height: 70px;
@@ -283,45 +291,6 @@ nav ul li{
 
 .scrolled nav ul li{color: #535C65;}
 
-/*
-    Dropdown
-*/
-nav ul li:hover .dropdown{
-    display: block;
-}
-
-nav ul li .dropdown{
-    position: absolute;
-    left: -10%;
-    right: -10%;
-
-    width: 120%;
-    height: 120%;
-
-    display: none;
-
-    line-height: normal;
-}
-
-nav ul li .dropdown li{
-    line-height: 40px;
-    height: 40px;
-
-    margin: 0;
-    padding: 0;
-    
-    font-size: 1em;
-    
-    transition: all 0.3s;
-}
-
-.scrolled .dropdown{
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.9);
-
-    transition: all 0.3s;
-}
-
 nav ul li a{
     padding: 10px 10px;
 }
@@ -348,17 +317,50 @@ nav ul li a::after{
 .scrolled nav ul li a::after{background: #535C65;}
 
 nav ul li a:hover::after,
-nav .active a::after{
+nav ul li.active a::after{
     width: 100%;
     transition: width .2s;
 }
 
-nav .active a::after{
+nav ul li.active a::after{
     opacity: 0.9;
 }
 
-header button{
-    display: none!important;
+/*
+    Dropdown
+*/
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+nav ul li .dropdown{
+    position: absolute;
+    left: -10%;
+    right: -10%;
+
+    display: none;
+    padding: 0 10px 15px 10px;
+
+    line-height: normal;
+}
+
+nav ul li .dropdown li{
+    line-height: 40px;
+    height: 40px;
+
+    margin: 0;
+    padding: 0;
+    
+    font-size: 1em;
+    
+    transition: all 0.3s;
+}
+
+.scrolled .dropdown{
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+
+    transition: all 0.3s;
 }
 
 @media screen and (max-width: 1400px) {

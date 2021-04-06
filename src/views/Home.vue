@@ -137,185 +137,7 @@
 
         <skill-section/>
 
-        <section class="bright" id="projects" ref="projects">
-
-            <div class="sectionHeader">
-                <img class="icon" src="public/images/rocket.png" alt="Icone représentant une fusée" />
-                <h3>MES PROJETS</h3>
-                <div class="spacer"></div>
-                <h4>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h4>
-            </div>
-
-            <div class="timeline">
-
-                <div class="project">
-
-                    <div class="row">
-                        <div class="col-md-3 col-12">
-                            <img class="logo" src="public/images/projects/portfolio.jpg" alt="Logo du projet" />
-                        </div>
-
-                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-                            <div class="name"><span class="prefix">- </span>Portfolio</div>
-                            <p>Un site pour présenter mes compétences, mes projets et ma personnalité</p>
-                        </div>
-                    </div>
-                        
-                    <div class="card row">
-
-                        <div class="col-md-6 col-12 buttons">
-
-                            <a class="btn btn-border" href="https://github.com/SashaCtp/Portfolio" target="_blank">
-                                <i class="fab fa-github"></i> Voir sur GitHub
-                            </a>
-        
-                            <a class="btn" href="#" target="_blank">
-                                En savoir plus
-                            </a>
-        
-                        </div>
-        
-                        <ul class="col-md-6 col-12 technos">
-                            <li class="title">
-                                Développé avec
-                            </li>
-                            <li>HTML & CSS (Bootstrap)</li>
-                            <li>Javascript</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="project">
-
-                    <div class="row">
-                        <div class="col-md-3 col-12">
-                            <img class="logo" src="public/images/projects/coincoinfpv.png" alt="Logo du projet" />
-                        </div>
-
-                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-                            <div class="name"><span class="prefix">- </span>CoinCoin du FPV</div>
-                            <p>Un site d'achat et de revente de pièces dédiées au FPV</p>
-                        </div>
-                    </div>
-                        
-                    <div class="card row">
-
-                        <div class="col-md-6 col-12 buttons">
-        
-                            <a class="btn" href="#" target="_blank">
-                                En savoir plus
-                            </a>
-        
-                        </div>
-        
-                        <ul class="col-md-6 col-12 technos">
-                            <li class="title">
-                                Développé avec
-                            </li>
-                            <li>HTML & CSS (Bootstrap)</li>
-                            <li>PHP (WordPress) & SQL</li>
-                            <li>Javascript</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="divider divider-row">
-                    <div class="bar"></div>
-                    <div class="text">2019</div>
-                    <div class="bar"></div>
-                </div>
-
-                <div class="project">
-
-                    <div class="row">
-                        <div class="col-md-3 col-12">
-                            <img class="logo" src="public/images/projects/aerosaver.png" alt="Logo du projet" />
-                        </div>
-
-                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-                            <div class="name"><span class="prefix">- </span>AeroSaver</div>
-                            <p>Projet de fin d'année pour porter secours aux victimes de noyades</p>
-                        </div>
-                    </div>
-                        
-                    <div class="card row">
-
-                        <div class="col-md-6 col-12 buttons">
-        
-                            <a class="btn" href="#" target="_blank">
-                                En savoir plus
-                            </a>
-        
-                        </div>
-        
-                        <ul class="col-md-6 col-12 technos">
-                            <li class="title">
-                                Développé avec
-                            </li>
-                            <li>C++</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="divider divider-row">
-                    <div class="bar"></div>
-                    <div class="text">2017</div>
-                    <div class="bar"></div>
-                </div>
-
-                <div class="project">
-
-                    <div class="row">
-                        <div class="col-md-3 col-12">
-                            <img class="logo" src="public/images/projects/monopoli.png" alt="Logo du projet" />
-                        </div>
-
-                        <div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-                            <div class="name"><span class="prefix">- </span>Monopo.li</div>
-                            <p>Un vrai jeu Monopoly sur un navigateur internet !</p>
-                        </div>
-                    </div>
-                        
-                    <div class="card row">
-
-                        <div class="col-md-6 col-12 buttons">
-        
-                            <a class="btn" href="#" target="_blank">
-                                En savoir plus
-                            </a>
-        
-                        </div>
-        
-                        <ul class="col-md-6 col-12 technos">
-                            <li class="title">
-                                Développé avec
-                            </li>
-                            <li>HTML & CSS</li>
-                            <li>Javascript</li>
-                            <li>VueJS</li>
-                            <li>SocketIO</li>
-                            <li>NodeJS</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="divider divider-row">
-                    <div class="bar"></div>
-                    <div class="text">2016</div>
-                    <div class="bar"></div>
-                </div>
-
-            </div>
-
-        </section>
+        <project-section/>
 
         <resume-section/>
 
@@ -328,12 +150,14 @@
 <script>
 // Sections ==========----------
 import SkillSection from './sections/SkillSection.vue'
+import ProjectSection from './sections/ProjectSection.vue'
 import ResumeSection from './sections/ResumeSection.vue'
 import ContactSection from './sections/ContactSection.vue'
 
 export default {
 	components: {
         'skill-section': SkillSection,
+        'project-section': ProjectSection,
         'resume-section': ResumeSection,
         'contact-section': ContactSection,
 	}

@@ -22327,11 +22327,7 @@ var Homevue_type_template_id_fae5bece_render = function() {
       _vm._v(" "),
       _c("skill-section"),
       _vm._v(" "),
-      _c(
-        "section",
-        { ref: "projects", staticClass: "bright", attrs: { id: "projects" } },
-        [_vm._m(2), _vm._v(" "), _vm._m(3)]
-      ),
+      _c("project-section"),
       _vm._v(" "),
       _c("resume-section"),
       _vm._v(" "),
@@ -22579,317 +22575,6 @@ var Homevue_type_template_id_fae5bece_staticRenderFns = [
         ])
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sectionHeader" }, [
-      _c("img", {
-        staticClass: "icon",
-        attrs: {
-          src: "public/images/rocket.png",
-          alt: "Icone représentant une fusée"
-        }
-      }),
-      _vm._v(" "),
-      _c("h3", [_vm._v("MES PROJETS")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "spacer" }),
-      _vm._v(" "),
-      _c("h4", [
-        _vm._v(
-          "Voici quelques projets sur lesquels j'ai pu travailler ces dernières années."
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "timeline" }, [
-      _c("div", { staticClass: "project" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-3 col-12" }, [
-            _c("img", {
-              staticClass: "logo",
-              attrs: {
-                src: "public/images/projects/portfolio.jpg",
-                alt: "Logo du projet"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-9 col-12 d-flex flex-column justify-content-center"
-            },
-            [
-              _c("div", { staticClass: "name" }, [
-                _c("span", { staticClass: "prefix" }, [_vm._v("- ")]),
-                _vm._v("Portfolio")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Un site pour présenter mes compétences, mes projets et ma personnalité"
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card row" }, [
-          _c("div", { staticClass: "col-md-6 col-12 buttons" }, [
-            _c(
-              "a",
-              {
-                staticClass: "btn btn-border",
-                attrs: {
-                  href: "https://github.com/SashaCtp/Portfolio",
-                  target: "_blank"
-                }
-              },
-              [
-                _c("i", { staticClass: "fab fa-github" }),
-                _vm._v(" Voir sur GitHub\n                        ")
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              { staticClass: "btn", attrs: { href: "#", target: "_blank" } },
-              [
-                _vm._v(
-                  "\n                            En savoir plus\n                        "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "col-md-6 col-12 technos" }, [
-            _c("li", { staticClass: "title" }, [
-              _vm._v(
-                "\n                            Développé avec\n                        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [_vm._v("HTML & CSS (Bootstrap)")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("Javascript")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "project" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-3 col-12" }, [
-            _c("img", {
-              staticClass: "logo",
-              attrs: {
-                src: "public/images/projects/coincoinfpv.png",
-                alt: "Logo du projet"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-9 col-12 d-flex flex-column justify-content-center"
-            },
-            [
-              _c("div", { staticClass: "name" }, [
-                _c("span", { staticClass: "prefix" }, [_vm._v("- ")]),
-                _vm._v("CoinCoin du FPV")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("Un site d'achat et de revente de pièces dédiées au FPV")
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card row" }, [
-          _c("div", { staticClass: "col-md-6 col-12 buttons" }, [
-            _c(
-              "a",
-              { staticClass: "btn", attrs: { href: "#", target: "_blank" } },
-              [
-                _vm._v(
-                  "\n                            En savoir plus\n                        "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "col-md-6 col-12 technos" }, [
-            _c("li", { staticClass: "title" }, [
-              _vm._v(
-                "\n                            Développé avec\n                        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [_vm._v("HTML & CSS (Bootstrap)")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("PHP (WordPress) & SQL")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("Javascript")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "divider divider-row" }, [
-        _c("div", { staticClass: "bar" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "text" }, [_vm._v("2019")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "bar" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "project" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-3 col-12" }, [
-            _c("img", {
-              staticClass: "logo",
-              attrs: {
-                src: "public/images/projects/aerosaver.png",
-                alt: "Logo du projet"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-9 col-12 d-flex flex-column justify-content-center"
-            },
-            [
-              _c("div", { staticClass: "name" }, [
-                _c("span", { staticClass: "prefix" }, [_vm._v("- ")]),
-                _vm._v("AeroSaver")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Projet de fin d'année pour porter secours aux victimes de noyades"
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card row" }, [
-          _c("div", { staticClass: "col-md-6 col-12 buttons" }, [
-            _c(
-              "a",
-              { staticClass: "btn", attrs: { href: "#", target: "_blank" } },
-              [
-                _vm._v(
-                  "\n                            En savoir plus\n                        "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "col-md-6 col-12 technos" }, [
-            _c("li", { staticClass: "title" }, [
-              _vm._v(
-                "\n                            Développé avec\n                        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [_vm._v("C++")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "divider divider-row" }, [
-        _c("div", { staticClass: "bar" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "text" }, [_vm._v("2017")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "bar" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "project" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-3 col-12" }, [
-            _c("img", {
-              staticClass: "logo",
-              attrs: {
-                src: "public/images/projects/monopoli.png",
-                alt: "Logo du projet"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-9 col-12 d-flex flex-column justify-content-center"
-            },
-            [
-              _c("div", { staticClass: "name" }, [
-                _c("span", { staticClass: "prefix" }, [_vm._v("- ")]),
-                _vm._v("Monopo.li")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("Un vrai jeu Monopoly sur un navigateur internet !")
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card row" }, [
-          _c("div", { staticClass: "col-md-6 col-12 buttons" }, [
-            _c(
-              "a",
-              { staticClass: "btn", attrs: { href: "#", target: "_blank" } },
-              [
-                _vm._v(
-                  "\n                            En savoir plus\n                        "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", { staticClass: "col-md-6 col-12 technos" }, [
-            _c("li", { staticClass: "title" }, [
-              _vm._v(
-                "\n                            Développé avec\n                        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [_vm._v("HTML & CSS")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("Javascript")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("VueJS")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("SocketIO")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("NodeJS")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "divider divider-row" }, [
-        _c("div", { staticClass: "bar" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "text" }, [_vm._v("2016")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "bar" })
-      ])
-    ])
   }
 ]
 Homevue_type_template_id_fae5bece_render._withStripped = true
@@ -23128,6 +22813,358 @@ var SkillSection_component = normalizeComponent(
 if (false) { var SkillSection_api; }
 SkillSection_component.options.__file = "src/views/sections/SkillSection.vue"
 /* harmony default export */ const SkillSection = (SkillSection_component.exports);
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/sections/ProjectSection.vue?vue&type=template&id=5b81b003&
+var ProjectSectionvue_type_template_id_5b81b003_render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "section",
+    { ref: "projects", staticClass: "bright", attrs: { id: "projects" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm.timeline.length == 0
+        ? _c(
+            "button",
+            { staticClass: "btn btn-blue", on: { click: _vm.loadTimeline } },
+            [
+              _c("i", { staticClass: "fas fa-sync-alt" }),
+              _vm._v(" Charger les projets\n        ")
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.timeline.length != 0
+        ? _c(
+            "div",
+            { staticClass: "timeline" },
+            [
+              _vm._l(_vm.timeline, function(row, index) {
+                return [
+                  index != 0
+                    ? _c(
+                        "div",
+                        { key: index, staticClass: "divider divider-row" },
+                        [
+                          _c("div", { staticClass: "bar" }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "text" }, [
+                            _vm._v(_vm._s(row.year))
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "bar" })
+                        ]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm._l(row.projects, function(project, projectIndex) {
+                    return _c(
+                      "project-card",
+                      _vm._b(
+                        { key: row.year + projectIndex },
+                        "project-card",
+                        project,
+                        false
+                      )
+                    )
+                  })
+                ]
+              })
+            ],
+            2
+          )
+        : _vm._e()
+    ]
+  )
+}
+var ProjectSectionvue_type_template_id_5b81b003_staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "sectionHeader" }, [
+      _c("img", {
+        staticClass: "icon",
+        attrs: {
+          src: "public/images/rocket.png",
+          alt: "Icone représentant une fusée"
+        }
+      }),
+      _vm._v(" "),
+      _c("h3", [_vm._v("MES PROJETS")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "spacer" }),
+      _vm._v(" "),
+      _c("h4", [
+        _vm._v(
+          "Voici quelques projets sur lesquels j'ai pu travailler ces dernières années."
+        )
+      ])
+    ])
+  }
+]
+ProjectSectionvue_type_template_id_5b81b003_render._withStripped = true
+
+
+;// CONCATENATED MODULE: ./src/views/sections/ProjectSection.vue?vue&type=template&id=5b81b003&
+
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/components/ProjectCard.vue?vue&type=template&id=5b46f6ca&
+var ProjectCardvue_type_template_id_5b46f6ca_render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.isValid
+    ? _c("div", { staticClass: "project" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-3 col-12" }, [
+            _c("img", {
+              staticClass: "logo",
+              attrs: {
+                src: "public/images/projects/" + _vm.logo,
+                alt: "Logo du projet"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-md-9 col-12 d-flex flex-column justify-content-center"
+            },
+            [
+              _c("div", { staticClass: "name" }, [
+                _c("span", { staticClass: "prefix" }, [_vm._v("- ")]),
+                _vm._v("\n\t\t\t\t\t\t" + _vm._s(_vm.name) + "\n\t\t\t\t\t")
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.description))])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card row" }, [
+          _c("div", { staticClass: "col-md-6 col-12 buttons" }, [
+            _vm.repository
+              ? _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-border",
+                    attrs: { href: _vm.repository, target: "_blank" }
+                  },
+                  [
+                    _c("i", {
+                      staticClass: "fab fa-github",
+                      attrs: { "aria-hidden": "true" }
+                    }),
+                    _vm._v(" Voir sur GitHub\n                ")
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+              _vm._v("En savoir plus")
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            { staticClass: "col-md-6 col-12 technos" },
+            [
+              _c("li", { staticClass: "title" }, [_vm._v("Développé avec")]),
+              _vm._v(" "),
+              _vm._l(_vm.technos, function(techno, index) {
+                return _c("li", { key: _vm.name + index }, [
+                  _vm._v(_vm._s(techno))
+                ])
+              })
+            ],
+            2
+          )
+        ])
+      ])
+    : _vm._e()
+}
+var ProjectCardvue_type_template_id_5b46f6ca_staticRenderFns = []
+ProjectCardvue_type_template_id_5b46f6ca_render._withStripped = true
+
+
+;// CONCATENATED MODULE: ./src/views/components/ProjectCard.vue?vue&type=template&id=5b46f6ca&
+
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/components/ProjectCard.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const ProjectCardvue_type_script_lang_js_ = ({
+
+	props: {
+		name: String,
+		description: String,
+		technos: Array,
+		repository: String,
+		logo: String
+	},
+	methods: {
+
+		isValid: function(){
+
+			this.name = this.name.trim()
+			this.description = this.description.trim()
+
+			return (this.name != '' && this.description != '')
+
+		}
+
+	}
+
+});
+
+;// CONCATENATED MODULE: ./src/views/components/ProjectCard.vue?vue&type=script&lang=js&
+ /* harmony default export */ const components_ProjectCardvue_type_script_lang_js_ = (ProjectCardvue_type_script_lang_js_); 
+;// CONCATENATED MODULE: ./src/views/components/ProjectCard.vue
+
+
+
+
+
+/* normalize component */
+;
+var ProjectCard_component = normalizeComponent(
+  components_ProjectCardvue_type_script_lang_js_,
+  ProjectCardvue_type_template_id_5b46f6ca_render,
+  ProjectCardvue_type_template_id_5b46f6ca_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var ProjectCard_api; }
+ProjectCard_component.options.__file = "src/views/components/ProjectCard.vue"
+/* harmony default export */ const ProjectCard = (ProjectCard_component.exports);
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/sections/ProjectSection.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ const ProjectSectionvue_type_script_lang_js_ = ({
+  components: { ProjectCard: ProjectCard },
+    data(){
+        return {
+            
+            timeline: []
+
+        }
+    },
+    methods: {
+        loadTimeline: function(){
+            fetch('/public/data/projectTimeline.json')
+            .then(data => data.json())
+            .then(data => {
+                this.timeline = data
+            })
+        }
+    },
+    mounted: function(){
+        
+        this.loadTimeline()
+
+    }
+});
+
+;// CONCATENATED MODULE: ./src/views/sections/ProjectSection.vue?vue&type=script&lang=js&
+ /* harmony default export */ const sections_ProjectSectionvue_type_script_lang_js_ = (ProjectSectionvue_type_script_lang_js_); 
+;// CONCATENATED MODULE: ./src/views/sections/ProjectSection.vue
+
+
+
+
+
+/* normalize component */
+;
+var ProjectSection_component = normalizeComponent(
+  sections_ProjectSectionvue_type_script_lang_js_,
+  ProjectSectionvue_type_template_id_5b81b003_render,
+  ProjectSectionvue_type_template_id_5b81b003_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var ProjectSection_api; }
+ProjectSection_component.options.__file = "src/views/sections/ProjectSection.vue"
+/* harmony default export */ const ProjectSection = (ProjectSection_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/sections/ResumeSection.vue?vue&type=template&id=2d00ca5e&
 var ResumeSectionvue_type_template_id_2d00ca5e_render = function() {
   var _vm = this
@@ -23909,186 +23946,9 @@ ContactSection_component.options.__file = "src/views/sections/ContactSection.vue
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 // Sections ==========----------
+
 
 
 
@@ -24096,6 +23956,7 @@ ContactSection_component.options.__file = "src/views/sections/ContactSection.vue
 /* harmony default export */ const Homevue_type_script_lang_js_ = ({
 	components: {
         'skill-section': SkillSection,
+        'project-section': ProjectSection,
         'resume-section': ResumeSection,
         'contact-section': ContactSection,
 	}
@@ -24428,8 +24289,8 @@ var Parcours_component = normalizeComponent(
 if (false) { var Parcours_api; }
 Parcours_component.options.__file = "src/views/Parcours.vue"
 /* harmony default export */ const Parcours = (Parcours_component.exports);
-;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/ProjectDescription.vue?vue&type=template&id=80b46546&
-var ProjectDescriptionvue_type_template_id_80b46546_render = function() {
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/Project.vue?vue&type=template&id=55fa6d4f&
+var Projectvue_type_template_id_55fa6d4f_render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -24441,13 +24302,13 @@ var ProjectDescriptionvue_type_template_id_80b46546_render = function() {
     ])
   ])
 }
-var ProjectDescriptionvue_type_template_id_80b46546_staticRenderFns = []
-ProjectDescriptionvue_type_template_id_80b46546_render._withStripped = true
+var Projectvue_type_template_id_55fa6d4f_staticRenderFns = []
+Projectvue_type_template_id_55fa6d4f_render._withStripped = true
 
 
-;// CONCATENATED MODULE: ./src/views/ProjectDescription.vue?vue&type=template&id=80b46546&
+;// CONCATENATED MODULE: ./src/views/Project.vue?vue&type=template&id=55fa6d4f&
 
-;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/ProjectDescription.vue?vue&type=script&lang=js&
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/Project.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -24461,13 +24322,13 @@ ProjectDescriptionvue_type_template_id_80b46546_render._withStripped = true
 //
 //
 
-/* harmony default export */ const ProjectDescriptionvue_type_script_lang_js_ = ({
+/* harmony default export */ const Projectvue_type_script_lang_js_ = ({
 
 });
 
-;// CONCATENATED MODULE: ./src/views/ProjectDescription.vue?vue&type=script&lang=js&
- /* harmony default export */ const views_ProjectDescriptionvue_type_script_lang_js_ = (ProjectDescriptionvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./src/views/ProjectDescription.vue
+;// CONCATENATED MODULE: ./src/views/Project.vue?vue&type=script&lang=js&
+ /* harmony default export */ const views_Projectvue_type_script_lang_js_ = (Projectvue_type_script_lang_js_); 
+;// CONCATENATED MODULE: ./src/views/Project.vue
 
 
 
@@ -24475,10 +24336,10 @@ ProjectDescriptionvue_type_template_id_80b46546_render._withStripped = true
 
 /* normalize component */
 ;
-var ProjectDescription_component = normalizeComponent(
-  views_ProjectDescriptionvue_type_script_lang_js_,
-  ProjectDescriptionvue_type_template_id_80b46546_render,
-  ProjectDescriptionvue_type_template_id_80b46546_staticRenderFns,
+var Project_component = normalizeComponent(
+  views_Projectvue_type_script_lang_js_,
+  Projectvue_type_template_id_55fa6d4f_render,
+  Projectvue_type_template_id_55fa6d4f_staticRenderFns,
   false,
   null,
   null,
@@ -24487,9 +24348,9 @@ var ProjectDescription_component = normalizeComponent(
 )
 
 /* hot reload */
-if (false) { var ProjectDescription_api; }
-ProjectDescription_component.options.__file = "src/views/ProjectDescription.vue"
-/* harmony default export */ const ProjectDescription = (ProjectDescription_component.exports);
+if (false) { var Project_api; }
+Project_component.options.__file = "src/views/Project.vue"
+/* harmony default export */ const Project = (Project_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/NotFound.vue?vue&type=template&id=46a88b29&
 var NotFoundvue_type_template_id_46a88b29_render = function() {
   var _vm = this
