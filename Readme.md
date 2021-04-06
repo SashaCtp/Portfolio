@@ -13,7 +13,7 @@ Technologies & langages utilisés:
 
 Compile le projet dans le répertoire `app`.
 
-```npm run docker```
+```sudo npm run docker```
 
 Construit l'image Docker du Portfolio (nom de l'image : *portfolio*), qui écoute sur le port 80 du conteneur.
 
