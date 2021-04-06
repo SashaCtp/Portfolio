@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Header from './js/sections/Header.vue'
-import Footer from './js/sections/Footer.vue'
+import Header from './views/sections/Header.vue'
+import Footer from './views/sections/Footer.vue'
 
 // Pages ==========----------
 

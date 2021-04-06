@@ -327,9 +327,9 @@
 
 <script>
 // Sections ==========----------
-import SkillSection from '../js/sections/SkillSection.vue'
-import ResumeSection from '../js/sections/ResumeSection.vue'
-import ContactSection from '../js/sections/ContactSection.vue'
+import SkillSection from './sections/SkillSection.vue'
+import ResumeSection from './sections/ResumeSection.vue'
+import ContactSection from './sections/ContactSection.vue'
 
 export default {
 	components: {
