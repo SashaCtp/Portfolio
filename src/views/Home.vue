@@ -33,14 +33,13 @@
                                 d'informatique, d'aéronautique et d'ingéniérie.
                             </p>
                             <p>
-                                <span class="tab">Après</span> avoir suivis un an de CPGE, j'ai décidé d'intégrer un IUT Informatique afin d'acquérir de
-                                solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur.
+                                <span class="tab">Après</span> avoir suivis un an de CPGE, j'ai décidé d'intégrer l'IUT Informatique de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur. Cette première année m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.
                             </p>
                             <p>
                                 <span class="tab">A</span> la sortie de cette école d'ingénieur, je vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués. Vous trouverez ici <a href="https://www.linkedin.com/in/sasha-contrepois/" target="_blank">mon profil LinkedIn</a>.
                             </p> 
                             <p>
-                                <span class="tab">Je</span> suis quelqu'un de dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page <a href="https://github.com/SashaCtp" target="_blank">GitHub</a>.
+                                <span class="tab">Je</span> suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page <a href="https://github.com/SashaCtp" target="_blank">GitHub</a>.
                             </p>
 
                             <div class="row justify-content-center">
