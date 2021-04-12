@@ -1,0 +1,20 @@
+.loader{
+    text-align: center;
+    color: #333;
+}
+
+.loader i{
+    font-size: 50px;
+}
+
+.loader p{
+    font-size: 1.2em;
+}
+
+.loader.loader-primary i{
+    color: #546de5;
+}
+
+.loader.loader-grey i{
+    color: #eee;
+}
