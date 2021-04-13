@@ -1,7 +1,7 @@
 [
     {
         "name": "HTML & CSS",
-        "infos": "Framework Boostrap, SASS",
+        "infos": "Framework Bootstrap, SASS",
         "favorite": true
     },
     {
@@ -22,7 +22,7 @@
     },
     {
         "name": "C & C++",
-        "infos": ""
+        "infos": "Arduino"
     },
     {
         "name": "Java",

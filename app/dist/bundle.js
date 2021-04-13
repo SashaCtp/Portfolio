@@ -22398,7 +22398,7 @@ var Homevue_type_template_id_fae5bece_staticRenderFns = [
               _c("p", [
                 _c("span", { staticClass: "tab" }, [_vm._v("Après")]),
                 _vm._v(
-                  " avoir suivis un an de CPGE, j'ai décidé d'intégrer un IUT Informatique afin d'acquérir de\n                            solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur.\n                        "
+                  " avoir suivis un an de CPGE, j'ai décidé d'intégrer l'IUT Informatique de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur. Cette première année m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.\n                        "
                 )
               ]),
               _vm._v(" "),
@@ -22423,7 +22423,7 @@ var Homevue_type_template_id_fae5bece_staticRenderFns = [
               _c("p", [
                 _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
                 _vm._v(
-                  " suis quelqu'un de dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page "
+                  " suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page "
                 ),
                 _c(
                   "a",
@@ -23797,7 +23797,6 @@ if (false) { var ContactSection_api; }
 ContactSection_component.options.__file = "src/views/sections/ContactSection.vue"
 /* harmony default export */ const ContactSection = (ContactSection_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/Home.vue?vue&type=script&lang=js&
-//
 //
 //
 //
