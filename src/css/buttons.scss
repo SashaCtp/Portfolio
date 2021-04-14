@@ -1,10 +1,7 @@
 /*
     BUTTON STYLE
 */
-
-$primaryColor: #546de5;
-$secondaryColor: #505B67;
-$lightColor: #989899;
+@import './colors.scss';
 
 .btn{
 
@@ -62,6 +59,13 @@ $lightColor: #989899;
     border-color: #eee;
 }
 
+.btn.btn-red{
+    border: none;
+    color: #fff;
+    background: $redColor;
+    border-color: $redColor;
+}
+
 .btn.btn-large{
     max-width: 300px;
     width: 100%;
@@ -79,4 +83,14 @@ $lightColor: #989899;
 
     background: none;
     border: 2px solid;
+}
+
+.btn.btn-primary.btn-border{
+    color: $primaryColor;
+}
+.btn.btn-secondary.btn.btn-border{
+    color: $secondaryColor;
+}
+.btn.btn-red.btn.btn-border{
+    color: $redColor;
 }
