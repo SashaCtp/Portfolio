@@ -44,7 +44,7 @@
 
                             <div class="row justify-content-center">
                                 <div class="col-12 col-sm-6">
-                                    <a href="parcours.html" class="btn btn-blue">Mon parcours</a>
+                                    <a href="parcours.html" class="btn btn-primary">Mon parcours</a>
                                 </div>
                             </div>
 							

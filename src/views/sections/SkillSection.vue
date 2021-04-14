@@ -10,7 +10,7 @@
 
                 <div class="row align-items-center" v-if="skills.length == 0">
                     
-                    <button class="btn btn-secondary" @click="loadSkills">Charger <i class="fas fa-sync-alt"></i></button>
+                    <button class="btn btn-primary" @click="loadSkills">Charger <i class="fas fa-sync-alt"></i></button>
 
                 </div>
 

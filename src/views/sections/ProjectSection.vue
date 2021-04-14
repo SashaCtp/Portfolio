@@ -8,7 +8,7 @@
                 <h4>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h4>
             </div>
 
-            <button class="btn btn-blue" v-if="timeline.length == 0" @click="loadTimeline">
+            <button class="btn btn-primary" v-if="timeline.length == 0" @click="loadTimeline">
                 <i class="fas fa-sync-alt"></i> Charger les projets
             </button>
 

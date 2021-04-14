@@ -1,0 +1,82 @@
+/*
+    BUTTON STYLE
+*/
+
+$primaryColor: #546de5;
+$secondaryColor: #505B67;
+$lightColor: #989899;
+
+.btn{
+
+    display: block;
+
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+
+    margin: 10px auto;
+
+    border-radius: 20px;
+    border: none;
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #4D5762;
+    background: #fff;
+
+    font-size: 15px;
+
+    transition: all 0.2s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+
+.btn:active{
+    transform: scale(0.99);
+    transition: transform .2s;
+}
+
+.btn.btn-primary{
+    border: none;
+    background: $primaryColor;
+    border-color: $primaryColor;
+    color: #fff;
+}
+
+.btn.btn-secondary{
+    border: none;
+    color: #fff;
+    background: $secondaryColor;
+    border-color: $secondaryColor;
+}
+
+.btn.btn-light{
+    border: none;
+    color: #4D5762;
+    background: #eee;
+    border-color: #eee;
+}
+
+.btn.btn-large{
+    max-width: 300px;
+    width: 100%;
+    height:60px;
+    line-height: 60px;
+    border-radius: 40px;
+
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.btn.btn-border{
+    font-weight: bold;
+    color: #fff;
+
+    background: none;
+    border: 2px solid;
+}
