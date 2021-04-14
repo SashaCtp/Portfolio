@@ -3,6 +3,7 @@
         "year": 2021,
         "projects" : [
             {
+                "id": 1,
                 "name": "Portfolio",
                 "description": "Un site pour présenter mes compétences et mes projets",
                 "technos" : [
@@ -15,6 +16,7 @@
                 "repository": "//github.com/SashaCtp/Portfolio",
                 "logo": "portfolio.jpg"
             },{
+                "id": 2,
                 "name": "Balls Of Steel",
                 "description": "Un plugin Java pour jouer entre amis !",
                 "technos": [
@@ -30,6 +32,7 @@
         "year": 2020,
         "projects": [
             {
+                "id": 3,
                 "name": "CoinCoin du FPV",
                 "description": "Un site d'achat et de revente de pièces dédiées au FPV",
                 "technos": [
@@ -46,6 +49,7 @@
         "year": 2019,
         "projects": [
             {
+                "id": 4,
                 "name": "AeroSaver",
                 "description": "Projet de fin d'année pour porter secours aux victimes de noyades",
                 "technos" : [
@@ -61,6 +65,7 @@
         "year": 2017,
         "projects": [
             {
+                "id": 5,
                 "name": "Monopo.li",
                 "description": "Un vrai jeu Monopoly sur un navigateur internet !",
                 "technos": [
@@ -78,6 +83,7 @@
         "year": 2016,
         "projects": [
             {
+                "id": 6,
                 "name": "RubyzGames",
                 "description": "Un serveur de jeu innovant et amusant !",
                 "technos": [
