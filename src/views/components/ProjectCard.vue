@@ -1,43 +1,37 @@
 <template>
+<div class="col-12 col-md-6 col-ld-4">
   	<div class="project" v-if="isValid">
-		<div class="row">
-			<div class="col-md-3 col-12">
-				<img
-					class="logo"
-					:src="'public/images/projects/' + logo"
-					alt="Logo du projet"
-				/>
-			</div>
+		<img
+			class="logo"
+			:src="'public/images/projects/' + logo"
+			alt="Logo du projet"
+		/>
 
-			<div class="col-md-9 col-12 d-flex flex-column justify-content-center">
-				<div class="name">
-					<span class="prefix">- </span>
-						{{ name }}
-					</div>
-				<p>{{ description }}</p>
-			</div>
+		<div>
+			<div class="name">{{ name }}</div>
+			<p class="text-center">{{ description }}</p>
 		</div>
 
-		<div class="card row">
-			<div class="col-md-6 col-12 buttons">
-				<a v-if="repository" :href="repository" target="_blank" class="btn btn-border">
-					<i class="fab fa-github" aria-hidden="true"></i> Voir sur GitHub
-                </a>
-				<a class="btn" href="#">En savoir plus</a>
-			</div>
-
-			<ul class="col-md-6 col-12 technos">
-				<li class="title">Développé avec</li>
-				<li v-for="(techno, index) in technos" :key="name + index">{{ techno }}</li>
-			</ul>
+		<div class="tags">
+			<div class="item" v-for="(techno, index) in technos" :key="name + index" >{{ techno }}</div>
 		</div>
+
+		<div class="buttons">
+			<a v-if="repository" :href="repository" target="_blank" class="btn btn-primary">
+				<i class="fab fa-github" aria-hidden="true"></i> Voir sur GitHub
+            </a>
+			<router-link class="btn btn-secondary btn-border" :to="getProjectLink()" v-if="id">En savoir plus</router-link>
+		</div>
+
   	</div>
+</div>
 </template>
 
 <script>
 export default {
 
 	props: {
+		id: Number,
 		name: String,
 		description: String,
 		technos: Array,
@@ -52,6 +46,11 @@ export default {
 			this.description = this.description.trim()
 
 			return (this.name != '' && this.description != '')
+		},
+		getProjectLink : function(){
+
+			let url = '/project/' + this.id + '/' + this.name.toLowerCase().replace(/\s/g, "")
+			return url
 
 		}
 

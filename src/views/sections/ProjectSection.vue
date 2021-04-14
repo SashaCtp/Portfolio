@@ -22,8 +22,10 @@
                         <div class="bar"></div>
                     </div>
 
-                    <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + projectIndex" />
-                    
+                    <div class="row justify-content-center" :key="index">
+                        <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + projectIndex" />
+                    </div>
+
                 </template>
 
             </div>
