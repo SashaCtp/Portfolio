@@ -31,7 +31,7 @@
 export default {
 
 	props: {
-		id: Number,
+		id: String,
 		name: String,
 		description: String,
 		technos: Array,
@@ -49,8 +49,7 @@ export default {
 		},
 		getProjectLink : function(){
 
-			let url = '/project/' + this.id + '/' + this.name.toLowerCase().replace(/\s/g, "")
-			return url
+			return '/project/' + this.id
 
 		}
 

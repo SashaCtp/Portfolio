@@ -14,7 +14,7 @@ Vue.use(VueRouter)
 const routes = [
     { path: '/', component: Home },
     { path: '/parcours', component: Parcours },
-    { path: '/project/:id/:name', component: Project},
+    { path: '/project/:id', component: Project},
     { path: '*', component: NotFound }
 ]
 

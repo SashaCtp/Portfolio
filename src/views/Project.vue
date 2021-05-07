@@ -77,9 +77,9 @@ export default{
             try{
                 console.log('🔁 Fetching data from the server ...')
 
-                let id = Number.parseInt(this.$route.params.id)
-                let name = this.$route.params.name.toLowerCase()
-                let url = '/public/data/projects/' + id + '_' + name + '.json'
+                // TODO : Verifier les possibles problèmes de sécurité
+                let id = this.$route.params.id;
+                let url = '/public/data/projects/' + id + '.json'
 
                 // TODO : A remplacer avec l'appel à l'API -- SOLUTION TEMPORAIRE
                 fetch(url)

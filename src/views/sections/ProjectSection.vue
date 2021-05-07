@@ -16,14 +16,14 @@
 
                 <template v-for="(row, index) in timeline">
 
-                    <div class="divider divider-row" v-if="index != 0" :key="index">
+                    <div class="divider divider-row" v-if="index != 0" :key="'year-' + row.year">
                         <div class="bar"></div>
                         <div class="text">{{ row.year }}</div>
                         <div class="bar"></div>
                     </div>
 
-                    <div class="row justify-content-center align-items-center" :key="index">
-                        <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + projectIndex" />
+                    <div class="row justify-content-center align-items-center" :key="'projects-year-' + row.year">
+                        <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + '-' + projectIndex" />
                     </div>
 
                 </template>

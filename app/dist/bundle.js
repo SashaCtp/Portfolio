@@ -22903,7 +22903,10 @@ var ProjectSectionvue_type_template_id_5b81b003_render = function() {
                   index != 0
                     ? _c(
                         "div",
-                        { key: index, staticClass: "divider divider-row" },
+                        {
+                          key: "year-" + row.year,
+                          staticClass: "divider divider-row"
+                        },
                         [
                           _c("div", { staticClass: "bar" }),
                           _vm._v(" "),
@@ -22919,7 +22922,7 @@ var ProjectSectionvue_type_template_id_5b81b003_render = function() {
                   _c(
                     "div",
                     {
-                      key: index,
+                      key: "projects-year-" + row.year,
                       staticClass:
                         "row justify-content-center align-items-center"
                     },
@@ -22927,7 +22930,7 @@ var ProjectSectionvue_type_template_id_5b81b003_render = function() {
                       return _c(
                         "project-card",
                         _vm._b(
-                          { key: row.year + projectIndex },
+                          { key: row.year + "-" + projectIndex },
                           "project-card",
                           project,
                           false
@@ -23089,7 +23092,7 @@ ProjectCardvue_type_template_id_5b46f6ca_render._withStripped = true
 /* harmony default export */ const ProjectCardvue_type_script_lang_js_ = ({
 
 	props: {
-		id: Number,
+		id: String,
 		name: String,
 		description: String,
 		technos: Array,
@@ -23107,8 +23110,7 @@ ProjectCardvue_type_template_id_5b46f6ca_render._withStripped = true
 		},
 		getProjectLink : function(){
 
-			let url = '/project/' + this.id + '/' + this.name.toLowerCase().replace(/\s/g, "")
-			return url
+			return '/project/' + this.id
 
 		}
 
@@ -24785,9 +24787,9 @@ LoadPlaceholder_component.options.__file = "src/views/components/LoadPlaceholder
             try{
                 console.log('🔁 Fetching data from the server ...')
 
-                let id = Number.parseInt(this.$route.params.id)
-                let name = this.$route.params.name.toLowerCase()
-                let url = '/public/data/projects/' + id + '_' + name + '.json'
+                // TODO : Verifier les possibles problèmes de sécurité
+                let id = this.$route.params.id;
+                let url = '/public/data/projects/' + id + '.json'
 
                 // TODO : A remplacer avec l'appel à l'API -- SOLUTION TEMPORAIRE
                 fetch(url)
@@ -24856,7 +24858,7 @@ vue_runtime_esm.use(vue_router_esm)
 const routes = [
     { path: '/', component: Home },
     { path: '/parcours', component: Parcours },
-    { path: '/project/:id/:name', component: Project},
+    { path: '/project/:id', component: Project},
     { path: '*', component: NotFound }
 ]
 
