@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --config webpack.config.dev.js",
+    "watchdev" : "webpack --config webpack.config.dev.js --watch",
     "dockerdev": "npm run dev && docker build -t portfolio . && echo Docker dev image built !",
     "dockerprod": "npm run prod && docker build -t portfolio . && echo Docker prod image built !",
     "prod": "webpack --config webpack.config.prod.js"

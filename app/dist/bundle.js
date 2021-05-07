@@ -22323,7 +22323,7 @@ var Homevue_type_template_id_fae5bece_render = function() {
     [
       _vm._m(0),
       _vm._v(" "),
-      _vm._m(1),
+      _c("presentation-section"),
       _vm._v(" "),
       _c("skill-section"),
       _vm._v(" "),
@@ -22358,223 +22358,6 @@ var Homevue_type_template_id_fae5bece_staticRenderFns = [
         _c("h2", [_vm._v("Etudiant & Développeur")])
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "bright", attrs: { id: "presentation" } },
-      [
-        _c("div", { staticClass: "sectionHeader" }, [
-          _c("img", {
-            staticClass: "icon",
-            attrs: {
-              src: "public/images/boy_gray.png",
-              alt: "Icone représentant un homme"
-            }
-          }),
-          _vm._v(" "),
-          _c("h3", [_vm._v("QUI SUIS-JE ?")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "spacer" })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("article", { staticClass: "col-lg-6 col-12" }, [
-              _c("h5", { attrs: { "data-nosnippet": "" } }, [
-                _vm._v("Présentation")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
-                _vm._v(
-                  " suis Sasha Contrepois, j'ai 19 ans et je suis avant tout un passioné de technologie,\n                            d'informatique, d'aéronautique et d'ingéniérie.\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("span", { staticClass: "tab" }, [_vm._v("Après")]),
-                _vm._v(
-                  " avoir suivis un an de CPGE, j'ai décidé d'intégrer l'IUT Informatique de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur. Cette première année m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("span", { staticClass: "tab" }, [_vm._v("A")]),
-                _vm._v(
-                  " la sortie de cette école d'ingénieur, je vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués. Vous trouverez ici "
-                ),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://www.linkedin.com/in/sasha-contrepois/",
-                      target: "_blank"
-                    }
-                  },
-                  [_vm._v("mon profil LinkedIn")]
-                ),
-                _vm._v(".\n                        ")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
-                _vm._v(
-                  " suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page "
-                ),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "https://github.com/SashaCtp",
-                      target: "_blank"
-                    }
-                  },
-                  [_vm._v("GitHub")]
-                ),
-                _vm._v(".\n                        ")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row justify-content-center" }, [
-                _c("div", { staticClass: "col-12 col-sm-6" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { href: "parcours.html" }
-                    },
-                    [_vm._v("Mon parcours")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("table", { staticClass: "table-blue" }, [
-                _c("thead", [
-                  _c("tr", [
-                    _c("td", { attrs: { colspan: "2" } }, [
-                      _vm._v("Je recherche actuellement")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", { attrs: { colspan: "2" } }, [
-                      _vm._v("Une alternance de 2"),
-                      _c("span", { staticClass: "text-exp" }, [_vm._v("ème")]),
-                      _vm._v(" année d'IUT Informatique")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", { staticClass: "text-bold" }, [
-                      _vm._v("Dans quel secteur ?")
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v("Informatique, défense et systèmes embarqués")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", { staticClass: "text-bold" }, [
-                      _vm._v("Pour quelles dates ?")
-                    ]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v("Du 1"),
-                      _c("span", { staticClass: "text-exp" }, [_vm._v("er")]),
-                      _vm._v(" Septembre 2021 au 31 Août 2022")
-                    ])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6 col-12 timeline" }, [
-              _c("h5", [_vm._v("Diplômes et études")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "item item-medium item-red" }, [
-                _c("div", { staticClass: "info" }, [
-                  _vm._v(
-                    "\n                                Depuis Octobre 2020\n                            "
-                  )
-                ]),
-                _vm._v("\n                            Etudiant en 1"),
-                _c("span", { staticClass: "text-exp" }, [_vm._v("ère")]),
-                _vm._v(
-                  " année d'informatique à l'IUT de l'Université de Paris\n                        "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "divider divider-row" }, [
-                _c("div", { staticClass: "bar" }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text" }, [_vm._v("2020")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "bar" })
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "item item-medium item-dark item-border" },
-                [
-                  _c("div", { staticClass: "info" }, [
-                    _vm._v(
-                      "\n                                Classe de PCSI puis PSI - De Sep. 2019 à Oct. 2020\n                            "
-                    )
-                  ]),
-                  _vm._v(
-                    "\n                            Etudiant en CPGE au Lycée Chaptal\n                        "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "item item-medium item-blue item-icon" },
-                [
-                  _c("i", { staticClass: "fas fa-graduation-cap" }),
-                  _vm._v(
-                    "\n\n                            Baccalauréat S - Sciences de l'Ingénieur, Mention TB & Anglais Européen\n                        "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "divider divider-row" }, [
-                _c("div", { staticClass: "bar" }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text" }, [_vm._v("2019")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "bar" })
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "item item-medium item-blue item-icon" },
-                [
-                  _c("i", { staticClass: "fas fa-graduation-cap" }),
-                  _vm._v(
-                    "\n\n                            Brevet d'Initiation à l'Aéronautique - Félicitations du Jury\n                        "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "divider divider-row" }, [
-                _c("div", { staticClass: "bar" }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text" }, [_vm._v("2018")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "bar" })
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
   }
 ]
 Homevue_type_template_id_fae5bece_render._withStripped = true
@@ -22582,6 +22365,281 @@ Homevue_type_template_id_fae5bece_render._withStripped = true
 
 ;// CONCATENATED MODULE: ./src/views/Home.vue?vue&type=template&id=fae5bece&
 
+;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/sections/PresentationSection.vue?vue&type=template&id=22524904&
+var PresentationSectionvue_type_template_id_22524904_render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "section",
+    { staticClass: "bright", attrs: { id: "presentation" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("article", { staticClass: "col-lg-6 col-12" }, [
+            _c("h5", { attrs: { "data-nosnippet": "" } }, [
+              _vm._v("Présentation")
+            ]),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c("div", { staticClass: "row justify-content-center" }, [
+              _c(
+                "div",
+                { staticClass: "col-12 col-sm-6" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { to: "parcours" }
+                    },
+                    [_vm._v("Mon parcours")]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(5)
+          ]),
+          _vm._v(" "),
+          _vm._m(6)
+        ])
+      ])
+    ]
+  )
+}
+var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "sectionHeader" }, [
+      _c("img", {
+        staticClass: "icon",
+        attrs: {
+          src: "public/images/boy_gray.png",
+          alt: "Icone représentant un homme"
+        }
+      }),
+      _vm._v(" "),
+      _c("h3", [_vm._v("QUI SUIS-JE ?")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "spacer" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
+      _vm._v(
+        " suis Sasha Contrepois, j'ai 19 ans et je suis avant tout un passioné de technologie,\n                            d'informatique, d'aéronautique et d'ingéniérie.\n                "
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("span", { staticClass: "tab" }, [_vm._v("Après")]),
+      _vm._v(
+        " avoir suivis un an de CPGE, j'ai décidé d'intégrer l'IUT Informatique de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur. Cette première année m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.\n                "
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("span", { staticClass: "tab" }, [_vm._v("A")]),
+      _vm._v(
+        " la sortie de cette école d'ingénieur, je vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués. Vous trouverez ici "
+      ),
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "https://www.linkedin.com/in/sasha-contrepois/",
+            target: "_blank"
+          }
+        },
+        [_vm._v("mon profil LinkedIn")]
+      ),
+      _vm._v(".\n                ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
+      _vm._v(
+        " suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page "
+      ),
+      _c(
+        "a",
+        { attrs: { href: "https://github.com/SashaCtp", target: "_blank" } },
+        [_vm._v("GitHub")]
+      ),
+      _vm._v(".\n                ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("table", { staticClass: "table-blue" }, [
+      _c("thead", [
+        _c("tr", [
+          _c("td", { attrs: { colspan: "2" } }, [
+            _vm._v("Je recherche actuellement")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("tbody", [
+        _c("tr", [
+          _c("td", { attrs: { colspan: "2" } }, [
+            _vm._v("Une alternance de 2"),
+            _c("span", { staticClass: "text-exp" }, [_vm._v("ème")]),
+            _vm._v(" année d'IUT Informatique")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", { staticClass: "text-bold" }, [
+            _vm._v("Dans quel secteur ?")
+          ]),
+          _vm._v(" "),
+          _c("td", [_vm._v("Informatique, défense et systèmes embarqués")])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", { staticClass: "text-bold" }, [
+            _vm._v("Pour quelles dates ?")
+          ]),
+          _vm._v(" "),
+          _c("td", [
+            _vm._v("Du 1"),
+            _c("span", { staticClass: "text-exp" }, [_vm._v("er")]),
+            _vm._v(" Septembre 2021 au 31 Août 2022")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-6 col-12 timeline" }, [
+      _c("h5", [_vm._v("Diplômes et études")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "item item-medium item-red" }, [
+        _c("div", { staticClass: "info" }, [
+          _vm._v(
+            "\n                                Depuis Octobre 2020\n                            "
+          )
+        ]),
+        _vm._v("\n                            Etudiant en 1"),
+        _c("span", { staticClass: "text-exp" }, [_vm._v("ère")]),
+        _vm._v(
+          " année d'informatique à l'IUT de l'Université de Paris\n                        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "divider divider-row" }, [
+        _c("div", { staticClass: "bar" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [_vm._v("2020")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "bar" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "item item-medium item-dark item-border" }, [
+        _c("div", { staticClass: "info" }, [
+          _vm._v(
+            "\n                                Classe de PCSI puis PSI - De Sep. 2019 à Oct. 2020\n                            "
+          )
+        ]),
+        _vm._v(
+          "\n                            Etudiant en CPGE au Lycée Chaptal\n                        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "item item-medium item-blue item-icon" }, [
+        _c("i", { staticClass: "fas fa-graduation-cap" }),
+        _vm._v(
+          "\n\n                            Baccalauréat S - Sciences de l'Ingénieur, Mention TB & Anglais Européen\n                        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "divider divider-row" }, [
+        _c("div", { staticClass: "bar" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [_vm._v("2019")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "bar" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "item item-medium item-blue item-icon" }, [
+        _c("i", { staticClass: "fas fa-graduation-cap" }),
+        _vm._v(
+          "\n\n                            Brevet d'Initiation à l'Aéronautique - Félicitations du Jury\n                        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "divider divider-row" }, [
+        _c("div", { staticClass: "bar" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [_vm._v("2018")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "bar" })
+      ])
+    ])
+  }
+]
+PresentationSectionvue_type_template_id_22524904_render._withStripped = true
+
+
+;// CONCATENATED MODULE: ./src/views/sections/PresentationSection.vue?vue&type=template&id=22524904&
+
+;// CONCATENATED MODULE: ./src/views/sections/PresentationSection.vue
+
+var script = {}
+
+
+/* normalize component */
+;
+var PresentationSection_component = normalizeComponent(
+  script,
+  PresentationSectionvue_type_template_id_22524904_render,
+  PresentationSectionvue_type_template_id_22524904_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var PresentationSection_api; }
+PresentationSection_component.options.__file = "src/views/sections/PresentationSection.vue"
+/* harmony default export */ const PresentationSection = (PresentationSection_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/sections/SkillSection.vue?vue&type=template&id=dac82cea&
 var SkillSectionvue_type_template_id_dac82cea_render = function() {
   var _vm = this
@@ -22860,7 +22918,11 @@ var ProjectSectionvue_type_template_id_5b81b003_render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { key: index, staticClass: "row justify-content-center" },
+                    {
+                      key: index,
+                      staticClass:
+                        "row justify-content-center align-items-center"
+                    },
                     _vm._l(row.projects, function(project, projectIndex) {
                       return _c(
                         "project-card",
@@ -23827,126 +23889,6 @@ ContactSection_component.options.__file = "src/views/sections/ContactSection.vue
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 // Sections ==========----------
 
@@ -23954,8 +23896,10 @@ ContactSection_component.options.__file = "src/views/sections/ContactSection.vue
 
 
 
+
 /* harmony default export */ const Homevue_type_script_lang_js_ = ({
 	components: {
+        'presentation-section': PresentationSection,
         'skill-section': SkillSection,
         'project-section': ProjectSection,
         'resume-section': ResumeSection,
@@ -24494,13 +24438,13 @@ NotFoundvue_type_template_id_46a88b29_render._withStripped = true
 
 ;// CONCATENATED MODULE: ./src/views/NotFound.vue
 
-var script = {}
+var NotFound_script = {}
 
 
 /* normalize component */
 ;
 var NotFound_component = normalizeComponent(
-  script,
+  NotFound_script,
   NotFoundvue_type_template_id_46a88b29_render,
   NotFoundvue_type_template_id_46a88b29_staticRenderFns,
   false,
