@@ -22984,7 +22984,7 @@ var ProjectCardvue_type_template_id_5b46f6ca_render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-12 col-md-6 col-ld-4" }, [
+  return _c("div", { staticClass: "col-12 col-md-6 col-lg-4" }, [
     _vm.isValid
       ? _c("div", { staticClass: "project" }, [
           _c("img", {
