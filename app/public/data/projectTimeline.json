@@ -3,6 +3,19 @@
         "year": 2021,
         "projects" : [
             {
+                "id": "chess",
+                "name": "Jeu d'échecs",
+                "description": "Projet de 1ère année de DUT : Un jeu d'échecs en Java",
+                "technos": [
+                    "Java",
+                    "jUnit 5",
+                    "Git"
+                ],
+                "repository": "//github.com/SashaCtp/Echecs",
+                "logo": "chess.png",
+                "credit": "https://www.flaticon.com/authors/freepik"
+            },
+            {
                 "id": "portfolio",
                 "name": "Portfolio",
                 "description": "Un site pour présenter mes compétences et mes projets",
