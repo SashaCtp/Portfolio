@@ -212,8 +212,8 @@ h2.placeholder{
 p{
     color: #4D5762;
 
-    font-family: 'Tw Cen MT', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.1em;
     text-align: justify;
 
     padding: 10px 0;
@@ -673,6 +673,20 @@ section{
 }
 
 /*
+======== Skills ======================================================
+*/
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.skills .item{
+    max-width: 350px;
+    width: 100%;
+}
+
+/*
 ======== CV ======================================================
 */
 
@@ -851,7 +865,6 @@ table{
     border-collapse: collapse;
     
     color: #444444;
-    font-family: 'Tw Cen MT', sans-serif;
 
     border-radius: 5px 5px 0 0;
     overflow: hidden;
