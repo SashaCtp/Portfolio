@@ -8,7 +8,7 @@
                 <h4>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h4>
             </div>
 
-            <button class="btn btn-blue" v-if="timeline.length == 0" @click="loadTimeline">
+            <button class="btn btn-primary" v-if="timeline.length == 0" @click="loadTimeline">
                 <i class="fas fa-sync-alt"></i> Charger les projets
             </button>
 
@@ -16,14 +16,16 @@
 
                 <template v-for="(row, index) in timeline">
 
-                    <div class="divider divider-row" v-if="index != 0" :key="index">
+                    <div class="divider divider-row" v-if="index != 0" :key="'year-' + row.year">
                         <div class="bar"></div>
                         <div class="text">{{ row.year }}</div>
                         <div class="bar"></div>
                     </div>
 
-                    <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + projectIndex" />
-                    
+                    <div class="row justify-content-center align-items-center" :key="'projects-year-' + row.year">
+                        <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + '-' + projectIndex" />
+                    </div>
+
                 </template>
 
             </div>

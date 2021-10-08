@@ -3,6 +3,20 @@
         "year": 2021,
         "projects" : [
             {
+                "id": "chess",
+                "name": "Jeu d'échecs",
+                "description": "Projet de 1ère année de DUT : Un jeu d'échecs en Java",
+                "technos": [
+                    "Java",
+                    "jUnit 5",
+                    "Git"
+                ],
+                "repository": "//github.com/SashaCtp/Echecs",
+                "logo": "chess.png",
+                "credit": "https://www.flaticon.com/authors/freepik"
+            },
+            {
+                "id": "portfolio",
                 "name": "Portfolio",
                 "description": "Un site pour présenter mes compétences et mes projets",
                 "technos" : [
@@ -14,7 +28,26 @@
                 ],
                 "repository": "//github.com/SashaCtp/Portfolio",
                 "logo": "portfolio.jpg"
-            },{
+            }, {
+                "id": "duel",
+                "name": "Duel",
+                "description": "Projet de 1ère année de DUT : Le jeu de carte Duel en Java",
+                "technos": [
+                    "Java",
+                    "jUnit 5",
+                    "Git"
+                ],
+                "repository": "//github.com/SashaCtp/Duel",
+                "logo": "duel.png",
+                "credit": "https://www.flaticon.com/free-icon/cards_4330544"
+            }
+        ]
+        
+    },{
+        "year": 2020,
+        "projects": [
+            {
+                "id": "ballsofsteel",
                 "name": "Balls Of Steel",
                 "description": "Un plugin Java pour jouer entre amis !",
                 "technos": [
@@ -23,13 +56,9 @@
                 ],
                 "repository": "//github.com/SashaCtp/BallsOfSteel",
                 "logo": "rubyzgames.png"
-            }
-        ]
-        
-    },{
-        "year": 2020,
-        "projects": [
+            },
             {
+                "id": "coincoinfpv",
                 "name": "CoinCoin du FPV",
                 "description": "Un site d'achat et de revente de pièces dédiées au FPV",
                 "technos": [
@@ -46,6 +75,7 @@
         "year": 2019,
         "projects": [
             {
+                "id": "aerosaver",
                 "name": "AeroSaver",
                 "description": "Projet de fin d'année pour porter secours aux victimes de noyades",
                 "technos" : [
@@ -61,6 +91,7 @@
         "year": 2017,
         "projects": [
             {
+                "id": "monopoly",
                 "name": "Monopo.li",
                 "description": "Un vrai jeu Monopoly sur un navigateur internet !",
                 "technos": [
@@ -78,6 +109,7 @@
         "year": 2016,
         "projects": [
             {
+                "id": "rubyzgames",
                 "name": "RubyzGames",
                 "description": "Un serveur de jeu innovant et amusant !",
                 "technos": [

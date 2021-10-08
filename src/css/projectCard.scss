@@ -1,0 +1,72 @@
+#projects .sectionHeader{
+    margin-bottom: 40px;
+}
+
+.project{
+    width: 100%;
+    max-width: 380px;
+
+    border-radius: 15px;
+
+    padding: 50px 15px 20px 15px;
+    margin: 0 auto 50px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
+    transition: all .2s;
+    border: none;
+}
+
+.project:hover{
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,.13);
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,.13);
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,.13);
+    transition: all .2s;
+}
+
+.project .logo{
+    width: 100px;
+    height: 100px;
+
+    display: block;
+}
+
+.project .name{
+    font-size: 2.6em;
+    font-family: 'OratorStd', sans-serif;
+    color: #4D5762;
+    position: relative;
+    text-align: center;
+}
+
+.project .tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project .tags .item{
+    width: auto;
+    min-height: fit-content;
+
+    color: #fff;
+    background-color: $secondaryColor;
+    font-size: .9em;
+    font-weight: normal;
+
+    margin: 10px 10px 0 10px;
+    padding: 5px 10px;
+}
+
+.project .buttons{
+    margin: 20px 0;
+}

@@ -1,0 +1,39 @@
+{
+
+    "title": "Duel",
+    "subtitle": "Projet de 1ère année de DUT : Le jeu de carte Duel en Java",
+    "rows": [
+
+        {
+            "cols": [
+                {
+                    "elements": [
+                        {
+                            "type": "title",
+                            "content": "Duel - Le jeu de carte"
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Duel est un jeu de cartes dans lequel deux joueurs (NORD et SUD) s'affrontent. Devant chacun d'eux se trouvent deux piles : Ascendante et Descendante. Les cartes du jeux vont de 1 à 60."
+                        }
+                    ]
+
+                },
+                {
+                    "elements": [
+                        {
+                            "type": "title",
+                            "content" : "Développement"
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": "Pour développer ce jeu en Java, nous avons suivis une démarche de Développement Piloté par les Tests (ou TDD). Cela nous a permi de détecter et corriger rapidement le moindre bug présent et ainsi avoir une haute qualité de code."
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+
+}

@@ -6,7 +6,7 @@
     Loading fonts
 */
 
-@import './buttons.css', './item.css', './loader.css';
+@import './buttons.scss', './item.css', './loader.css', './projectCard.scss';
 
 @font-face {
     font-family: 'OratorStd';
@@ -212,8 +212,8 @@ h2.placeholder{
 p{
     color: #4D5762;
 
-    font-family: 'Tw Cen MT', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.1em;
     text-align: justify;
 
     padding: 10px 0;
@@ -672,113 +672,18 @@ section{
     margin: 5px;
 }
 
-/* 
-======== Projects ======================================================
+/*
+======== Skills ======================================================
 */
-
-#projects .sectionHeader{
-    margin-bottom: 40px;
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
-.project{
-    
+.skills .item{
+    max-width: 350px;
     width: 100%;
-    max-width: 800px;
-
-    margin: 0 auto 50px auto;
-
-}
-
-.project .logo{
-    width: 120px;
-    height: 120px;
-
-    display: block;
-
-    margin: auto;
-    padding: 0;
-}
-
-
-.project .name{
-    font-size: 2.6em;
-    font-family: 'OratorStd', sans-serif;
-    color: #4D5762;
-    position: relative;
-}
-
-/* Medium Breakpoint */
-@media screen and (max-width: 768px){
-
-    .project .name{
-
-        text-align: center;
-        font-size: 2.3em;
-
-    }
-
-    .project .name .prefix{
-        display: none;
-    }
-
-    .project p{
-        text-align: center;
-    }
-
-}
-
-.project .card{
-    min-height: 100px;
-    width: 800px;
-
-    margin: 30px auto;
-    padding: 10px 0;
-
-    background-image: linear-gradient(to bottom right, #363795, #005C97);
-    border-radius: 30px;
-}
-
-/* Large breakpoint */
-@media screen and (max-width: 992px) {
-
-    .project .card{
-
-        width: 100%;
-
-    }
-
-}
-
-.project .buttons, .project .technos{
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#projects .timeline .project .card .technos .title{
-    color: #fff;
-    font-size: 1.1em;
-
-    margin-bottom: 10px;
-
-    font-style: normal;
-    font-family: 'OratorStd', sans-serif;
-}
-
-#projects .timeline .project .card .technos{
-
-    list-style: none;
-
-    font-family: 'Tw Cen MT', sans-serif;
-    font-size: 1.2em;
-    font-style: italic;
-    text-align: center;
-    color: #eee;
-    
 }
 
 /*
@@ -960,7 +865,6 @@ table{
     border-collapse: collapse;
     
     color: #444444;
-    font-family: 'Tw Cen MT', sans-serif;
 
     border-radius: 5px 5px 0 0;
     overflow: hidden;

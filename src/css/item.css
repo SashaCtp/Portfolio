@@ -8,12 +8,11 @@
 */
 
 .item{
-
     background: #fff;
 
     box-sizing: border-box;
 
-    padding: 8px 8px;
+    padding: 8px 12px;
     margin: 25px auto;
 
     min-height: 40px;
@@ -24,6 +23,10 @@
     color: #505B67;
     font-weight: 600;
     font-size: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     position: relative;
 
@@ -113,7 +116,7 @@
     border-radius: 5px;
 
     line-height: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: normal;
 
     background: #353b48;
