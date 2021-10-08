@@ -22391,6 +22391,8 @@ var PresentationSectionvue_type_template_id_22524904_render = function() {
             _vm._v(" "),
             _vm._m(4),
             _vm._v(" "),
+            _vm._m(5),
+            _vm._v(" "),
             _c("div", { staticClass: "row justify-content-center" }, [
               _c(
                 "div",
@@ -22407,9 +22409,7 @@ var PresentationSectionvue_type_template_id_22524904_render = function() {
                 ],
                 1
               )
-            ]),
-            _vm._v(" "),
-            _vm._m(5)
+            ])
           ]),
           _vm._v(" "),
           _vm._m(6)
@@ -22453,9 +22453,13 @@ var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", [
-      _c("span", { staticClass: "tab" }, [_vm._v("Après")]),
+      _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
       _vm._v(
-        " avoir suivis un an de CPGE, j'ai décidé d'intégrer l'IUT Informatique de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage en école d'ingénieur. Cette première année m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.\n                "
+        " suis actuellement en deuxième année de DUT Informatique à l'IUT de Paris, en alternance à Safran Landing Systems en tant qu'apprenti Ingénieur Outils d'Analyses Systèmes.\n                    "
+      ),
+      _c("br"),
+      _vm._v(
+        "\n                     Après avoir suivi une anné de CPGE, j'ai décidé d'intégrer l'IUT de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage. Cette année de CPGE m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.\n                "
       )
     ])
   },
@@ -22464,9 +22468,9 @@ var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", [
-      _c("span", { staticClass: "tab" }, [_vm._v("A")]),
+      _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
       _vm._v(
-        " la sortie de cette école d'ingénieur, je vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués. Vous trouverez ici "
+        " vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués dans le secteur des transports aériens ou ferroviaires et donc pour cela je souhaite intégrer une école d'ingénieur à la fin de mon cursus de DUT en Septembre 2022. Vous trouverez ici "
       ),
       _c(
         "a",
@@ -22488,7 +22492,18 @@ var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
     return _c("p", [
       _c("span", { staticClass: "tab" }, [_vm._v("Je")]),
       _vm._v(
-        " suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. J'ai commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page "
+        " suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. Grâce à de nombreux projets que j'ai pu mené, j'ai acquis des compétences de travail en équipe, de gestion de projet et d'équipe.\n                "
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("span", { staticClass: "tab" }, [_vm._v("J'ai")]),
+      _vm._v(
+        " commencé à programmer dès l'âge de 13 ans, et depuis, je passe mon temps libre à programmer de petits projets personnels ou de plus grande envergure. Vous pouvez en retrouver quelques'un sur ma page "
       ),
       _c(
         "a",
@@ -22502,64 +22517,37 @@ var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("table", { staticClass: "table-blue" }, [
-      _c("thead", [
-        _c("tr", [
-          _c("td", { attrs: { colspan: "2" } }, [
-            _vm._v("Je recherche actuellement")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("tbody", [
-        _c("tr", [
-          _c("td", { attrs: { colspan: "2" } }, [
-            _vm._v("Une alternance de 2"),
-            _c("span", { staticClass: "text-exp" }, [_vm._v("ème")]),
-            _vm._v(" année d'IUT Informatique")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", { staticClass: "text-bold" }, [
-            _vm._v("Dans quel secteur ?")
-          ]),
-          _vm._v(" "),
-          _c("td", [_vm._v("Informatique, défense et systèmes embarqués")])
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", { staticClass: "text-bold" }, [
-            _vm._v("Pour quelles dates ?")
-          ]),
-          _vm._v(" "),
-          _c("td", [
-            _vm._v("Du 1"),
-            _c("span", { staticClass: "text-exp" }, [_vm._v("er")]),
-            _vm._v(" Septembre 2021 au 31 Août 2022")
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6 col-12 timeline" }, [
       _c("h5", [_vm._v("Diplômes et études")]),
       _vm._v(" "),
       _c("div", { staticClass: "item item-medium item-red" }, [
         _c("div", { staticClass: "info" }, [
           _vm._v(
-            "\n                                Depuis Octobre 2020\n                            "
+            "\n                        Chargé de moderniser des logiciels d'étude de matériaux\n                    "
           )
         ]),
-        _vm._v("\n                            Etudiant en 1"),
-        _c("span", { staticClass: "text-exp" }, [_vm._v("ère")]),
-        _vm._v(
-          " année d'informatique à l'IUT de l'Université de Paris\n                        "
-        )
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [
+          _vm._v(
+            "\n                        Apprenti Ingénieur Outils d'Analyses de Structures chez Safran Landing Systems\n                    "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "item item-medium item-red" }, [
+        _c("div", { staticClass: "info" }, [
+          _vm._v(
+            "\n                        Depuis Octobre 2020\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [
+          _vm._v("\n                        Etudiant en 2"),
+          _c("span", { staticClass: "text-exp" }, [_vm._v("ème")]),
+          _vm._v(
+            " année de DUT Informatique à l'IUT de Paris\n                    "
+          )
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "divider divider-row" }, [
@@ -22573,18 +22561,21 @@ var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
       _c("div", { staticClass: "item item-medium item-dark item-border" }, [
         _c("div", { staticClass: "info" }, [
           _vm._v(
-            "\n                                Classe de PCSI puis PSI - De Sep. 2019 à Oct. 2020\n                            "
+            "\n                        Classe de PCSI puis PSI - De Sep. 2019 à Oct. 2020\n                    "
           )
         ]),
-        _vm._v(
-          "\n                            Etudiant en CPGE au Lycée Chaptal\n                        "
-        )
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [
+          _vm._v(
+            "\n                        Etudiant en CPGE au Lycée Chaptal\n                    "
+          )
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "item item-medium item-blue item-icon" }, [
         _c("i", { staticClass: "fas fa-graduation-cap" }),
         _vm._v(
-          "\n\n                            Baccalauréat S - Sciences de l'Ingénieur, Mention TB & Anglais Européen\n                        "
+          "\n\n                    Baccalauréat S - Sciences de l'Ingénieur, Mention TB & Anglais Européen\n                "
         )
       ]),
       _vm._v(" "),
@@ -22598,9 +22589,12 @@ var PresentationSectionvue_type_template_id_22524904_staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "item item-medium item-blue item-icon" }, [
         _c("i", { staticClass: "fas fa-graduation-cap" }),
-        _vm._v(
-          "\n\n                            Brevet d'Initiation à l'Aéronautique - Félicitations du Jury\n                        "
-        )
+        _vm._v(" "),
+        _c("div", { staticClass: "text" }, [
+          _vm._v(
+            "\n                        Brevet d'Initiation à l'Aéronautique - Félicitations du Jury\n                    "
+          )
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "divider divider-row" }, [
@@ -22659,21 +22653,17 @@ var SkillSectionvue_type_template_id_dac82cea_render = function() {
       : _vm._e(),
     _vm._v(" "),
     _vm.skills.length != 0
-      ? _c("div", { staticClass: "skills" }, [
-          _c(
-            "div",
-            { staticClass: "row" },
-            _vm._l(_vm.skills, function(skill, index) {
-              return _c(
-                "div",
-                { key: index, staticClass: "col-12 col-sm-6 col-lg-3" },
-                [_c("skill-card", _vm._b({}, "skill-card", skill, false))],
-                1
-              )
-            }),
-            0
-          )
-        ])
+      ? _c(
+          "div",
+          { staticClass: "skills" },
+          _vm._l(_vm.skills, function(skill, index) {
+            return _c(
+              "skill-card",
+              _vm._b({ key: index }, "skill-card", skill, false)
+            )
+          }),
+          1
+        )
       : _vm._e()
   ])
 }
@@ -22776,14 +22766,6 @@ if (false) { var SkillCard_api; }
 SkillCard_component.options.__file = "src/views/components/SkillCard.vue"
 /* harmony default export */ const SkillCard = (SkillCard_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/views/sections/SkillSection.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
