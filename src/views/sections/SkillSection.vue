@@ -22,7 +22,7 @@
 
 </template>
 
-<script>
+<script lang="ts">
 import SkillCard from '../../components/SkillCard.vue'
 
 export default {

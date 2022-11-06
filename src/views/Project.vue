@@ -81,7 +81,7 @@ export default{
 
                 // TODO : Verifier les possibles problèmes de sécurité
                 let id = this.$route.params.id;
-                let url = '/public/data/projects/' + id + '.json'
+                let url = '/data/projects/' + id + '.json'
 
                 // TODO : A remplacer avec l'appel à l'API -- SOLUTION TEMPORAIRE
                 fetch(url)
