@@ -5,7 +5,7 @@
 		<div class="sectionHeader">
 			<img
 				class="icon"
-				src="public/images/paperplane.png"
+				src="/images/paperplane.png"
 				alt="Icone représentant un avion en papier"
 			/>
 
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ContactForm from '../components/ContactForm.vue'
+import ContactForm from '../../components/ContactForm.vue'
 
 export default{
 	

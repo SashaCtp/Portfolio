@@ -35,6 +35,7 @@
 </template>
 
 <script>
+// TODO - Remove jquery 🤮
 import $ from 'jquery'
 
 export default {

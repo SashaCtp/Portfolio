@@ -2,7 +2,7 @@
            <section class="colored" id="skills">
 
                 <div class="sectionHeader">
-                    <img class="icon" src="public/images/cogwheel.png" alt="Icone représentant un engrenage" />
+                    <img class="icon" src="/images/cogwheel.png" alt="Icone représentant un engrenage" />
                     <h3>MES COMPETENCES</h3>
                     <div class="spacer"></div>
                     <h4>J'ai appris de nombreuses choses, en voici une liste non exhaustive.</h4>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import SkillCard from '../components/SkillCard.vue'
+import SkillCard from '../../components/SkillCard.vue'
 
 export default {
     
@@ -39,7 +39,7 @@ export default {
         loadSkills : function(){
 
             if(this.skills.length == 0){
-                fetch('public/data/skills.json')
+                fetch('/data/skills.json')
                 .then(data => data.json())
                 .then(data => {
                     this.skills = data

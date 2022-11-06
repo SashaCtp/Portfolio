@@ -2,7 +2,7 @@
     <section class="bright" id="presentation">
 
         <div class="sectionHeader">
-            <img class="icon" src="public/images/boy_gray.png" alt="Icone représentant un homme" />
+            <img class="icon" src="/images/boy_gray.png" alt="Icone représentant un homme" />
             <h3>QUI SUIS-JE ?</h3>
             <div class="spacer"></div>
         </div>
@@ -16,16 +16,16 @@
                     <h5 data-nosnippet>Présentation</h5>
 
                     <p>
-                        <span class="tab">Je</span> suis Sasha Contrepois, j'ai 19 ans et je suis avant tout un passioné de technologie,
+                        <span class="tab">Je</span> suis Sasha Contrepois, j'ai 20 ans et je suis avant tout un passioné de technologie,
                                 d'informatique, d'aéronautique et d'ingéniérie.
                     </p>
                     <p>
-                        <span class="tab">Je</span> suis actuellement en deuxième année de DUT Informatique à l'IUT de Paris, en alternance à Safran Landing Systems en tant qu'apprenti Ingénieur Outils d'Analyses Systèmes.
+                        <span class="tab">Je</span> suis actuellement en deuxième année de DUT Informatique à l'IUT de Paris, en alternance à Safran Landing Systems en tant qu'apprenti Ingénieur Outils d'Analyses Structures, où j'y fais du développement back-end et de la conception de base de données.
                         <br>
                          Après avoir suivi une anné de CPGE, j'ai décidé d'intégrer l'IUT de Paris afin d'acquérir de solides compétences en Informatique en vu de faire un parcours en apprentissage. Cette année de CPGE m'a permis d'acquérir de bonnes méthodes de travail, de la rigueur et de nombreuses connaissances dans les domaines scientifiques, notamment en ingéniérie.
                     </p>
                     <p>
-                        <span class="tab">Je</span> vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou systèmes embarqués dans le secteur des transports aériens ou ferroviaires et donc pour cela je souhaite intégrer une école d'ingénieur à la fin de mon cursus de DUT en Septembre 2022. Vous trouverez ici <a href="https://www.linkedin.com/in/sasha-contrepois/" target="_blank">mon profil LinkedIn</a>.
+                        <span class="tab">Je</span> vise de travailler en tant qu'ingénieur dans le secteur de la défense, en cybersécurité ou alors dans les systèmes embarqués dans le secteur des transports aériens ou ferroviaires et donc pour cela je souhaite intégrer une école d'ingénieur à la fin de mon cursus de DUT en Septembre 2022. Vous trouverez ici <a href="https://www.linkedin.com/in/sasha-contrepois/" target="_blank">mon profil LinkedIn</a>.
                     </p>
                     <p>
                         <span class="tab">Je</span> suis quelqu'un de curieux, dynamique, toujours prêt à apprendre de nouvelles choses, et cela depuis tout petit. Grâce à de nombreux projets que j'ai pu mené, j'ai acquis des compétences de travail en équipe, de gestion de projet et d'équipe.

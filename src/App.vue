@@ -5,14 +5,14 @@
 	    <Header />
 
         <router-view></router-view>
-	
+			
 		<Footer/>
 
 	</div>
 
 </template>
 
-<script>
+<script lang="ts">
 import Header from './views/sections/Header.vue'
 import Footer from './views/sections/Footer.vue'
 

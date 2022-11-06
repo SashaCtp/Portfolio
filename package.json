@@ -4,12 +4,9 @@
   "description": "Ceci est mon portfolio afin de proposer mes services et montrer mes différents projets.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config webpack.config.dev.js",
-    "watchdev": "webpack --config webpack.config.dev.js --watch",
-    "dockerdev": "npm run dev && docker build -t portfolio . && echo Docker dev image built !",
-    "dockerprod": "npm run prod && docker build -t portfolio . && echo Docker prod image built !",
-    "prod": "webpack --config webpack.config.prod.js"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -22,27 +19,25 @@
   },
   "homepage": "https://github.com/SashaCtp/Portfolio#readme",
   "devDependencies": {
-    "css-loader": "^5.2.7",
-    "css-minimizer-webpack-plugin": "^2.0.0",
-    "file-loader": "^6.2.0",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^1.6.2",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^11.1.1",
-    "style-loader": "^2.0.0",
-    "url-loader": "^4.1.1"
+    "@vitejs/plugin-vue": "^3.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.0",
+    "vue-tsc": "^1.0.9"
   },
   "dependencies": {
     "connect-history-api-fallback": "^1.6.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.6.0",
-    "vue": "^2.6.14",
+    "vue": "^3.2.41",
     "vue-loader": "^15.9.8",
-    "vue-router": "^3.5.2",
+    "vue-router": "^4.1.6",
     "vue-style-loader": "^4.1.3",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^5.58.0",
-    "webpack-cli": "^4.9.0"
+    "vue-template-compiler": "^2.6.14"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "src/images",
+      "src/data"
+    ]
   }
 }

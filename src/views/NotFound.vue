@@ -10,7 +10,7 @@
         <div class="body">
             <div class="container">
                             
-                <p class="text-center">On dirait bien que la page à laquelle vous essayez d'accéder n'existe pas !<p>
+                <p class="text-center">On dirait bien que la page à laquelle vous essayez d'accéder n'existe pas !</p>
 
                 <div class="d-flex justify-content-center">
                     <router-link class="btn btn-primary btn-small" to="/"><i class="fas fa-home"></i></router-link>

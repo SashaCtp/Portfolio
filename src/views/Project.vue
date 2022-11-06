@@ -1,14 +1,14 @@
 <template>
 
     <div>
-        <not-found v-if="notFound"/>
+        <not-found-view v-if="notFound" />
 
         <section class="dividedSection" v-if="!notFound">
 
             <div class="colored header">
-                <template v-if="this.page">
-                    <h1>{{ this.page.title }}</h1>
-                    <h2 v-if="this.page.subtitle">{{ this.page.subtitle }}</h2>
+                <template v-if="page">
+                    <h1>{{ page.title }}</h1>
+                    <h2 v-if="page.subtitle">{{ page.subtitle }}</h2>
                 </template>
                 <template v-else>
                     <load-placeholder :type="'h1'" :size="'medium'"/>
@@ -20,7 +20,7 @@
 
                 <div class="container-fluid">
 
-                    <template v-if="this.page && !this.notFound">
+                    <template v-if="page && !notFound">
 
                         <div class="row" v-for="(row, rowIndex) in page.rows" :key="rowIndex">
 
@@ -33,7 +33,7 @@
                         </div>
                     
                     </template>
-                    <template v-else-if="!this.notFound">
+                    <template v-else-if="!notFound">
 
                         <loader type="loader-primary" text="Chargement des informations du projet"/>
 
@@ -49,24 +49,26 @@
     
 </template>
 
-<script>
-import Loader from './components/Loader.vue'
+<script lang="ts">
+import Loader from '../components/Loader.vue'
 import NotFound from './NotFound.vue'
-import ElementParser from './components/ElementParser.vue'
-import LoadPlaceholder from './components/LoadPlaceholder.vue'
+import ElementParser from '../components/ElementParser.vue'
+import LoadPlaceholder from '../components/LoadPlaceholder.vue'
+
+import Page from '../types/Page'
 
 export default{
 
     components: {
-        'not-found': NotFound,
+        'not-found-view': NotFound,
         'loader' : Loader,
         'element-parser' : ElementParser,
         LoadPlaceholder
     },
-    data(){
+    data() {
         return{
-            notFound: false,
-            page: null
+            notFound: false as boolean,
+            page: null as Page | null
         }
     },
     methods: {

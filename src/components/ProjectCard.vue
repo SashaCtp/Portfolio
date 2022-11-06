@@ -3,7 +3,7 @@
   	<div class="project" v-if="isValid">
 		<img
 			class="logo"
-			:src="'public/images/projects/' + logo"
+			:src="'/images/projects/' + logo"
 			alt="Logo du projet"
 		/>
 

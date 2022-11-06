@@ -2,7 +2,7 @@
     <section class="colored" id="cv">
 
         <div class="sectionHeader">
-            <img class="icon" src="public/images/resume.png" alt="Icone représentant un CV" />
+            <img class="icon" src="/images/resume.png" alt="Icone représentant un CV" />
             <h3>MON CV</h3>
             <div class="spacer"></div>
             <h4>Je résume tout en une page !</h4>
@@ -13,9 +13,9 @@
             <div class="row choice">
 
                 <div class="col-md-5 col-12 cvSection">
-                    <img class="illustration" src="public/images/pdf.png" alt="Icone représentant un fichier PDF" />
+                    <img class="illustration" src="/images/pdf.png" alt="Icone représentant un fichier PDF" />
 
-                    <a class="btn btn-large" href="public/pdf/Sasha_Contrepois.pdf" download>Télécharger le CV</a>
+                    <a class="btn btn-large" href="/pdf/Sasha_Contrepois.pdf" download>Télécharger le CV</a>
                 </div>
 
                 <div class="col-2 d-md-flex d-none justify-content-center">
@@ -39,8 +39,8 @@
                 </div>
                     
                 <div class="col-md-5 col-12 cvSection">
-                    <img class="illustration" src="public/images/cloud.png" alt="Icone représentant un nuage" />
-                    <a class="btn btn-large" href="public/pdf/Sasha_Contrepois.pdf" target="_blank">Consulter en ligne</a>
+                    <img class="illustration" src="/images/cloud.png" alt="Icone représentant un nuage" />
+                    <a class="btn btn-large" href="/pdf/Sasha_Contrepois.pdf" target="_blank">Consulter en ligne</a>
                 </div>
 
             </div>
