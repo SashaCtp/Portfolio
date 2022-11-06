@@ -3,25 +3,19 @@
     	<nav :class="{ display : openNav }">
       		<ul>
         		<li id="link_presentation">
-					<a href="/#presentation">QUI SUIS-JE ?</a>
-          			
-					<ul id="link_loisirs" class="dropdown">
-            			<li>
-              				<router-link to="/parcours">Mon parcours</router-link>
-            			</li>
-          			</ul>
+					<a href="/#presentation">Présentation</a>
         		</li>
 				<li id="link_skills">
-					<a href="/#skills" exact-path>MES COMPETENCES</a>
+					<a href="/#skills" exact-path>Compétences</a>
 				</li>
 				<li id="link_projects">
-					<a href="/#projects">MES PROJETS</a>
+					<a href="/#projects">Projets</a>
 				</li>
 				<li id="link_cv">
-					<a href="/#cv">MON CV</a>
+					<a href="/#cv">CV</a>
 				</li>
 				<li id="link_contact">
-					<a href="/#contact">ME CONTACTER</a>
+					<a href="/#contact">Contact</a>
 				</li>
       		</ul>
     	</nav>

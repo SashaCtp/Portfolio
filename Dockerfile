@@ -1,9 +1,22 @@
-FROM node:latest
+# Improved version
+
+# Build
+FROM node:18-alpine AS builder
+WORKDIR /usr/app
+COPY package*.json ./
+COPY tsconfig*.json ./
+RUN npm install
+COPY . ./
+RUN npm run build
+
+# ???
+FROM node:18-alpine as runner
+WORKDIR /usr/app
+COPY --from=builder /usr/app/package*.json ./
+COPY --from=builder /usr/app/dist ./
+COPY --from=builder server.js ./
+RUN npm install --omit=dev
 
 EXPOSE 80
 
-ADD /app/ /app/
-WORKDIR /app
-COPY package.json .
-RUN npm install --production
-CMD ["node", "server.js"]
+CMD ["node", "index.js"]

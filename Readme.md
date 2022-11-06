@@ -12,8 +12,5 @@ L'icone "Hamburger" du menu provient de la librairie de Jonathan Suh : https://j
 ## Elements importants
 
 - 🐳 Utilisation de Docker pour déployer facilement et rapidement le Portfolio
-- 📦 Utilisation de Webpack pour faciliter et accélérer le développement
 - `🔧 En cours de développement` - Mise en page automatique des pages des projets depuis des objets JSON
 - `🕙 A venir` - Création d'une API & Back-End pour modifier dynamiquement le contenu
-
-*(Il s'agit ici de Node 15, distribution Alpine)*
