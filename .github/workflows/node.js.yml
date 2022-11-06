@@ -18,6 +18,7 @@ jobs:
     env:
       APP_ENV: production
       BASE_URL: /Portfolio/
+      ASSET_URL: /Portfolio/
 
     steps:
     - uses: actions/checkout@v3
