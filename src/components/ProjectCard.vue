@@ -3,7 +3,7 @@
   	<div class="project" v-if="isValid">
 		<img
 			class="logo"
-			:src="'/images/projects/' + logo"
+			:src=logo
 			alt="Logo du projet"
 		/>
 
@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="tags">
-			<div class="item" v-for="(techno, index) in technos" :key="name + index" >{{ techno }}</div>
+			<div class="item" v-for="(tool, index) in tools" :key="name + index" >{{ tool }}</div>
 		</div>
 
 		<div class="buttons">
@@ -34,7 +34,7 @@ export default {
 		id: String,
 		name: String,
 		description: String,
-		technos: Array,
+		tools: Array,
 		repository: String,
 		logo: String
 	},

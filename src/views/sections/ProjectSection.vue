@@ -8,22 +8,24 @@
                 <h4>Voici quelques projets sur lesquels j'ai pu travailler ces dernières années.</h4>
             </div>
 
-            <button class="btn btn-primary" v-if="timeline.length == 0" @click="loadTimeline">
+            <button class="btn btn-primary" v-if="displayLoadButton" @click="loadTimeline">
                 <i class="fas fa-sync-alt"></i> Charger les projets
             </button>
 
-            <div class="timeline" v-if="timeline.length != 0">
+            <Loader text="Loading projects ..." type="loader-primary" v-if="displayLoader"/>
 
-                <template v-for="(row, index) in timeline" :key="'projects-year-' + row.year">
+            <div class="timeline" v-if="displayProjects">
 
-                    <div class="divider divider-row" v-if="index != 0" :key="'year-' + row.year">
+                <template v-for="(year, index) in getYears" :key="'projects-year-' + year">
+
+                    <div class="divider divider-row" v-if="index != 0" :key="'year-' + year">
                         <div class="bar"></div>
-                        <div class="text">{{ row.year }}</div>
+                        <div class="text">{{ year }}</div>
                         <div class="bar"></div>
                     </div>
 
                     <div class="row justify-content-center align-items-center" >
-                        <project-card v-bind="project" v-for="(project, projectIndex) in row.projects" :key="row.year + '-' + projectIndex" />
+                        <project-card v-bind="project" v-for="(project, projectIndex) in timeline[year].projects" :key="year + '-' + projectIndex" />
                     </div>
 
                 </template>
@@ -33,23 +35,51 @@
         </section>
 </template>
 
-<script>
+<script lang=ts>
 import ProjectCard from '../../components/ProjectCard.vue'
+import Loader from '../../components/Loader.vue'
+import LoadState from '../../types/LoadState'
+import { API_URL } from '../../config'
 export default{
-  components: { ProjectCard },
-    data(){
+  components: { ProjectCard, Loader },
+    data: () => {
         return {
             
-            timeline: []
+            timeline: {} as any,
+            loadState: LoadState.BEFORE_LOADING as LoadState
 
         }
     },
     methods: {
         loadTimeline: function(){
-            fetch('/data/projectTimeline.json')
+            this.loadState = LoadState.LOADING;
+            fetch(API_URL + '/v1/projects/timeline')
             .then(data => data.json())
             .then(data => {
-                this.timeline = data
+                this.timeline = data;
+                this.timeline;
+                this.loadState = LoadState.SUCCESS;
+            })
+            .catch(err => {
+                console.error('😢 Failed to load projects');
+                this.loadState = LoadState.ERROR;
+            });
+        }
+    },
+    computed: {
+        displayLoader() {
+            return this.loadState == LoadState.BEFORE_LOADING || this.loadState == LoadState.LOADING;
+        },
+        displayLoadButton() {
+            return this.loadState == LoadState.ERROR;
+        },
+        displayProjects() {
+            return this.loadState == LoadState.SUCCESS;
+        },
+        getYears(){
+            return Object.keys(this.timeline).sort((a: any, b: any) => {
+                // Return the list of years, ordered by decreasing order
+                return parseInt(b) - parseInt(a)
             })
         }
     },
